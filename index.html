@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Peru Vehicle Label App</title>
+<style>
+  :root{
+    --bg:#0f1318; --panel:#171d25; --panel2:#202836; --line:#2d3747;
+    --text:#e8edf5; --muted:#94a3b8; --accent:#4f8cff; --ok:#2dd489;
+    --warn:#ffbd4a; --bad:#ff6170;
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%;margin:0;background:var(--bg);color:var(--text);
+    font-family:Segoe UI,Roboto,Arial,sans-serif;font-size:13px;overflow:hidden}
+  #app{height:100vh;display:grid;grid-template-columns:1fr 320px;grid-template-rows:auto 1fr}
+  #top{grid-column:1/3;display:flex;gap:9px;align-items:center;flex-wrap:wrap;
+    padding:8px 12px;background:var(--panel);border-bottom:1px solid var(--line)}
+  button,input,select{font:inherit}
+  button{background:var(--panel2);color:var(--text);border:1px solid var(--line);
+    border-radius:6px;padding:6px 10px;cursor:pointer}
+  button:hover{border-color:var(--accent)}
+  button.primary{background:var(--accent);border-color:var(--accent);font-weight:650;color:white}
+  button.good{background:#173629;border-color:#246f50;color:#c8ffe6}
+  button.danger{background:#351d25;border-color:#71313c;color:#ffd5dc}
+  button.toggled{border-color:var(--accent);background:#233b66}
+  input,select{background:var(--panel2);border:1px solid var(--line);color:var(--text);
+    border-radius:6px;padding:6px 8px}
+  .sep{width:1px;height:24px;background:var(--line)}
+  .muted{color:var(--muted)}
+  #counter b{color:var(--accent)}
+  #imageId{font-family:Consolas,monospace;color:#dbeafe}
+  #dirty{color:var(--warn);display:none;font-weight:700}
+  #reviewedBadge{color:var(--ok);font-weight:700}
+  #stage{position:relative;background:#080b0f;overflow:hidden}
+  #cv{display:block;position:absolute;inset:0;cursor:crosshair}
+  #hint,#zoom{position:absolute;bottom:10px;background:rgba(0,0,0,.55);border:1px solid #000;
+    border-radius:6px;padding:5px 8px;color:#cbd5e1;pointer-events:none;font-size:12px}
+  #hint{left:10px}
+  #zoom{right:10px}
+  #side{background:var(--panel);border-left:1px solid var(--line);display:flex;flex-direction:column;min-height:0}
+  #classPanel{padding:10px;border-bottom:1px solid var(--line);display:grid;grid-template-columns:1fr 1fr;gap:6px}
+  .cls{display:flex;align-items:center;gap:7px;padding:6px 7px;border:1px solid var(--line);
+    border-radius:6px;cursor:pointer;min-width:0}
+  .cls.active{background:var(--panel2);border-color:#dbeafe}
+  .sw{width:13px;height:13px;border-radius:3px;flex:0 0 auto}
+  .cls span.name{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .cls span.key{margin-left:auto;color:var(--muted);font-family:Consolas,monospace}
+  #boxHead{display:flex;justify-content:space-between;align-items:center;padding:9px 10px;
+    border-bottom:1px solid var(--line);color:var(--muted)}
+  #boxList{flex:1;overflow:auto;padding:7px}
+  .boxRow{display:grid;grid-template-columns:14px 1fr auto auto;gap:7px;align-items:center;
+    padding:6px;border-radius:6px;margin-bottom:4px;cursor:pointer}
+  .boxRow:hover{background:var(--panel2)}
+  .boxRow.sel{outline:1px solid var(--accent);background:#24324d}
+  .boxRow select{width:100%;min-width:0;padding:3px 5px}
+  .boxRow .mini{color:var(--muted);font-variant-numeric:tabular-nums;font-size:11px}
+  .boxRow .del{padding:2px 6px;color:var(--bad);background:transparent;border:0}
+  #cropBox{border-top:1px solid var(--line);padding:9px 10px;background:#131922}
+  #cropTop{display:flex;justify-content:space-between;color:var(--muted);font-size:12px;margin-bottom:7px}
+  #cropCv{width:100%;height:170px;background:#05070a;border:1px solid var(--line);border-radius:6px;display:block}
+  #actions{border-top:1px solid var(--line);padding:10px;display:flex;flex-direction:column;gap:8px}
+  .row{display:flex;gap:8px;align-items:center}
+  .row > *{min-width:0}
+  #log{height:112px;overflow:auto;background:#090d13;border:1px solid var(--line);
+    border-radius:6px;padding:7px;color:#cbd5e1;font:11px Consolas,monospace;white-space:pre-wrap}
+  #toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);opacity:0;
+    transition:opacity .2s;background:var(--panel2);border:1px solid var(--line);
+    padding:9px 14px;border-radius:8px;z-index:20}
+</style>
+</head>
+<body>
+<div id="app">
+  <div id="top">
+    <button id="prevBtn" title="Anterior (A o flecha izquierda)">Anterior</button>
+    <span id="counter"><b id="idx">0</b> / <span id="total">0</span></span>
+    <button id="nextBtn" title="Siguiente (D o flecha derecha)">Siguiente</button>
+    <div class="sep"></div>
+    <span id="imageId">sin imagen</span>
+    <span id="dirty">sin guardar</span>
+    <span id="reviewedBadge"></span>
+    <div class="sep"></div>
+    <input id="jump" type="text" placeholder="id o #indice" style="width:150px">
+    <button id="jumpBtn">Ir</button>
+    <label class="muted"><input id="onlyPending" type="checkbox"> solo pendientes</label>
+    <div class="sep"></div>
+    <button id="newBtn" title="Dibujar caja (N)">Nueva caja</button>
+    <button id="dupBtn" title="Duplicar seleccion (R)">Duplicar</button>
+    <button id="clearBtn" class="danger">Vaciar</button>
+    <button id="fitBtn" title="Ajustar vista (F)">Ajustar</button>
+    <div class="sep"></div>
+    <button id="saveBtn">Guardar imagen actual</button>
+    <button id="approveBtn" class="primary" title="Guardar y avanzar (Enter)">Aprobar + siguiente</button>
+  </div>
+
+  <div id="stage">
+    <canvas id="cv"></canvas>
+    <div id="hint">N dibuja caja | arrastra para mover | esquinas para redimensionar | 1-9 cambia clase</div>
+    <div id="zoom">100%</div>
+  </div>
+
+  <aside id="side">
+    <div id="classPanel"></div>
+    <div id="boxHead"><span>Objetos: <b id="boxCount">0</b></span><span id="sourceTag">metadata</span></div>
+    <div id="boxList"></div>
+    <div id="cropBox">
+      <div id="cropTop"><span>Crop</span><span id="cropInfo">sin seleccion</span></div>
+      <canvas id="cropCv" width="300" height="170"></canvas>
+    </div>
+    <div id="actions">
+      <div class="row">
+        <button id="reloadBtn" style="flex:1">Recargar dataset</button>
+        <button id="exportBtn" class="good" style="flex:1">Guardar todo revisado / Exportar YOLO</button>
+      </div>
+      <button id="csvBtn" class="good">Guardar CSV corregido y sobrescribir metadata.csv</button>
+      <div class="row">
+        <select id="modelSel" style="flex:1">
+          <option>yolo11n.pt</option>
+          <option>yolo11s.pt</option>
+          <option>yolo11m.pt</option>
+        </select>
+        <input id="epochs" type="number" min="1" value="50" title="epochs" style="width:72px">
+        <input id="imgsz" type="number" min="320" value="1280" title="imgsz" style="width:82px">
+      </div>
+      <button id="trainBtn">Entrenar con export actual</button>
+      <div class="muted" id="paths">Esperando dataset...</div>
+      <div class="muted" id="saveHint">Correcciones: data/corrected_labels/*.json | Export YOLO: exports/yolo_latest</div>
+      <div id="log"></div>
+    </div>
+  </aside>
+</div>
+<div id="toast"></div>
+
+<script>
+const COLORS = ["#4f8cff","#ffbd4a","#2dd489","#ff7ac6","#60d4ff","#ff6170","#b58cff",
+  "#c2e66e","#ff9f43","#9ca3af","#22c55e","#f59e0b","#38bdf8","#f43f5e","#a3e635"];
+let state = null, images = [], reviewed = [], initialCounts = [], classes = [];
+let idx = 0, cur = null, boxes = [], source = "metadata";
+let img = new Image(), imgReady = false, imgW = 2304, imgH = 1296;
+let selected = -1, currentClass = 0, dirty = false, drawMode = false;
+let view = {scale:1, ox:0, oy:0};
+let drag = null, drawRect = null, pan = null;
+
+const cv = document.getElementById("cv");
+const ctx = cv.getContext("2d");
+const stage = document.getElementById("stage");
+
+function toast(msg){
+  const t = document.getElementById("toast");
+  t.textContent = msg; t.style.opacity = 1;
+  clearTimeout(window.toastTimer);
+  window.toastTimer = setTimeout(()=>t.style.opacity = 0, 1700);
+}
+function enc(x){ return encodeURIComponent(x); }
+function hashImageId(){
+  const raw = (location.hash || "").replace(/^#/, "");
+  try { return decodeURIComponent(raw); } catch(e) { return raw; }
+}
+function clsName(id){
+  const c = classes.find(x=>x.id === id);
+  return c ? c.name : "class_" + id;
+}
+function markDirty(){ dirty = true; document.getElementById("dirty").style.display = "inline"; }
+function clearDirty(){ dirty = false; document.getElementById("dirty").style.display = "none"; }
+function setSaveHint(text){ document.getElementById("saveHint").textContent = text; }
+function imgToCv(x,y){ return [x*view.scale + view.ox, y*view.scale + view.oy]; }
+function cvToImg(x,y){ return [(x-view.ox)/view.scale, (y-view.oy)/view.scale]; }
+function clampBox(b){
+  b.x1 = Math.max(0, Math.min(imgW, b.x1)); b.x2 = Math.max(0, Math.min(imgW, b.x2));
+  b.y1 = Math.max(0, Math.min(imgH, b.y1)); b.y2 = Math.max(0, Math.min(imgH, b.y2));
+  let x1 = Math.min(b.x1,b.x2), x2 = Math.max(b.x1,b.x2);
+  let y1 = Math.min(b.y1,b.y2), y2 = Math.max(b.y1,b.y2);
+  b.x1 = x1; b.x2 = x2; b.y1 = y1; b.y2 = y2;
+}
+function fit(){
+  const s = Math.min(cv.width / imgW, cv.height / imgH) * 0.98;
+  view.scale = s; view.ox = (cv.width - imgW*s)/2; view.oy = (cv.height - imgH*s)/2;
+  draw();
+}
+function resize(){
+  cv.width = stage.clientWidth; cv.height = stage.clientHeight;
+  fit();
+}
+
+function draw(){
+  ctx.clearRect(0,0,cv.width,cv.height);
+  if(imgReady){
+    ctx.save(); ctx.setTransform(view.scale,0,0,view.scale,view.ox,view.oy);
+    ctx.drawImage(img,0,0,imgW,imgH); ctx.restore();
+  }
+  for(let i=0;i<boxes.length;i++) drawBox(boxes[i], i);
+  if(drawRect){
+    const a = imgToCv(drawRect.x1, drawRect.y1), b = imgToCv(drawRect.x2, drawRect.y2);
+    ctx.strokeStyle = COLORS[currentClass % COLORS.length]; ctx.setLineDash([6,4]); ctx.lineWidth = 2;
+    ctx.strokeRect(Math.min(a[0],b[0]), Math.min(a[1],b[1]), Math.abs(a[0]-b[0]), Math.abs(a[1]-b[1]));
+    ctx.setLineDash([]);
+  }
+  document.getElementById("zoom").textContent = Math.round(view.scale * 100) + "%";
+  drawCrop();
+}
+function drawBox(b, i){
+  const p1 = imgToCv(b.x1,b.y1), p2 = imgToCv(b.x2,b.y2);
+  const x = p1[0], y = p1[1], w = p2[0]-p1[0], h = p2[1]-p1[1];
+  const col = COLORS[(b.class_id || 0) % COLORS.length];
+  ctx.lineWidth = i === selected ? 3 : 2;
+  ctx.strokeStyle = col; ctx.fillStyle = col + (i === selected ? "33" : "18");
+  ctx.fillRect(x,y,w,h); ctx.strokeRect(x,y,w,h);
+  const label = (i+1) + ". " + clsName(b.class_id) + (b.confidence ? " " + Number(b.confidence).toFixed(2) : "");
+  ctx.font = "12px Segoe UI";
+  const tw = ctx.measureText(label).width + 8;
+  ctx.fillStyle = col; ctx.fillRect(x, Math.max(0,y-18), tw, 17);
+  ctx.fillStyle = "#071018"; ctx.fillText(label, x+4, Math.max(12,y-5));
+  if(i === selected) drawHandles(b);
+}
+function handles(b){
+  const pts = {
+    nw:[b.x1,b.y1], n:[(b.x1+b.x2)/2,b.y1], ne:[b.x2,b.y1], e:[b.x2,(b.y1+b.y2)/2],
+    se:[b.x2,b.y2], s:[(b.x1+b.x2)/2,b.y2], sw:[b.x1,b.y2], w:[b.x1,(b.y1+b.y2)/2]
+  };
+  return pts;
+}
+function drawHandles(b){
+  const hs = handles(b);
+  ctx.fillStyle = "#ffffff"; ctx.strokeStyle = "#071018"; ctx.lineWidth = 1;
+  for(const k in hs){
+    const p = imgToCv(hs[k][0], hs[k][1]);
+    ctx.fillRect(p[0]-5,p[1]-5,10,10); ctx.strokeRect(p[0]-5,p[1]-5,10,10);
+  }
+}
+function drawCrop(){
+  const c = document.getElementById("cropCv"), g = c.getContext("2d");
+  g.fillStyle = "#05070a"; g.fillRect(0,0,c.width,c.height);
+  if(selected < 0 || !boxes[selected] || !imgReady){
+    document.getElementById("cropInfo").textContent = "sin seleccion";
+    return;
+  }
+  const b = boxes[selected], pad = 1.25;
+  const bw = Math.max(12, b.x2-b.x1), bh = Math.max(12, b.y2-b.y1);
+  const sx = Math.max(0, b.x1 - bw*(pad-1)/2), sy = Math.max(0, b.y1 - bh*(pad-1)/2);
+  const sw = Math.min(imgW - sx, bw*pad), sh = Math.min(imgH - sy, bh*pad);
+  const scale = Math.min(c.width / sw, c.height / sh);
+  const dw = sw * scale, dh = sh * scale;
+  const dx = (c.width-dw)/2, dy = (c.height-dh)/2;
+  const srcScaleX = (img.naturalWidth || imgW) / imgW;
+  const srcScaleY = (img.naturalHeight || imgH) / imgH;
+  g.drawImage(img, sx*srcScaleX, sy*srcScaleY, sw*srcScaleX, sh*srcScaleY, dx, dy, dw, dh);
+  g.strokeStyle = "#64748b"; g.lineWidth = 1;
+  g.strokeRect(dx, dy, dw, dh);
+  g.strokeStyle = COLORS[b.class_id % COLORS.length]; g.lineWidth = 2;
+  g.strokeRect(dx + (b.x1-sx)*scale, dy + (b.y1-sy)*scale, (b.x2-b.x1)*scale, (b.y2-b.y1)*scale);
+  document.getElementById("cropInfo").textContent = clsName(b.class_id);
+}
+
+function buildClasses(){
+  const p = document.getElementById("classPanel"); p.innerHTML = "";
+  for(const c of classes){
+    const el = document.createElement("div");
+    el.className = "cls" + (c.id === currentClass ? " active" : "");
+    el.dataset.id = c.id;
+    el.innerHTML = `<span class="sw" style="background:${COLORS[c.id % COLORS.length]}"></span><span class="name">${c.name}</span><span class="key">${c.id+1}</span>`;
+    el.onclick = ()=>setClass(c.id, true);
+    p.appendChild(el);
+  }
+}
+function setClass(id, apply){
+  currentClass = id;
+  document.querySelectorAll(".cls").forEach(e=>e.classList.toggle("active", Number(e.dataset.id) === id));
+  if(apply && selected >= 0){
+    boxes[selected].class_id = id; boxes[selected].class_name = clsName(id); boxes[selected].source = "human";
+    markDirty(); renderBoxes(); draw();
+  }
+}
+function renderBoxes(){
+  document.getElementById("boxCount").textContent = boxes.length;
+  document.getElementById("sourceTag").textContent = source;
+  const list = document.getElementById("boxList"); list.innerHTML = "";
+  boxes.forEach((b,i)=>{
+    const row = document.createElement("div");
+    row.className = "boxRow" + (i === selected ? " sel" : "");
+    const sel = document.createElement("select");
+    for(const c of classes){
+      const o = document.createElement("option"); o.value = c.id; o.textContent = c.name;
+      if(c.id === b.class_id) o.selected = true; sel.appendChild(o);
+    }
+    sel.onchange = e=>{ b.class_id = Number(e.target.value); b.class_name = clsName(b.class_id); b.source = "human"; markDirty(); renderBoxes(); draw(); };
+    sel.onclick = e=>e.stopPropagation();
+    const del = document.createElement("button"); del.className = "del"; del.textContent = "x";
+    del.onclick = e=>{ e.stopPropagation(); boxes.splice(i,1); selected=-1; markDirty(); renderBoxes(); draw(); };
+    row.innerHTML = `<span class="sw" style="background:${COLORS[b.class_id % COLORS.length]}"></span>`;
+    row.appendChild(sel);
+    const mini = document.createElement("span"); mini.className = "mini"; mini.textContent = Math.round(b.x2-b.x1) + "x" + Math.round(b.y2-b.y1);
+    row.appendChild(mini); row.appendChild(del);
+    row.onclick = ()=>{ selected = i; setClass(b.class_id, false); renderBoxes(); draw(); };
+    list.appendChild(row);
+  });
+}
+
+async function loadState(){
+  const r = await fetch("/api/state"); state = await r.json();
+  images = state.images || []; reviewed = state.reviewed || []; initialCounts = state.initial_counts || [];
+  classes = state.classes || [];
+  if(classes.length === 0){ classes = [{id:0,name:"car"}]; }
+  buildClasses();
+  document.getElementById("total").textContent = images.length;
+  document.getElementById("paths").textContent = `${images.length} imagenes | ${state.reviewed_count || 0} revisadas`;
+  const hashId = hashImageId();
+  let start = hashId ? images.indexOf(hashId) : -1;
+  if(start < 0 && location.hash) start = images.indexOf(location.hash.replace(/^#/, ""));
+  if(start < 0) start = reviewed.findIndex(x=>!x);
+  await loadIndex(start >= 0 ? start : 0, false);
+}
+async function loadIndex(i, saveFirst=true){
+  if(i < 0 || i >= images.length){ toast("No hay mas imagenes"); return; }
+  if(saveFirst && dirty) await save(false);
+  idx = i; cur = images[idx]; selected = -1; drawMode = false; document.getElementById("newBtn").classList.remove("toggled");
+  if(location.hash !== "#" + enc(cur)) history.replaceState(null, "", "#" + enc(cur));
+  document.getElementById("idx").textContent = idx + 1;
+  document.getElementById("imageId").textContent = cur;
+  document.getElementById("reviewedBadge").textContent = reviewed[idx] ? "revisada" : "";
+  const a = await (await fetch("/api/annotations/" + enc(cur))).json();
+  imgW = a.width || imgW; imgH = a.height || imgH; source = a.source || "metadata";
+  boxes = (a.boxes || []).map(b=>({...b}));
+  clearDirty(); renderBoxes();
+  imgReady = false; img = new Image();
+  img.onload = ()=>{ imgReady = true; imgW = img.naturalWidth || imgW; imgH = img.naturalHeight || imgH; fit(); };
+  img.src = "/api/image/" + enc(cur) + "?t=" + Date.now();
+  draw();
+}
+async function save(showToast=true){
+  if(!cur) return;
+  const payload = {boxes: boxes.map(b=>({class_id:b.class_id,x1:b.x1,y1:b.y1,x2:b.x2,y2:b.y2,confidence:b.confidence,origin_line:b.origin_line,destination_line:b.destination_line,turn_name:b.turn_name,source:b.source || "human"}))};
+  const r = await fetch("/api/save/" + enc(cur), {method:"POST", headers:{"Content-Type":"application/json"}, body:JSON.stringify(payload)});
+  const d = await r.json();
+  if(d.ok){
+    reviewed[idx] = true;
+    clearDirty();
+    document.getElementById("reviewedBadge").textContent = "revisada";
+    document.getElementById("paths").textContent = `${images.length} imagenes | ${d.reviewed_count} revisadas guardadas`;
+    setSaveHint(`Guardado: data/corrected_labels/${cur.replace(/\.[^.]+$/, "")}.json`);
+    if(showToast) toast("Imagen guardada en corrected_labels");
+  }
+}
+async function approveNext(){
+  await save(false);
+  next();
+}
+function next(){
+  let i = idx + 1;
+  if(document.getElementById("onlyPending").checked){ while(i < images.length && reviewed[i]) i++; }
+  loadIndex(i);
+}
+function prev(){
+  let i = idx - 1;
+  if(document.getElementById("onlyPending").checked){ while(i >= 0 && reviewed[i]) i--; }
+  loadIndex(i);
+}
+function jump(){
+  const v = document.getElementById("jump").value.trim();
+  if(!v) return;
+  let i = -1;
+  if(/^#?\d+$/.test(v)) i = Number(v.replace("#","")) - 1;
+  else { i = images.indexOf(v); if(i < 0) i = images.findIndex(x=>x.includes(v)); }
+  if(i >= 0) loadIndex(i); else toast("No encontrado");
+}
+
+function hitHandle(mx,my){
+  if(selected < 0) return null;
+  const hs = handles(boxes[selected]);
+  for(const k in hs){
+    const p = imgToCv(hs[k][0],hs[k][1]);
+    if(Math.abs(mx-p[0]) <= 8 && Math.abs(my-p[1]) <= 8) return k;
+  }
+  return null;
+}
+function hitBox(ix,iy){
+  for(let i=boxes.length-1;i>=0;i--){
+    const b = boxes[i];
+    if(ix >= b.x1 && ix <= b.x2 && iy >= b.y1 && iy <= b.y2) return i;
+  }
+  return -1;
+}
+cv.addEventListener("mousedown", e=>{
+  const r = cv.getBoundingClientRect(), mx = e.clientX-r.left, my = e.clientY-r.top;
+  const [ix,iy] = cvToImg(mx,my);
+  if(e.button === 1 || e.button === 2){ pan = {mx,my,ox:view.ox,oy:view.oy}; e.preventDefault(); return; }
+  if(drawMode){
+    drawRect = {x1:ix,y1:iy,x2:ix,y2:iy}; return;
+  }
+  const h = hitHandle(mx,my);
+  if(h){ drag = {type:h, start:{ix,iy}, orig:{...boxes[selected]}}; return; }
+  const bi = hitBox(ix,iy);
+  if(bi >= 0){ selected = bi; setClass(boxes[bi].class_id, false); renderBoxes(); drag = {type:"move", start:{ix,iy}, orig:{...boxes[bi]}}; draw(); return; }
+  selected = -1; renderBoxes(); pan = {mx,my,ox:view.ox,oy:view.oy}; draw();
+});
+window.addEventListener("mousemove", e=>{
+  const r = cv.getBoundingClientRect(), mx = e.clientX-r.left, my = e.clientY-r.top;
+  const [ix,iy] = cvToImg(mx,my);
+  if(pan){ view.ox = pan.ox + mx - pan.mx; view.oy = pan.oy + my - pan.my; draw(); return; }
+  if(drawRect){ drawRect.x2 = ix; drawRect.y2 = iy; draw(); return; }
+  if(!drag || selected < 0) return;
+  const b = boxes[selected], o = drag.orig;
+  if(drag.type === "move"){
+    const dx = ix - drag.start.ix, dy = iy - drag.start.iy;
+    b.x1 = o.x1 + dx; b.x2 = o.x2 + dx; b.y1 = o.y1 + dy; b.y2 = o.y2 + dy;
+  }else{
+    b.x1 = o.x1; b.x2 = o.x2; b.y1 = o.y1; b.y2 = o.y2;
+    if(drag.type.includes("w")) b.x1 = ix;
+    if(drag.type.includes("e")) b.x2 = ix;
+    if(drag.type.includes("n")) b.y1 = iy;
+    if(drag.type.includes("s")) b.y2 = iy;
+  }
+  clampBox(b); b.source = "human"; markDirty(); renderBoxes(); draw();
+});
+window.addEventListener("mouseup", ()=>{
+  if(drawRect){
+    const b = {class_id:currentClass,class_name:clsName(currentClass),x1:drawRect.x1,y1:drawRect.y1,x2:drawRect.x2,y2:drawRect.y2,source:"human"};
+    clampBox(b); drawRect = null; drawMode = false; document.getElementById("newBtn").classList.remove("toggled");
+    if(b.x2-b.x1 > 3 && b.y2-b.y1 > 3){ boxes.push(b); selected = boxes.length-1; markDirty(); renderBoxes(); }
+    draw(); return;
+  }
+  drag = null; pan = null;
+});
+cv.addEventListener("contextmenu", e=>e.preventDefault());
+cv.addEventListener("wheel", e=>{
+  e.preventDefault();
+  const r = cv.getBoundingClientRect(), mx = e.clientX-r.left, my = e.clientY-r.top;
+  const [ix,iy] = cvToImg(mx,my);
+  const f = e.deltaY < 0 ? 1.15 : 1/1.15;
+  view.scale = Math.max(0.05, Math.min(25, view.scale * f));
+  view.ox = mx - ix*view.scale; view.oy = my - iy*view.scale; draw();
+},{passive:false});
+
+async function exportYolo(){
+  await save(false);
+  const r = await fetch("/api/export_yolo", {method:"POST", headers:{"Content-Type":"application/json"}, body:JSON.stringify({reviewed_only:true})});
+  const d = await r.json();
+  if(!d.ok){ toast(d.error || "Error exportando"); return; }
+  toast("Todo lo revisado fue exportado a YOLO");
+  document.getElementById("paths").textContent = `Export: ${d.dir}`;
+  setSaveHint(`Exportado: ${d.images} imagenes | train ${d.train} | val ${d.val} | ${d.data_yaml}`);
+}
+async function exportCsv(){
+  await save(false);
+  const r = await fetch("/api/export_csv", {method:"POST", headers:{"Content-Type":"application/json"}, body:JSON.stringify({overwrite:true})});
+  const d = await r.json();
+  if(!d.ok){ toast(d.error || "Error guardando CSV"); return; }
+  toast("CSV corregido guardado");
+  document.getElementById("paths").textContent = `${images.length} imagenes | ${d.corrected_images} revisadas en CSV`;
+  setSaveHint(`metadata.csv sobrescrito | backup: ${d.backup}`);
+}
+async function train(){
+  await exportYolo();
+  const payload = {model:document.getElementById("modelSel").value, epochs:Number(document.getElementById("epochs").value), imgsz:Number(document.getElementById("imgsz").value)};
+  const d = await (await fetch("/api/train", {method:"POST", headers:{"Content-Type":"application/json"}, body:JSON.stringify(payload)})).json();
+  toast(d.ok ? "Entrenamiento iniciado" : (d.error || "No se pudo entrenar"));
+  pollTrain();
+}
+async function pollTrain(){
+  const d = await (await fetch("/api/train_status")).json();
+  document.getElementById("log").textContent = d.tail || "";
+  if(d.running) setTimeout(pollTrain, 2500);
+}
+
+document.getElementById("prevBtn").onclick = prev;
+document.getElementById("nextBtn").onclick = next;
+document.getElementById("saveBtn").onclick = ()=>save(true);
+document.getElementById("approveBtn").onclick = approveNext;
+document.getElementById("jumpBtn").onclick = jump;
+document.getElementById("jump").onkeydown = e=>{ if(e.key === "Enter") jump(); };
+document.getElementById("newBtn").onclick = ()=>{ drawMode = !drawMode; document.getElementById("newBtn").classList.toggle("toggled", drawMode); };
+document.getElementById("dupBtn").onclick = ()=>{ if(selected>=0){ const b = {...boxes[selected]}; b.x1+=20;b.x2+=20;b.y1+=20;b.y2+=20;b.source="human"; boxes.push(b); selected=boxes.length-1; markDirty(); renderBoxes(); draw(); } };
+document.getElementById("clearBtn").onclick = ()=>{ boxes=[]; selected=-1; markDirty(); renderBoxes(); draw(); };
+document.getElementById("fitBtn").onclick = fit;
+document.getElementById("reloadBtn").onclick = async()=>{ await fetch("/api/reload"); await loadState(); toast("Dataset recargado"); };
+document.getElementById("exportBtn").onclick = exportYolo;
+document.getElementById("csvBtn").onclick = exportCsv;
+document.getElementById("trainBtn").onclick = train;
+window.addEventListener("resize", resize);
+window.addEventListener("keydown", e=>{
+  if(["INPUT","SELECT"].includes(e.target.tagName)) return;
+  if(e.ctrlKey && e.key.toLowerCase() === "s"){ e.preventDefault(); save(true); return; }
+  if(e.key >= "1" && e.key <= "9"){ const c = classes[Number(e.key)-1]; if(c) setClass(c.id, true); return; }
+  if(e.key === "Enter"){ e.preventDefault(); approveNext(); return; }
+  if(e.key === "Delete" || e.key === "Backspace"){ if(selected>=0){ boxes.splice(selected,1); selected=-1; markDirty(); renderBoxes(); draw(); } return; }
+  if(e.key.toLowerCase() === "n"){ drawMode=!drawMode; document.getElementById("newBtn").classList.toggle("toggled", drawMode); return; }
+  if(e.key.toLowerCase() === "r"){ document.getElementById("dupBtn").click(); return; }
+  if(e.key.toLowerCase() === "f"){ fit(); return; }
+  if(e.key.toLowerCase() === "a" || e.key === "ArrowLeft"){ prev(); return; }
+  if(e.key.toLowerCase() === "d" || e.key === "ArrowRight"){ next(); return; }
+  if(e.key === "Escape"){ selected=-1; drawMode=false; document.getElementById("newBtn").classList.remove("toggled"); renderBoxes(); draw(); }
+});
+
+resize();
+loadState().catch(err=>{
+  document.getElementById("paths").textContent = "Error: " + err.message;
+});
+</script>
+</body>
+</html>

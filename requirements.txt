@@ -1,0 +1,3 @@
+gdown
+requests
+Pillow

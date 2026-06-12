@@ -1,0 +1,15 @@
+data/
+exports/
+runs/
+__pycache__/
+*.pyc
+*.pyo
+*.log
+*.part
+.env
+.venv/
+venv/
+env/
+*.pt
+*.onnx
+*.engine
