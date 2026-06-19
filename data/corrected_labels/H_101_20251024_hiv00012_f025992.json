@@ -1,0 +1,20 @@
+{
+  "image": "H_101_20251024_hiv00012_f025992.jpg",
+  "reviewed": true,
+  "updated_at": "20260616_120941",
+  "boxes": [
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 405.728096105186,
+      "y1": 711.0647716792395,
+      "x2": 778.9494407264644,
+      "y2": 927.6604157306027,
+      "confidence": 0.9174865484237671,
+      "origin_line": "L3",
+      "destination_line": "L4",
+      "turn_name": "M2",
+      "source": "human"
+    }
+  ]
+}

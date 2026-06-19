@@ -1,0 +1,33 @@
+{
+  "image": "H_101_20251024_hiv00013_f025038.jpg",
+  "reviewed": true,
+  "updated_at": "20260618_094853",
+  "boxes": [
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 1805.0,
+      "y1": 491.0,
+      "x2": 1898.0,
+      "y2": 575.0,
+      "confidence": 0.8638063073158264,
+      "origin_line": "L1",
+      "destination_line": "L2",
+      "turn_name": "M1",
+      "source": "metadata"
+    },
+    {
+      "class_id": 13,
+      "class_name": "camioneta",
+      "x1": 1397.8270106221548,
+      "y1": 762.4004908488433,
+      "x2": 1743.9915766002912,
+      "y2": 1070.4367857917066,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "image": "H_101_20251024_hiv00013_f012954.jpg",
+  "reviewed": true,
+  "updated_at": "20260618_154439",
+  "boxes": [
+    {
+      "class_id": 1,
+      "class_name": "mototaxi",
+      "x1": 706.0757206706553,
+      "y1": 744.0,
+      "x2": 1018.9494407264644,
+      "y2": 1067.1075271359991,
+      "confidence": 0.7781611084938049,
+      "origin_line": "L3",
+      "destination_line": "L4",
+      "turn_name": "M2",
+      "source": "human"
+    },
+    {
+      "class_id": 1,
+      "class_name": "mototaxi",
+      "x1": 963.5165417267718,
+      "y1": 919.998486532504,
+      "x2": 1337.4186865939887,
+      "y2": 1296.0,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 4,
+      "class_name": "person",
+      "x1": 462.42637217111644,
+      "y1": 590.5355310142597,
+      "x2": 520.6570340766666,
+      "y2": 711.5940123442192,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    }
+  ]
+}

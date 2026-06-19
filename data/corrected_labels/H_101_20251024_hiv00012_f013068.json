@@ -1,0 +1,33 @@
+{
+  "image": "H_101_20251024_hiv00012_f013068.jpg",
+  "reviewed": true,
+  "updated_at": "20260616_165222",
+  "boxes": [
+    {
+      "class_id": 13,
+      "class_name": "camioneta",
+      "x1": 707.608106510275,
+      "y1": 799.5181734339159,
+      "x2": 1372.352283207605,
+      "y2": 1296.0,
+      "confidence": 0.8784233927726746,
+      "origin_line": "L3",
+      "destination_line": "L4",
+      "turn_name": "M2",
+      "source": "human"
+    },
+    {
+      "class_id": 1,
+      "class_name": "mototaxi",
+      "x1": 2106.550010783938,
+      "y1": 419.60624623476576,
+      "x2": 2158.677335173028,
+      "y2": 468.0101903103497,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    }
+  ]
+}

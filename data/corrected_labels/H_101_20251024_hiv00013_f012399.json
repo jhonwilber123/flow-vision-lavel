@@ -1,0 +1,46 @@
+{
+  "image": "H_101_20251024_hiv00013_f012399.jpg",
+  "reviewed": true,
+  "updated_at": "20260618_154439",
+  "boxes": [
+    {
+      "class_id": 7,
+      "class_name": "van-minivan",
+      "x1": 1811.0,
+      "y1": 475.0,
+      "x2": 1919.0,
+      "y2": 589.0,
+      "confidence": 0.7670891284942627,
+      "origin_line": "L1",
+      "destination_line": "L2",
+      "turn_name": "M1",
+      "source": "metadata"
+    },
+    {
+      "class_id": 3,
+      "class_name": "motorcycle",
+      "x1": 370.48322179393193,
+      "y1": 763.6951308912904,
+      "x2": 581.9524676614562,
+      "y2": 921.5308723721238,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 4,
+      "class_name": "person",
+      "x1": 494.606474803131,
+      "y1": 598.1974602123584,
+      "x2": 551.3047508690614,
+      "y2": 705.4644689857403,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    }
+  ]
+}

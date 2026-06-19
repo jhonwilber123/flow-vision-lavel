@@ -1,0 +1,33 @@
+{
+  "image": "H_101_20251024_hiv00013_f017835.jpg",
+  "reviewed": true,
+  "updated_at": "20260618_081609",
+  "boxes": [
+    {
+      "class_id": 8,
+      "class_name": "combi",
+      "x1": 369.0,
+      "y1": 630.0,
+      "x2": 783.0,
+      "y2": 906.0,
+      "confidence": 0.6105276346206665,
+      "origin_line": "L3",
+      "destination_line": "L4",
+      "turn_name": "M2",
+      "source": "metadata"
+    },
+    {
+      "class_id": 8,
+      "class_name": "combi",
+      "x1": 1142.8056849622815,
+      "y1": 483.2685222408778,
+      "x2": 1499.8515855936812,
+      "y2": 705.4644689857403,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    }
+  ]
+}

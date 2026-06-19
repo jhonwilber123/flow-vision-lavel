@@ -1,0 +1,33 @@
+{
+  "image": "H_101_20251024_hiv00014_f013812.jpg",
+  "reviewed": true,
+  "updated_at": "20260618_085826",
+  "boxes": [
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 527.0,
+      "y1": 670.0,
+      "x2": 872.0,
+      "y2": 878.0,
+      "confidence": 0.9285562634468079,
+      "origin_line": "L3",
+      "destination_line": "L4",
+      "turn_name": "M2",
+      "source": "metadata"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 210.0,
+      "y1": 565.0,
+      "x2": 415.0,
+      "y2": 682.8,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "vision"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "image": "H_101_20251024_hiv00014_f007851.jpg",
+  "reviewed": true,
+  "updated_at": "20260618_085826",
+  "boxes": [
+    {
+      "class_id": 13,
+      "class_name": "camioneta",
+      "x1": 410.0,
+      "y1": 652.0,
+      "x2": 837.0,
+      "y2": 885.0,
+      "confidence": 0.8228067755699158,
+      "origin_line": "L3",
+      "destination_line": "L4",
+      "turn_name": "M2",
+      "source": "metadata"
+    },
+    {
+      "class_id": 7,
+      "class_name": "van-minivan",
+      "x1": 460.0,
+      "y1": 780.0,
+      "x2": 1108.0,
+      "y2": 1073.0,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "vision"
+    },
+    {
+      "class_id": 3,
+      "class_name": "motorcycle",
+      "x1": 1575.0,
+      "y1": 500.0,
+      "x2": 1660.0,
+      "y2": 565.1,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "vision"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "image": "H_101_20251024_hiv00014_f007863.jpg",
+  "reviewed": true,
+  "updated_at": "20260618_085826",
+  "boxes": [
+    {
+      "class_id": 3,
+      "class_name": "motorcycle",
+      "x1": 1871.0,
+      "y1": 501.0,
+      "x2": 1906.0,
+      "y2": 573.0,
+      "confidence": 0.42240479588508606,
+      "origin_line": "L1",
+      "destination_line": "L2",
+      "turn_name": "M1",
+      "source": "metadata"
+    },
+    {
+      "class_id": 13,
+      "class_name": "camioneta",
+      "x1": 60.0,
+      "y1": 695.0,
+      "x2": 510.0,
+      "y2": 887.2,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "vision"
+    }
+  ]
+}

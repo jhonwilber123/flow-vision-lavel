@@ -1,0 +1,20 @@
+{
+  "image": "H_101_20251024_hiv00012_f014571.jpg",
+  "reviewed": true,
+  "updated_at": "20260616_105417",
+  "boxes": [
+    {
+      "class_id": 11,
+      "class_name": "bici-triciclo",
+      "x1": 1795.0,
+      "y1": 478.0,
+      "x2": 1874.0,
+      "y2": 581.0,
+      "confidence": 0.3824880123138428,
+      "origin_line": "L1",
+      "destination_line": "L2",
+      "turn_name": "M1",
+      "source": "metadata"
+    }
+  ]
+}

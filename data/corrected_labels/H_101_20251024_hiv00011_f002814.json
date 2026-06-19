@@ -1,0 +1,20 @@
+{
+  "image": "H_101_20251024_hiv00011_f002814.jpg",
+  "reviewed": true,
+  "updated_at": "20260616_095732",
+  "boxes": [
+    {
+      "class_id": 8,
+      "class_name": "combi",
+      "x1": 358.22413507697405,
+      "y1": 631.0,
+      "x2": 789.0789840849434,
+      "y2": 923.0632582117436,
+      "confidence": 0.8314605355262756,
+      "origin_line": "L3",
+      "destination_line": "L4",
+      "turn_name": "M2",
+      "source": "human"
+    }
+  ]
+}

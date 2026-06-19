@@ -1,0 +1,46 @@
+{
+  "image": "H_101_20251024_hiv00013_f029271.jpg",
+  "reviewed": true,
+  "updated_at": "20260618_154553",
+  "boxes": [
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 1793.0,
+      "y1": 479.0,
+      "x2": 1899.0,
+      "y2": 583.0,
+      "confidence": 0.5992520451545715,
+      "origin_line": "L1",
+      "destination_line": "L2",
+      "turn_name": "M1",
+      "source": "metadata"
+    },
+    {
+      "class_id": 13,
+      "class_name": "camioneta",
+      "x1": 1793.0,
+      "y1": 479.0,
+      "x2": 1898.0,
+      "y2": 584.0,
+      "confidence": 0.42262426018714905,
+      "origin_line": "L1",
+      "destination_line": "L2",
+      "turn_name": "M1",
+      "source": "human"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 1295.4827041590536,
+      "y1": 721.2620931528909,
+      "x2": 1625.593261280233,
+      "y2": 992.173492614041,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    }
+  ]
+}

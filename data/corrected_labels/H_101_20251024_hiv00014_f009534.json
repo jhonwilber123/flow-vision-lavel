@@ -1,0 +1,46 @@
+{
+  "image": "H_101_20251024_hiv00014_f009534.jpg",
+  "reviewed": true,
+  "updated_at": "20260618_085826",
+  "boxes": [
+    {
+      "class_id": 8,
+      "class_name": "combi",
+      "x1": 740.0,
+      "y1": 673.0,
+      "x2": 1266.0,
+      "y2": 1083.0,
+      "confidence": 0.45595553517341614,
+      "origin_line": "L3",
+      "destination_line": "L4",
+      "turn_name": "M2",
+      "source": "metadata"
+    },
+    {
+      "class_id": 13,
+      "class_name": "camioneta",
+      "x1": 1218.0,
+      "y1": 488.0,
+      "x2": 1505.0,
+      "y2": 581.0,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "vision"
+    },
+    {
+      "class_id": 3,
+      "class_name": "motorcycle",
+      "x1": 1578.0,
+      "y1": 776.0,
+      "x2": 1714.0,
+      "y2": 872.1,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "vision"
+    }
+  ]
+}

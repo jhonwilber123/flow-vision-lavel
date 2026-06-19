@@ -1,0 +1,85 @@
+{
+  "image": "H_101_20251024_hiv00013_f018849.jpg",
+  "reviewed": true,
+  "updated_at": "20260618_081622",
+  "boxes": [
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 120.0,
+      "y1": 753.0,
+      "x2": 452.0,
+      "y2": 1009.0,
+      "confidence": 0.9275620579719543,
+      "origin_line": "L6",
+      "destination_line": "L5",
+      "turn_name": "M3",
+      "source": "metadata"
+    },
+    {
+      "class_id": 7,
+      "class_name": "van-minivan",
+      "x1": 761.241610896966,
+      "y1": 610.4565469293163,
+      "x2": 1107.5608106510274,
+      "y2": 802.004776881784,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 10,
+      "class_name": "bus",
+      "x1": 729.0615082649514,
+      "y1": 722.3207132215574,
+      "x2": 1771.0838792063753,
+      "y2": 1296.0,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 4,
+      "class_name": "person",
+      "x1": 1899.8042897344335,
+      "y1": 674.8167521933455,
+      "x2": 1988.6826684323785,
+      "y2": 857.1706671080947,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 1,
+      "class_name": "mototaxi",
+      "x1": 1889.0775888570954,
+      "y1": 409.71400193913024,
+      "x2": 1944.243479083406,
+      "y2": 467.9446638446804,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 4,
+      "class_name": "person",
+      "x1": 598.8087118972734,
+      "y1": 611.988932768936,
+      "x2": 670.8308463594012,
+      "y2": 745.3065008158535,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    }
+  ]
+}

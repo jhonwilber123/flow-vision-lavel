@@ -1,0 +1,20 @@
+{
+  "image": "H_101_20251024_hiv00013_f027762.jpg",
+  "reviewed": true,
+  "updated_at": "20260619_094741",
+  "boxes": [
+    {
+      "class_id": 5,
+      "class_name": "truck",
+      "x1": 398.4649592765786,
+      "y1": 563.0101266606794,
+      "x2": 1228.945991143043,
+      "y2": 1245.0241321111146,
+      "confidence": 0.9752094149589539,
+      "origin_line": "L3",
+      "destination_line": "L4",
+      "turn_name": "M2",
+      "source": "human"
+    }
+  ]
+}

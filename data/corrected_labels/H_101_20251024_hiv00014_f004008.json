@@ -1,0 +1,98 @@
+{
+  "image": "H_101_20251024_hiv00014_f004008.jpg",
+  "reviewed": true,
+  "updated_at": "20260619_104433",
+  "boxes": [
+    {
+      "class_id": 13,
+      "class_name": "camioneta",
+      "x1": 582.0826855780248,
+      "y1": 687.0,
+      "x2": 1176.8784800718465,
+      "y2": 1108.5650568269796,
+      "confidence": 0.6808485388755798,
+      "origin_line": "L3",
+      "destination_line": "L4",
+      "turn_name": "M2",
+      "source": "human"
+    },
+    {
+      "class_id": 10,
+      "class_name": "bus",
+      "x1": 397.4615837230188,
+      "y1": 480.45196029853514,
+      "x2": 1089.7907156792915,
+      "y2": 886.8190594902604,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 13,
+      "class_name": "camioneta",
+      "x1": 1587.4649902449598,
+      "y1": 461.38782478089865,
+      "x2": 1731.9510699575733,
+      "y2": 579.7861401009569,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 13,
+      "class_name": "camioneta",
+      "x1": 1786.1333498498034,
+      "y1": 408.2089204422284,
+      "x2": 1893.4945340807037,
+      "y2": 489.4823402805735,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 13,
+      "class_name": "camioneta",
+      "x1": 2026.9434827041591,
+      "y1": 399.1785404601901,
+      "x2": 2114.2371558638633,
+      "y2": 461.38782478089865,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 1924.5991762410579,
+      "y1": 441.32031370970236,
+      "x2": 1992.8287138831254,
+      "y2": 501.5228469232913,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 5,
+      "class_name": "truck",
+      "x1": 1.1282400668916661,
+      "y1": 907.8899461150165,
+      "x2": 1367.7257440153603,
+      "y2": 1296.0,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "image": "H_101_20251024_hiv00014_f008169.jpg",
+  "reviewed": true,
+  "updated_at": "20260618_085826",
+  "boxes": [
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 71.0,
+      "y1": 824.0,
+      "x2": 407.0,
+      "y2": 1048.0,
+      "confidence": 0.9290648102760315,
+      "origin_line": "L6",
+      "destination_line": "L5",
+      "turn_name": "M3",
+      "source": "metadata"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 525.0,
+      "y1": 595.0,
+      "x2": 940.0,
+      "y2": 740.7,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "vision"
+    },
+    {
+      "class_id": 13,
+      "class_name": "camioneta",
+      "x1": 890.0,
+      "y1": 700.0,
+      "x2": 1535.0,
+      "y2": 910.8,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "vision"
+    },
+    {
+      "class_id": 8,
+      "class_name": "combi",
+      "x1": 1665.0,
+      "y1": 428.0,
+      "x2": 1815.0,
+      "y2": 506.7,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "vision"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "image": "H_101_20251024_hiv00013_f005052.jpg",
+  "reviewed": true,
+  "updated_at": "20260617_125902",
+  "boxes": [
+    {
+      "class_id": 7,
+      "class_name": "van-minivan",
+      "x1": 0.0,
+      "y1": 724.4534017546764,
+      "x2": 409.22273984912624,
+      "y2": 1093.4534017546764,
+      "confidence": 0.7436382174491882,
+      "origin_line": "L6",
+      "destination_line": "L5",
+      "turn_name": "M3",
+      "source": "human"
+    },
+    {
+      "class_id": 7,
+      "class_name": "van-minivan",
+      "x1": 1892.1423605363348,
+      "y1": 418.90831697684865,
+      "x2": 1979.48835339466,
+      "y2": 506.2543098351739,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 4,
+      "class_name": "person",
+      "x1": 1440.0885378485111,
+      "y1": 431.1674036938066,
+      "x2": 1492.1896563955825,
+      "y2": 518.5133965521319,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    }
+  ]
+}

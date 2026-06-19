@@ -1,0 +1,20 @@
+{
+  "image": "H_101_20251024_hiv00013_f013074.jpg",
+  "reviewed": true,
+  "updated_at": "20260618_154440",
+  "boxes": [
+    {
+      "class_id": 2,
+      "class_name": "microbus",
+      "x1": 0.0,
+      "y1": 670.0,
+      "x2": 445.0,
+      "y2": 1080.0,
+      "confidence": 0.9440033435821533,
+      "origin_line": "L6",
+      "destination_line": "L5",
+      "turn_name": "M3",
+      "source": "metadata"
+    }
+  ]
+}

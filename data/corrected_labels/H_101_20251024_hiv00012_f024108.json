@@ -1,0 +1,20 @@
+{
+  "image": "H_101_20251024_hiv00012_f024108.jpg",
+  "reviewed": true,
+  "updated_at": "20260616_115713",
+  "boxes": [
+    {
+      "class_id": 9,
+      "class_name": "trailer",
+      "x1": 1621.0,
+      "y1": 362.0,
+      "x2": 1882.0,
+      "y2": 670.0,
+      "confidence": 0.7758521437644958,
+      "origin_line": "L1",
+      "destination_line": "L2",
+      "turn_name": "M1",
+      "source": "metadata"
+    }
+  ]
+}

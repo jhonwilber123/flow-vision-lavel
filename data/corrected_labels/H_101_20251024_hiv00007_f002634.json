@@ -1,0 +1,20 @@
+{
+  "image": "H_101_20251024_hiv00007_f002634.jpg",
+  "reviewed": true,
+  "updated_at": "20260616_090220",
+  "boxes": [
+    {
+      "class_id": 13,
+      "class_name": "camioneta",
+      "x1": 370.483221793932,
+      "y1": 655.9999999999999,
+      "x2": 828.9494407264644,
+      "y2": 900.0774706174473,
+      "confidence": 0.5991047024726868,
+      "origin_line": "L3",
+      "destination_line": "L4",
+      "turn_name": "M2",
+      "source": "human"
+    }
+  ]
+}

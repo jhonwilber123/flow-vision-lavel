@@ -1,0 +1,20 @@
+{
+  "image": "H_101_20251024_hiv00011_f000237.jpg",
+  "reviewed": true,
+  "updated_at": "20260616_095548",
+  "boxes": [
+    {
+      "class_id": 1,
+      "class_name": "mototaxi",
+      "x1": 1800.2913109621577,
+      "y1": 478.41737807568427,
+      "x2": 1869.5504314066045,
+      "y2": 576.2823844978084,
+      "confidence": 0.4614807963371277,
+      "origin_line": "L1",
+      "destination_line": "L2",
+      "turn_name": "M1",
+      "source": "human"
+    }
+  ]
+}

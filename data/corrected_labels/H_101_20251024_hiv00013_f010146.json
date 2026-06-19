@@ -1,0 +1,33 @@
+{
+  "image": "H_101_20251024_hiv00013_f010146.jpg",
+  "reviewed": true,
+  "updated_at": "20260618_154437",
+  "boxes": [
+    {
+      "class_id": 7,
+      "class_name": "van-minivan",
+      "x1": 78.0,
+      "y1": 765.0,
+      "x2": 469.0,
+      "y2": 1024.0,
+      "confidence": 0.5544984936714172,
+      "origin_line": "L6",
+      "destination_line": "L5",
+      "turn_name": "M3",
+      "source": "metadata"
+    },
+    {
+      "class_id": 1,
+      "class_name": "mototaxi",
+      "x1": 1954.9701799607442,
+      "y1": 406.6492302598907,
+      "x2": 2005.5389126681957,
+      "y2": 463.34750632582114,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    }
+  ]
+}

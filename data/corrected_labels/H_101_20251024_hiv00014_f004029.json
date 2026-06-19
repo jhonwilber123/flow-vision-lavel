@@ -1,0 +1,85 @@
+{
+  "image": "H_101_20251024_hiv00014_f004029.jpg",
+  "reviewed": true,
+  "updated_at": "20260619_104459",
+  "boxes": [
+    {
+      "class_id": 2,
+      "class_name": "microbus",
+      "x1": 0.0,
+      "y1": 624.0,
+      "x2": 511.0,
+      "y2": 1102.0,
+      "confidence": 0.9462317228317261,
+      "origin_line": "L6",
+      "destination_line": "L5",
+      "turn_name": "M3",
+      "source": "metadata"
+    },
+    {
+      "class_id": 5,
+      "class_name": "truck",
+      "x1": 889.1156049673284,
+      "y1": 500.5194713697315,
+      "x2": 1806.2008609209997,
+      "y2": 1296.0,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 1228.256542070546,
+      "y1": 521.5903579944876,
+      "x2": 1488.1308104425382,
+      "y2": 685.1405732247375,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 13,
+      "class_name": "camioneta",
+      "x1": 1667.7350345297452,
+      "y1": 432.289933727664,
+      "x2": 1791.1502276176025,
+      "y2": 537.6443668514446,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 13,
+      "class_name": "camioneta",
+      "x1": 1888.4776563129046,
+      "y1": 409.2122959957882,
+      "x2": 1977.778080579728,
+      "y2": 471.42158031649683,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 7,
+      "class_name": "van-minivan",
+      "x1": 2010.889473847202,
+      "y1": 432.289933727664,
+      "x2": 2068.081880400112,
+      "y2": 477.4418336378557,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    }
+  ]
+}

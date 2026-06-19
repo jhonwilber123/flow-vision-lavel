@@ -1,0 +1,59 @@
+{
+  "image": "H_101_20251024_hiv00014_f009549.jpg",
+  "reviewed": true,
+  "updated_at": "20260618_085826",
+  "boxes": [
+    {
+      "class_id": 13,
+      "class_name": "camioneta",
+      "x1": 418.0,
+      "y1": 652.0,
+      "x2": 841.0,
+      "y2": 876.0,
+      "confidence": 0.72556072473526,
+      "origin_line": "L3",
+      "destination_line": "L4",
+      "turn_name": "M2",
+      "source": "metadata"
+    },
+    {
+      "class_id": 2,
+      "class_name": "microbus",
+      "x1": 1160.0,
+      "y1": 1095.0,
+      "x2": 1484.0,
+      "y2": 1195.4,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "vision"
+    },
+    {
+      "class_id": 13,
+      "class_name": "camioneta",
+      "x1": 1442.0,
+      "y1": 1095.0,
+      "x2": 1818.0,
+      "y2": 1195.4,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "vision"
+    },
+    {
+      "class_id": 3,
+      "class_name": "motorcycle",
+      "x1": 1578.0,
+      "y1": 651.0,
+      "x2": 1697.0,
+      "y2": 741.5,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "vision"
+    }
+  ]
+}

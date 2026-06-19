@@ -1,0 +1,33 @@
+{
+  "image": "H_101_20251024_hiv00013_f031926.jpg",
+  "reviewed": true,
+  "updated_at": "20260618_103826",
+  "boxes": [
+    {
+      "class_id": 8,
+      "class_name": "combi",
+      "x1": 343.27930383078876,
+      "y1": 563.8481000898082,
+      "x2": 826.9763711250813,
+      "y2": 930.9675838468924,
+      "confidence": 0.8672353625297546,
+      "origin_line": "L3",
+      "destination_line": "L4",
+      "turn_name": "M2",
+      "source": "human"
+    },
+    {
+      "class_id": 5,
+      "class_name": "truck",
+      "x1": 1855.3662630454307,
+      "y1": 379.1110293889938,
+      "x2": 1977.778080579728,
+      "y2": 506.5397246910904,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    }
+  ]
+}

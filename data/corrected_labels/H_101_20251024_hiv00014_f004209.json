@@ -1,0 +1,85 @@
+{
+  "image": "H_101_20251024_hiv00014_f004209.jpg",
+  "reviewed": true,
+  "updated_at": "20260619_104821",
+  "boxes": [
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 1817.0,
+      "y1": 497.0,
+      "x2": 1904.0,
+      "y2": 575.0,
+      "confidence": 0.8266651034355164,
+      "origin_line": "L1",
+      "destination_line": "L2",
+      "turn_name": "M1",
+      "source": "metadata"
+    },
+    {
+      "class_id": 7,
+      "class_name": "van-minivan",
+      "x1": 17.985810633266297,
+      "y1": 760.0,
+      "x2": 402.2430585968293,
+      "y2": 1076.1404893615675,
+      "confidence": 0.8692095875740051,
+      "origin_line": "L6",
+      "destination_line": "L5",
+      "turn_name": "M3",
+      "source": "human"
+    },
+    {
+      "class_id": 3,
+      "class_name": "motorcycle",
+      "x1": 1142.9188052903564,
+      "y1": 518.7821640571967,
+      "x2": 1260.9743365157221,
+      "y2": 657.2703833792604,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 1,
+      "class_name": "mototaxi",
+      "x1": 1593.5730927564157,
+      "y1": 407.53752886406375,
+      "x2": 1676.438994481913,
+      "y2": 499.4846252992043,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 1833.0896032232633,
+      "y1": 423.4296196059399,
+      "x2": 1920.4961023035821,
+      "y2": 480.18708654121184,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 13,
+      "class_name": "camioneta",
+      "x1": 1955.6857318034508,
+      "y1": 402.99693150924196,
+      "x2": 2053.3085749321185,
+      "y2": 459.7543984445139,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    }
+  ]
+}

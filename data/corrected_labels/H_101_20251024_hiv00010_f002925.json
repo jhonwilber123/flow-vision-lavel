@@ -1,0 +1,20 @@
+{
+  "image": "H_101_20251024_hiv00010_f002925.jpg",
+  "reviewed": true,
+  "updated_at": "20260616_092914",
+  "boxes": [
+    {
+      "class_id": 7,
+      "class_name": "van-minivan",
+      "x1": 1808.0,
+      "y1": 477.05140897296593,
+      "x2": 1915.3278272127993,
+      "y2": 568.0,
+      "confidence": 0.8531314730644226,
+      "origin_line": "L1",
+      "destination_line": "L2",
+      "turn_name": "M1",
+      "source": "human"
+    }
+  ]
+}

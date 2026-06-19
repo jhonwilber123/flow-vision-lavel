@@ -1,0 +1,20 @@
+{
+  "image": "H_101_20251024_hiv00011_f003219.jpg",
+  "reviewed": true,
+  "updated_at": "20260616_095812",
+  "boxes": [
+    {
+      "class_id": 10,
+      "class_name": "bus",
+      "x1": 1680.0,
+      "y1": 379.0,
+      "x2": 1917.0,
+      "y2": 647.0,
+      "confidence": 0.8159393668174744,
+      "origin_line": "L1",
+      "destination_line": "L2",
+      "turn_name": "M1",
+      "source": "metadata"
+    }
+  ]
+}

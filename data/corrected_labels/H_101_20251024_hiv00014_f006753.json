@@ -1,0 +1,33 @@
+{
+  "image": "H_101_20251024_hiv00014_f006753.jpg",
+  "reviewed": true,
+  "updated_at": "20260619_114948",
+  "boxes": [
+    {
+      "class_id": 5,
+      "class_name": "truck",
+      "x1": 299.5028466322152,
+      "y1": 476.053954629062,
+      "x2": 1272.3258299027766,
+      "y2": 1255.4940848770266,
+      "confidence": 0.9333207011222839,
+      "origin_line": "L3",
+      "destination_line": "L4",
+      "turn_name": "M2",
+      "source": "human"
+    },
+    {
+      "class_id": 2,
+      "class_name": "microbus",
+      "x1": 1242.0005255321014,
+      "y1": 609.7008846457037,
+      "x2": 1862.0005255321014,
+      "y2": 1220.304455377158,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    }
+  ]
+}

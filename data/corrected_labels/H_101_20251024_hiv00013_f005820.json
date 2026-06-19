@@ -1,0 +1,20 @@
+{
+  "image": "H_101_20251024_hiv00013_f005820.jpg",
+  "reviewed": true,
+  "updated_at": "20260617_130230",
+  "boxes": [
+    {
+      "class_id": 4,
+      "class_name": "person",
+      "x1": 513.0,
+      "y1": 669.0,
+      "x2": 548.0,
+      "y2": 777.0,
+      "confidence": 0.4098653793334961,
+      "origin_line": "L3",
+      "destination_line": "L4",
+      "turn_name": "M2",
+      "source": "metadata"
+    }
+  ]
+}

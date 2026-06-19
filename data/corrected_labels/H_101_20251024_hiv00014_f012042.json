@@ -1,0 +1,59 @@
+{
+  "image": "H_101_20251024_hiv00014_f012042.jpg",
+  "reviewed": true,
+  "updated_at": "20260618_085826",
+  "boxes": [
+    {
+      "class_id": 13,
+      "class_name": "camioneta",
+      "x1": 399.0,
+      "y1": 647.0,
+      "x2": 894.0,
+      "y2": 888.0,
+      "confidence": 0.42280882596969604,
+      "origin_line": "L3",
+      "destination_line": "L4",
+      "turn_name": "M2",
+      "source": "metadata"
+    },
+    {
+      "class_id": 1,
+      "class_name": "mototaxi",
+      "x1": 1259.3611842309003,
+      "y1": 733.3025997956087,
+      "x2": 1515.2219503886533,
+      "y2": 1006.2207503638784,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 13,
+      "class_name": "camioneta",
+      "x1": 1468.0,
+      "y1": 703.0,
+      "x2": 1888.0,
+      "y2": 882.8,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "vision"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 1833.0,
+      "y1": 408.0,
+      "x2": 1968.0,
+      "y2": 465.7,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "vision"
+    }
+  ]
+}
