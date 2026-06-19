@@ -15,6 +15,8 @@ from urllib.parse import parse_qs, unquote, urlparse
 ROOT = Path(__file__).resolve().parent
 RAW_DIR = ROOT / "data" / "raw"
 IMAGE_DIR = RAW_DIR / "images" / "train"
+BATCHES_DIR = RAW_DIR / "batches"
+BATCH_STATE_FILE = BATCHES_DIR / "state.json"
 METADATA_CSV = RAW_DIR / "metadata.csv"
 CORRECTED_DIR = ROOT / "data" / "corrected_labels"
 EXPORTS_DIR = ROOT / "exports"
@@ -41,6 +43,8 @@ DEFAULT_CLASSES = {
 
 TRAIN_PROC = None
 TRAIN_LOG = None
+DOWNLOAD_PROC = None
+DOWNLOAD_LOG = None
 
 
 def now_stamp():
@@ -130,11 +134,21 @@ def safe_float(value):
 
 
 def scan_images():
+    if BATCHES_DIR.exists():
+        names = []
+        for batch_dir in sorted(BATCHES_DIR.glob("batch_*")):
+            imgs = batch_dir / "images"
+            if imgs.exists():
+                names.extend(
+                    p.name for p in imgs.iterdir()
+                    if p.suffix.lower() in {".jpg", ".jpeg", ".png"}
+                )
+        if names:
+            return sorted(names)
     if not IMAGE_DIR.exists():
         return []
     return sorted(
-        p.name
-        for p in IMAGE_DIR.iterdir()
+        p.name for p in IMAGE_DIR.iterdir()
         if p.suffix.lower() in {".jpg", ".jpeg", ".png"}
     )
 
@@ -176,10 +190,15 @@ def reviewed_names():
 
 def image_path(name):
     safe = sanitize_filename(name)
+    if BATCHES_DIR.exists():
+        for batch_dir in sorted(BATCHES_DIR.glob("batch_*")):
+            p = batch_dir / "images" / safe
+            if p.exists():
+                return p
     path = IMAGE_DIR / safe
-    if not path.exists():
-        return None
-    return path
+    if path.exists():
+        return path
+    return None
 
 
 def get_image_dims(name):
@@ -446,6 +465,100 @@ def train_status():
     return {"running": running, "returncode": code, "log": str(TRAIN_LOG or ""), "tail": tail}
 
 
+def load_batch_state():
+    if not BATCH_STATE_FILE.exists():
+        return None
+    try:
+        return json.loads(BATCH_STATE_FILE.read_text(encoding="utf-8"))
+    except Exception:
+        return None
+
+
+def get_batches_info():
+    state = load_batch_state()
+    if not state:
+        return None
+    rev = reviewed_names()
+    batches = []
+    for b in state.get("batches", []):
+        if b.get("status") != "active":
+            continue
+        imgs = b.get("images", [])
+        done = sum(1 for img in imgs if img in rev)
+        batches.append({
+            "num": b["num"],
+            "folder": b["folder"],
+            "total": len(imgs),
+            "reviewed": done,
+            "complete": done == len(imgs) and len(imgs) > 0,
+        })
+    total = state.get("total_images", 0)
+    nxt = state.get("next_index", 0)
+    return {
+        "batches": batches,
+        "total_images": total,
+        "downloaded": nxt,
+        "remaining": total - nxt,
+    }
+
+
+def complete_batch(batch_num):
+    state = load_batch_state()
+    if not state:
+        raise RuntimeError("No hay estado de lotes (ejecuta download_dataset.py primero)")
+    batch = next((b for b in state.get("batches", []) if b["num"] == batch_num), None)
+    if not batch:
+        raise RuntimeError(f"Lote {batch_num} no encontrado")
+    if batch.get("status") != "active":
+        raise RuntimeError(f"El lote {batch_num} ya fue completado")
+
+    rev = reviewed_names()
+    imgs = batch.get("images", [])
+    pending = [img for img in imgs if img not in rev]
+    if pending:
+        raise RuntimeError(f"Faltan {len(pending)} imagenes sin revisar en el lote {batch_num}")
+
+    export_result = export_corrected_csv(overwrite=True)
+
+    batch_dir = BATCHES_DIR / batch["folder"]
+    if batch_dir.exists():
+        shutil.rmtree(batch_dir)
+
+    batch["status"] = "completed"
+    BATCH_STATE_FILE.write_text(json.dumps(state, indent=2, ensure_ascii=False), encoding="utf-8")
+    reload_globals()
+    return export_result
+
+
+def start_download(batch_size, max_batches, workers):
+    global DOWNLOAD_PROC, DOWNLOAD_LOG
+    if DOWNLOAD_PROC is not None and DOWNLOAD_PROC.poll() is None:
+        return {"ok": False, "error": "Ya hay una descarga en curso"}
+    DOWNLOAD_LOG = ROOT / "runs" / f"download_{now_stamp()}.log"
+    DOWNLOAD_LOG.parent.mkdir(parents=True, exist_ok=True)
+    cmd = [
+        sys.executable, "-u", str(ROOT / "download_dataset.py"),
+        "--batch-size", str(batch_size),
+        "--max-batches", str(max_batches),
+        "--workers", str(workers),
+    ]
+    log_f = DOWNLOAD_LOG.open("w", encoding="utf-8")
+    log_f.write(" ".join(cmd) + "\n\n")
+    log_f.flush()
+    DOWNLOAD_PROC = subprocess.Popen(
+        cmd, cwd=str(ROOT), stdout=log_f, stderr=subprocess.STDOUT, text=True
+    )
+    return {"ok": True, "pid": DOWNLOAD_PROC.pid, "log": str(DOWNLOAD_LOG)}
+
+
+def get_download_status():
+    running = DOWNLOAD_PROC is not None and DOWNLOAD_PROC.poll() is None
+    tail = ""
+    if DOWNLOAD_LOG and DOWNLOAD_LOG.exists():
+        tail = DOWNLOAD_LOG.read_text(encoding="utf-8", errors="replace")[-3000:]
+    return {"running": running, "tail": tail}
+
+
 def reload_globals():
     global META_BY_FILE, CLASS_NAMES, CLASS_COUNTS, IMAGE_DIMS, IMAGE_IDS
     META_BY_FILE, CLASS_NAMES, CLASS_COUNTS, IMAGE_DIMS = load_metadata()
@@ -535,6 +648,15 @@ class Handler(BaseHTTPRequestHandler):
             self.send_json(train_status())
             return
 
+        if path == "/api/batches":
+            info = get_batches_info()
+            self.send_json(info if info is not None else {})
+            return
+
+        if path == "/api/download_status":
+            self.send_json(get_download_status())
+            return
+
         self.send_json({"error": "not found", "path": path}, 404)
 
     def do_POST(self):
@@ -596,6 +718,23 @@ class Handler(BaseHTTPRequestHandler):
 
         if path == "/api/train":
             self.send_json(start_training(payload))
+            return
+
+        if path == "/api/complete_batch":
+            num = int(payload.get("num", 0))
+            try:
+                result = complete_batch(num)
+            except Exception as exc:
+                self.send_json({"ok": False, "error": str(exc)}, 400)
+                return
+            self.send_json({"ok": True, **result})
+            return
+
+        if path == "/api/download_more":
+            bs = int(payload.get("batch_size", 100))
+            mb = int(payload.get("max_batches", 5))
+            wk = int(payload.get("workers", 16))
+            self.send_json(start_download(bs, mb, wk))
             return
 
         self.send_json({"error": "not found", "path": path}, 404)

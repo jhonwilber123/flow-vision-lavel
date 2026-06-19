@@ -67,6 +67,11 @@
   #toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);opacity:0;
     transition:opacity .2s;background:var(--panel2);border:1px solid var(--line);
     padding:9px 14px;border-radius:8px;z-index:20}
+  #batchPanel{display:none;flex-direction:column;gap:6px;border:1px solid var(--line);
+    border-radius:6px;padding:9px}
+  .batchItem{background:var(--panel2);border-radius:5px;padding:7px}
+  .batchBar{height:4px;background:var(--line);border-radius:2px;margin:4px 0 6px}
+  .batchBarFill{height:100%;border-radius:2px;transition:width .4s}
 </style>
 </head>
 <body>
@@ -113,6 +118,18 @@
         <button id="exportBtn" class="good" style="flex:1">Guardar todo revisado / Exportar YOLO</button>
       </div>
       <button id="csvBtn" class="good">Guardar CSV corregido y sobrescribir metadata.csv</button>
+      <div id="batchPanel">
+        <div style="display:flex;justify-content:space-between;align-items:center">
+          <b style="color:var(--accent);font-size:12px">Gestión de Lotes</b>
+          <span id="batchMeta" class="muted" style="font-size:11px"></span>
+        </div>
+        <div id="batchItems"></div>
+        <div class="row">
+          <button id="dlMoreBtn" style="flex:1;font-size:12px">Descargar más lotes</button>
+          <span id="dlState" class="muted" style="font-size:11px;margin-left:6px"></span>
+        </div>
+        <div id="dlLog" style="display:none;height:60px;overflow:auto;background:#090d13;border:1px solid var(--line);border-radius:5px;padding:5px;font:10px Consolas,monospace;color:#94a3b8;white-space:pre-wrap"></div>
+      </div>
       <div class="row">
         <select id="modelSel" style="flex:1">
           <option>yolo11n.pt</option>
@@ -308,6 +325,7 @@ async function loadState(){
   if(start < 0 && location.hash) start = images.indexOf(location.hash.replace(/^#/, ""));
   if(start < 0) start = reviewed.findIndex(x=>!x);
   await loadIndex(start >= 0 ? start : 0, false);
+  loadBatches();
 }
 async function loadIndex(i, saveFirst=true){
   if(i < 0 || i >= images.length){ toast("No hay mas imagenes"); return; }
@@ -338,6 +356,7 @@ async function save(showToast=true){
     document.getElementById("paths").textContent = `${images.length} imagenes | ${d.reviewed_count} revisadas guardadas`;
     setSaveHint(`Guardado: data/corrected_labels/${cur.replace(/\.[^.]+$/, "")}.json`);
     if(showToast) toast("Imagen guardada en corrected_labels");
+    loadBatches();
   }
 }
 async function approveNext(){
@@ -460,6 +479,146 @@ async function pollTrain(){
   document.getElementById("log").textContent = d.tail || "";
   if(d.running) setTimeout(pollTrain, 2500);
 }
+
+// ── Batch management ──────────────────────────────────────────────
+let _dlPollTimer = null;
+
+async function loadBatches() {
+  let info;
+  try {
+    const r = await fetch('/api/batches');
+    if (!r.ok) { hideBatchPanel(); return; }
+    info = await r.json();
+  } catch(e) { hideBatchPanel(); return; }
+  if (!info || !Array.isArray(info.batches)) { hideBatchPanel(); return; }
+
+  const panel = document.getElementById('batchPanel');
+  panel.style.display = 'flex';
+
+  const total = info.total_images || 0;
+  const dl = info.downloaded || 0;
+  const rem = info.remaining || 0;
+  document.getElementById('batchMeta').textContent =
+    `${dl}/${total} imgs${rem > 0 ? ' | ' + rem + ' en Drive' : ' | todo descargado'}`;
+
+  const container = document.getElementById('batchItems');
+  container.innerHTML = '';
+  if (info.batches.length === 0) {
+    container.innerHTML = '<span class="muted" style="font-size:11px">No hay lotes activos. Descarga el primero.</span>';
+    return;
+  }
+
+  for (const b of info.batches) {
+    const pct = b.total > 0 ? Math.round(b.reviewed / b.total * 100) : 0;
+    const barColor = b.complete ? 'var(--ok)' : (pct >= 50 ? 'var(--warn)' : 'var(--accent)');
+    const div = document.createElement('div');
+    div.className = 'batchItem';
+
+    const header = document.createElement('div');
+    header.style.cssText = 'display:flex;justify-content:space-between;font-size:12px';
+    header.innerHTML =
+      `<span>Lote <b>${String(b.num).padStart(3,'0')}</b></span>` +
+      `<span style="color:${barColor}">${b.reviewed}/${b.total} (${pct}%)</span>`;
+
+    const barWrap = document.createElement('div');
+    barWrap.className = 'batchBar';
+    const fill = document.createElement('div');
+    fill.className = 'batchBarFill';
+    fill.style.width = pct + '%';
+    fill.style.background = barColor;
+    barWrap.appendChild(fill);
+
+    const btn = document.createElement('button');
+    btn.style.cssText = 'width:100%;font-size:11px;padding:4px 6px';
+    if (b.complete) {
+      btn.className = 'good';
+      btn.textContent = 'Completar y liberar lote ' + String(b.num).padStart(3,'0');
+      btn.onclick = () => completeBatch(b.num);
+    } else {
+      btn.disabled = true;
+      btn.textContent = `Faltan ${b.total - b.reviewed} imagenes`;
+    }
+
+    div.appendChild(header);
+    div.appendChild(barWrap);
+    div.appendChild(btn);
+    container.appendChild(div);
+  }
+}
+
+function hideBatchPanel() {
+  document.getElementById('batchPanel').style.display = 'none';
+}
+
+async function completeBatch(num) {
+  if (!confirm(
+    `¿Completar el lote ${num}?\n\n` +
+    `Se guardarán las correcciones en metadata.csv y se eliminarán ` +
+    `las imágenes del lote para liberar espacio en disco.`
+  )) return;
+
+  const r = await fetch('/api/complete_batch', {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify({num}),
+  });
+  const d = await r.json();
+  if (!d.ok) { toast(d.error || `Error completando lote ${num}`); return; }
+  toast(`Lote ${num} completado y liberado`);
+  await loadState();
+  await loadBatches();
+}
+
+async function startDownload() {
+  const btn = document.getElementById('dlMoreBtn');
+  btn.disabled = true;
+  document.getElementById('dlState').textContent = 'iniciando...';
+
+  const r = await fetch('/api/download_more', {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify({batch_size: 100, max_batches: 5, workers: 16}),
+  });
+  const d = await r.json();
+  if (!d.ok) {
+    toast(d.error || 'No se pudo iniciar la descarga');
+    btn.disabled = false;
+    document.getElementById('dlState').textContent = '';
+    return;
+  }
+  toast('Descarga iniciada...');
+  pollDownload();
+}
+
+async function pollDownload() {
+  clearTimeout(_dlPollTimer);
+  const r = await fetch('/api/download_status');
+  const d = await r.json();
+  const btn = document.getElementById('dlMoreBtn');
+  const state = document.getElementById('dlState');
+  const logEl = document.getElementById('dlLog');
+
+  if (d.tail) {
+    logEl.style.display = '';
+    logEl.textContent = d.tail;
+    logEl.scrollTop = logEl.scrollHeight;
+  }
+
+  if (d.running) {
+    state.textContent = 'descargando...';
+    btn.disabled = true;
+    _dlPollTimer = setTimeout(pollDownload, 3000);
+  } else {
+    state.textContent = '';
+    btn.disabled = false;
+    await loadState();
+    await loadBatches();
+    if (d.tail) toast('Descarga completada');
+  }
+}
+
+document.getElementById('dlMoreBtn').onclick = startDownload;
+// ── End batch management ───────────────────────────────────────────
 
 document.getElementById("prevBtn").onclick = prev;
 document.getElementById("nextBtn").onclick = next;
