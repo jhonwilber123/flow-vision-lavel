@@ -1,7 +1,7 @@
 {
   "image": "H_101_20251024_hiv00014_f008352.jpg",
   "reviewed": true,
-  "updated_at": "20260618_085826",
+  "updated_at": "20260622_102427",
   "boxes": [
     {
       "class_id": 8,
@@ -19,15 +19,15 @@
     {
       "class_id": 3,
       "class_name": "motorcycle",
-      "x1": 578.0,
+      "x1": 604.8580187439784,
       "y1": 648.0,
-      "x2": 810.0,
-      "y2": 786.3,
+      "x2": 762.3237277743715,
+      "y2": 832.083381539898,
       "confidence": null,
       "origin_line": "",
       "destination_line": "",
       "turn_name": "",
-      "source": "vision"
+      "source": "human"
     }
   ]
 }

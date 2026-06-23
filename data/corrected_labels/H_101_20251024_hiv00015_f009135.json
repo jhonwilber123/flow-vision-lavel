@@ -1,0 +1,72 @@
+{
+  "image": "H_101_20251024_hiv00015_f009135.jpg",
+  "reviewed": true,
+  "updated_at": "20260623_115855",
+  "boxes": [
+    {
+      "class_id": 5,
+      "class_name": "truck",
+      "x1": 1741.0,
+      "y1": 436.0,
+      "x2": 1880.0,
+      "y2": 612.0,
+      "confidence": 0.8918823003768921,
+      "origin_line": "L1",
+      "destination_line": "L2",
+      "turn_name": "M1",
+      "source": "metadata"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 511.7757729701323,
+      "y1": 803.7046480722621,
+      "x2": 1062.3232022422703,
+      "y2": 1160.14154042577,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 1449.409126740825,
+      "y1": 662.9461300727876,
+      "x2": 1708.2231759656652,
+      "y2": 891.1111471525808,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 1629.8978715949897,
+      "y1": 870.6784590558829,
+      "x2": 1969.3075238679162,
+      "y2": 1172.6281831515296,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 4,
+      "class_name": "person",
+      "x1": 1929.5772970132257,
+      "y1": 897.9220431848134,
+      "x2": 2024.9298414644827,
+      "y2": 1063.6538466358077,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    }
+  ]
+}

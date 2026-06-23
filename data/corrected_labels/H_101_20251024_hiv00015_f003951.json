@@ -1,0 +1,98 @@
+{
+  "image": "H_101_20251024_hiv00015_f003951.jpg",
+  "reviewed": true,
+  "updated_at": "20260623_094730",
+  "boxes": [
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 1736.0,
+      "y1": 486.0,
+      "x2": 1839.0,
+      "y2": 570.0,
+      "confidence": 0.4391102194786072,
+      "origin_line": "L1",
+      "destination_line": "L2",
+      "turn_name": "M1",
+      "source": "metadata"
+    },
+    {
+      "class_id": 1,
+      "class_name": "mototaxi",
+      "x1": 882.0919760924097,
+      "y1": 551.6916246012821,
+      "x2": 1086.780589018612,
+      "y2": 730.2924731349292,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 1,
+      "class_name": "mototaxi",
+      "x1": 1292.4725774983742,
+      "y1": 567.7456334582391,
+      "x2": 1464.0497971571026,
+      "y2": 756.3802375274844,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 1447.9957883001457,
+      "y1": 761.3971152952835,
+      "x2": 1777.102969867765,
+      "y2": 1061.4064058096683,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 1,
+      "class_name": "mototaxi",
+      "x1": 1830.2818742064353,
+      "y1": 491.4890913876931,
+      "x2": 1923.5958006874982,
+      "y2": 599.8536511721531,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 8,
+      "class_name": "combi",
+      "x1": 2075.1055092750307,
+      "y1": 394.161662692391,
+      "x2": 2194.5072001486487,
+      "y2": 473.42833142361644,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 10,
+      "class_name": "bus",
+      "x1": 1997.8455916509245,
+      "y1": 378.107653835434,
+      "x2": 2109.2202780960642,
+      "y2": 455.36757145953976,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    }
+  ]
+}

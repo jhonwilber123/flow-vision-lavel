@@ -1,72 +1,72 @@
 {
   "image": "H_101_20251024_hiv00014_f011973.jpg",
   "reviewed": true,
-  "updated_at": "20260618_085826",
+  "updated_at": "20260622_110403",
   "boxes": [
     {
       "class_id": 13,
       "class_name": "camioneta",
-      "x1": 94.0,
-      "y1": 790.0,
-      "x2": 370.0,
-      "y2": 1027.0,
+      "x1": 59.98633616536755,
+      "y1": 794.5405973548218,
+      "x2": 346.16186388718575,
+      "y2": 1054.572651926164,
       "confidence": 0.47716042399406433,
       "origin_line": "L6",
       "destination_line": "L5",
       "turn_name": "M3",
-      "source": "metadata"
+      "source": "human"
     },
     {
       "class_id": 13,
       "class_name": "camioneta",
-      "x1": 630.0,
-      "y1": 523.0,
-      "x2": 1115.0,
-      "y2": 665.6,
+      "x1": 627.5610055180871,
+      "y1": 584.2980642900937,
+      "x2": 1036.2147674520452,
+      "y2": 834.3536802173088,
       "confidence": null,
       "origin_line": "",
       "destination_line": "",
       "turn_name": "",
-      "source": "vision"
+      "source": "human"
     },
     {
       "class_id": 13,
       "class_name": "camioneta",
-      "x1": 1185.0,
-      "y1": 555.0,
-      "x2": 1595.0,
-      "y2": 697.6,
+      "x1": 1453.9497240956466,
+      "y1": 586.7841814837523,
+      "x2": 1731.2179206446526,
+      "y2": 786.6774079916804,
       "confidence": null,
       "origin_line": "",
       "destination_line": "",
       "turn_name": "",
-      "source": "vision"
+      "source": "human"
     },
     {
       "class_id": 13,
       "class_name": "camioneta",
-      "x1": 1175.0,
-      "y1": 753.0,
-      "x2": 1815.0,
-      "y2": 968.1,
+      "x1": 1483.4636069019882,
+      "y1": 789.324778838574,
+      "x2": 1903.541648419024,
+      "y2": 1171.4930338128243,
       "confidence": null,
       "origin_line": "",
       "destination_line": "",
       "turn_name": "",
-      "source": "vision"
+      "source": "human"
     },
     {
       "class_id": 0,
       "class_name": "car",
-      "x1": 1572.0,
-      "y1": 367.0,
-      "x2": 1710.0,
-      "y2": 424.7,
+      "x1": 1497.0853989664533,
+      "y1": 409.0005255321013,
+      "x2": 1648.7019357099061,
+      "y2": 505.1603719927315,
       "confidence": null,
       "origin_line": "",
       "destination_line": "",
       "turn_name": "",
-      "source": "vision"
+      "source": "human"
     }
   ]
 }

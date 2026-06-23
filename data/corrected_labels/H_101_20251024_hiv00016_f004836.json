@@ -1,0 +1,98 @@
+{
+  "image": "H_101_20251024_hiv00016_f004836.jpg",
+  "reviewed": true,
+  "updated_at": "20260623_181617",
+  "boxes": [
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 93.8,
+      "y1": 711.0,
+      "x2": 153.9,
+      "y2": 749.7,
+      "confidence": 0.451,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 246.8,
+      "y1": 653.8,
+      "x2": 295.4,
+      "y2": 693.4,
+      "confidence": 0.208,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 312.3,
+      "y1": 640.8,
+      "x2": 359.1,
+      "y2": 679.5,
+      "confidence": 0.296,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 7,
+      "class_name": "van-minivan",
+      "x1": 1504.8,
+      "y1": 617.0,
+      "x2": 1720.8,
+      "y2": 836.5,
+      "confidence": 0.769,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 7,
+      "class_name": "van-minivan",
+      "x1": 1805.4,
+      "y1": 476.1,
+      "x2": 1888.2,
+      "y2": 580.5,
+      "confidence": 0.657,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 1854.0,
+      "y1": 456.3,
+      "x2": 1904.4,
+      "y2": 533.7,
+      "confidence": 0.719,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 5,
+      "class_name": "truck",
+      "x1": 1911.6,
+      "y1": 351.4,
+      "x2": 2041.2,
+      "y2": 480.1,
+      "confidence": 0.791,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    }
+  ]
+}

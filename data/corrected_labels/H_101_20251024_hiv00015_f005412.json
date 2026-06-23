@@ -1,0 +1,46 @@
+{
+  "image": "H_101_20251024_hiv00015_f005412.jpg",
+  "reviewed": true,
+  "updated_at": "20260623_102010",
+  "boxes": [
+    {
+      "class_id": 7,
+      "class_name": "van-minivan",
+      "x1": 360.3158497043677,
+      "y1": 597.7901912138432,
+      "x2": 775.0402441350371,
+      "y2": 938.3585680973068,
+      "confidence": 0.7016993165016174,
+      "origin_line": "L3",
+      "destination_line": "L4",
+      "turn_name": "M2",
+      "source": "human"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 1967.02956322716,
+      "y1": 408.2803685932061,
+      "x2": 2037.0658020217434,
+      "y2": 460.46423279309164,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 2016.4669082586306,
+      "y1": 430.2525219405263,
+      "x2": 2085.1298874690065,
+      "y2": 474.1968286351668,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    }
+  ]
+}

@@ -1,59 +1,72 @@
 {
   "image": "H_101_20251024_hiv00014_f011958.jpg",
   "reviewed": true,
-  "updated_at": "20260618_085826",
+  "updated_at": "20260622_110403",
   "boxes": [
     {
       "class_id": 13,
       "class_name": "camioneta",
-      "x1": 508.0,
-      "y1": 665.0,
-      "x2": 768.0,
-      "y2": 887.0,
+      "x1": 432.3153192607516,
+      "y1": 657.053954629062,
+      "x2": 753.2430585968293,
+      "y2": 889.9759978138753,
       "confidence": 0.7897977232933044,
       "origin_line": "L3",
       "destination_line": "L4",
       "turn_name": "M2",
-      "source": "metadata"
+      "source": "human"
     },
     {
       "class_id": 13,
       "class_name": "camioneta",
-      "x1": 157.0,
-      "y1": 490.0,
-      "x2": 420.0,
-      "y2": 632.6,
+      "x1": 1470.9769641762284,
+      "y1": 785.542258652975,
+      "x2": 1897.7931155294734,
+      "y2": 1157.8712417483591,
       "confidence": null,
       "origin_line": "",
       "destination_line": "",
       "turn_name": "",
-      "source": "vision"
+      "source": "human"
     },
     {
       "class_id": 13,
       "class_name": "camioneta",
-      "x1": 1185.0,
-      "y1": 573.0,
-      "x2": 1680.0,
-      "y2": 788.1,
+      "x1": 1013.5924498554784,
+      "y1": 744.6768824595791,
+      "x2": 1508.5924498554784,
+      "y2": 1107.9246708453197,
       "confidence": null,
       "origin_line": "",
       "destination_line": "",
       "turn_name": "",
-      "source": "vision"
+      "source": "human"
     },
     {
       "class_id": 0,
       "class_name": "car",
-      "x1": 1665.0,
-      "y1": 383.0,
-      "x2": 1820.0,
-      "y2": 452.4,
+      "x1": 1620.8166768853462,
+      "y1": 402.29753875799247,
+      "x2": 1765.5128317421388,
+      "y2": 485.862833234739,
       "confidence": null,
       "origin_line": "",
       "destination_line": "",
       "turn_name": "",
-      "source": "vision"
+      "source": "human"
+    },
+    {
+      "class_id": 13,
+      "class_name": "camioneta",
+      "x1": 985.1330472103004,
+      "y1": 514.241566702375,
+      "x2": 1293.8936673381797,
+      "y2": 714.0278503145323,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
     }
   ]
 }

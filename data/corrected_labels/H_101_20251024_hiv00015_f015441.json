@@ -1,0 +1,111 @@
+{
+  "image": "H_101_20251024_hiv00015_f015441.jpg",
+  "reviewed": true,
+  "updated_at": "20260623_152509",
+  "boxes": [
+    {
+      "class_id": 13,
+      "class_name": "camioneta",
+      "x1": 1118.7,
+      "y1": 762.3,
+      "x2": 1590.3,
+      "y2": 1102.5,
+      "confidence": 0.862,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 1625.4,
+      "y1": 886.0,
+      "x2": 1954.8,
+      "y2": 1202.4,
+      "confidence": 0.93,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 8,
+      "class_name": "combi",
+      "x1": 1639.8,
+      "y1": 525.6,
+      "x2": 1819.8,
+      "y2": 709.2,
+      "confidence": 0.712,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 4,
+      "class_name": "person",
+      "x1": 1823.4,
+      "y1": 405.7,
+      "x2": 1837.8,
+      "y2": 443.5,
+      "confidence": 0.491,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 10,
+      "class_name": "bus",
+      "x1": 1823.4,
+      "y1": 488.7,
+      "x2": 1895.4,
+      "y2": 584.1,
+      "confidence": 0.471,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 13,
+      "class_name": "camioneta",
+      "x1": 1828.8,
+      "y1": 422.5,
+      "x2": 1922.4,
+      "y2": 490.0,
+      "confidence": 0.78,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 4,
+      "class_name": "person",
+      "x1": 1940.4,
+      "y1": 901.8,
+      "x2": 2041.2,
+      "y2": 1051.2,
+      "confidence": 0.812,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 1,
+      "class_name": "mototaxi",
+      "x1": 1956.7071939549721,
+      "y1": 406.8,
+      "x2": 2012.4,
+      "y2": 445.5,
+      "confidence": 0.482,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    }
+  ]
+}

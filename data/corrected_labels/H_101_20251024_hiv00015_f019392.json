@@ -1,0 +1,111 @@
+{
+  "image": "H_101_20251024_hiv00015_f019392.jpg",
+  "reviewed": true,
+  "updated_at": "20260623_154210",
+  "boxes": [
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 18.2,
+      "y1": 842.8,
+      "x2": 331.6,
+      "y2": 1076.4,
+      "confidence": 0.939,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 94.2,
+      "y1": 710.1,
+      "x2": 153.8,
+      "y2": 749.7,
+      "confidence": 0.442,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 104.3,
+      "y1": 684.0,
+      "x2": 173.7,
+      "y2": 734.4,
+      "confidence": 0.392,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 248.4,
+      "y1": 652.5,
+      "x2": 296.1,
+      "y2": 697.5,
+      "confidence": 0.363,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 311.4,
+      "y1": 640.3,
+      "x2": 360.0,
+      "y2": 683.5,
+      "confidence": 0.307,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 7,
+      "class_name": "van-minivan",
+      "x1": 1749.6,
+      "y1": 616.5,
+      "x2": 1922.4,
+      "y2": 858.6,
+      "confidence": 0.821,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 4,
+      "class_name": "person",
+      "x1": 2079.0,
+      "y1": 450.0,
+      "x2": 2093.4,
+      "y2": 492.3,
+      "confidence": 0.466,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 4,
+      "class_name": "person",
+      "x1": 2091.6,
+      "y1": 442.3,
+      "x2": 2106.0,
+      "y2": 491.8,
+      "confidence": 0.37,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    }
+  ]
+}

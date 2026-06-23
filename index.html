@@ -38,6 +38,8 @@
     border-radius:6px;padding:5px 8px;color:#cbd5e1;pointer-events:none;font-size:12px}
   #hint{left:10px}
   #zoom{right:10px}
+  #approveFloat{position:absolute;bottom:46px;right:10px;padding:11px 18px;font-size:14px;
+    border-radius:9px;box-shadow:0 3px 12px rgba(0,0,0,.55);z-index:5}
   #side{background:var(--panel);border-left:1px solid var(--line);display:flex;flex-direction:column;min-height:0}
   #classPanel{padding:10px;border-bottom:1px solid var(--line);display:grid;grid-template-columns:1fr 1fr;gap:6px}
   .cls{display:flex;align-items:center;gap:7px;padding:6px 7px;border:1px solid var(--line);
@@ -89,8 +91,9 @@
     <button id="jumpBtn">Ir</button>
     <label class="muted"><input id="onlyPending" type="checkbox"> solo pendientes</label>
     <div class="sep"></div>
-    <button id="newBtn" title="Dibujar caja (N)">Nueva caja</button>
+    <button id="newBtn" title="Dibujar caja arrastrando (N) · Caja rapida al centro (C)">Nueva caja</button>
     <button id="dupBtn" title="Duplicar seleccion (R)">Duplicar</button>
+    <button id="aiBtn" class="good" title="Detectar cajas con Claude Opus 4.8 (vision IA)">Detectar (IA)</button>
     <button id="clearBtn" class="danger">Vaciar</button>
     <button id="fitBtn" title="Ajustar vista (F)">Ajustar</button>
     <div class="sep"></div>
@@ -100,8 +103,9 @@
 
   <div id="stage">
     <canvas id="cv"></canvas>
-    <div id="hint">N dibuja caja | arrastra para mover | esquinas para redimensionar | 1-9 cambia clase</div>
+    <div id="hint">N dibuja caja | C caja rapida | arrastra para mover | esquinas para redimensionar | 1-9 cambia clase</div>
     <div id="zoom">100%</div>
+    <button id="approveFloat" class="primary" title="Guardar y avanzar (Enter)">Aprobar + siguiente &rarr;</button>
   </div>
 
   <aside id="side">
@@ -188,6 +192,18 @@ function clampBox(b){
   let x1 = Math.min(b.x1,b.x2), x2 = Math.max(b.x1,b.x2);
   let y1 = Math.min(b.y1,b.y2), y2 = Math.max(b.y1,b.y2);
   b.x1 = x1; b.x2 = x2; b.y1 = y1; b.y2 = y2;
+}
+function addBoxQuick(){
+  if(!imgReady) return;
+  const [cx, cy] = cvToImg(cv.width/2, cv.height/2);
+  const wImg = (Math.min(cv.width, cv.height) * 0.18) / view.scale;
+  const hImg = wImg * 0.7;
+  const b = {class_id:currentClass, class_name:clsName(currentClass),
+    x1:cx-wImg/2, y1:cy-hImg/2, x2:cx+wImg/2, y2:cy+hImg/2, source:"human"};
+  clampBox(b);
+  boxes.push(b); selected = boxes.length-1;
+  markDirty(); renderBoxes(); draw();
+  toast("Nueva caja: " + clsName(currentClass));
 }
 function fit(){
   const s = Math.min(cv.width / imgW, cv.height / imgH) * 0.98;
@@ -624,6 +640,31 @@ document.getElementById("prevBtn").onclick = prev;
 document.getElementById("nextBtn").onclick = next;
 document.getElementById("saveBtn").onclick = ()=>save(true);
 document.getElementById("approveBtn").onclick = approveNext;
+document.getElementById("approveFloat").onclick = approveNext;
+
+async function detectAI(){
+  if(!cur){ toast("No hay imagen cargada"); return; }
+  const btn = document.getElementById("aiBtn");
+  const prev = btn.textContent;
+  btn.disabled = true; btn.textContent = "Detectando...";
+  try{
+    const r = await fetch("/api/detect/" + encodeURIComponent(cur), {method:"POST"});
+    const data = await r.json();
+    if(!r.ok || data.error){ toast("IA: " + (data.error || ("error " + r.status))); return; }
+    const det = data.boxes || [];
+    if(!det.length){ toast("La IA no detecto objetos"); return; }
+    for(const b of det){
+      boxes.push({class_id:b.class_id, class_name:b.class_name, x1:b.x1, y1:b.y1, x2:b.x2, y2:b.y2, source:"ai"});
+    }
+    selected = -1; markDirty(); renderBoxes(); draw();
+    toast(det.length + " cajas detectadas por IA (revisa y corrige)");
+  }catch(err){
+    toast("IA: " + err.message);
+  }finally{
+    btn.disabled = false; btn.textContent = prev;
+  }
+}
+document.getElementById("aiBtn").onclick = detectAI;
 document.getElementById("jumpBtn").onclick = jump;
 document.getElementById("jump").onkeydown = e=>{ if(e.key === "Enter") jump(); };
 document.getElementById("newBtn").onclick = ()=>{ drawMode = !drawMode; document.getElementById("newBtn").classList.toggle("toggled", drawMode); };
@@ -642,6 +683,7 @@ window.addEventListener("keydown", e=>{
   if(e.key === "Enter"){ e.preventDefault(); approveNext(); return; }
   if(e.key === "Delete" || e.key === "Backspace"){ if(selected>=0){ boxes.splice(selected,1); selected=-1; markDirty(); renderBoxes(); draw(); } return; }
   if(e.key.toLowerCase() === "n"){ drawMode=!drawMode; document.getElementById("newBtn").classList.toggle("toggled", drawMode); return; }
+  if(e.key.toLowerCase() === "c"){ addBoxQuick(); return; }
   if(e.key.toLowerCase() === "r"){ document.getElementById("dupBtn").click(); return; }
   if(e.key.toLowerCase() === "f"){ fit(); return; }
   if(e.key.toLowerCase() === "a" || e.key === "ArrowLeft"){ prev(); return; }

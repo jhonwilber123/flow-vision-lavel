@@ -1,0 +1,98 @@
+{
+  "image": "H_101_20251024_hiv00015_f020916.jpg",
+  "reviewed": true,
+  "updated_at": "20260623_155811",
+  "boxes": [
+    {
+      "class_id": 5,
+      "class_name": "truck",
+      "x1": 530.0,
+      "y1": 528.0,
+      "x2": 1387.0,
+      "y2": 1191.0,
+      "confidence": 0.940394937992096,
+      "origin_line": "L3",
+      "destination_line": "L4",
+      "turn_name": "M2",
+      "source": "metadata"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 91.43203988727505,
+      "y1": 804.5422640983555,
+      "x2": 451.64386361524885,
+      "y2": 1021.2713836672757,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 1,
+      "class_name": "mototaxi",
+      "x1": 1247.3206775881824,
+      "y1": 829.626652937351,
+      "x2": 1547.3299681025674,
+      "y2": 1172.7810922548078,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 1550.3400947632467,
+      "y1": 501.5228469232913,
+      "x2": 1707.8700566721377,
+      "y2": 627.9481666718281,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 7,
+      "class_name": "van-minivan",
+      "x1": 1731.9510699575733,
+      "y1": 430.2831826205444,
+      "x2": 1825.2649964386362,
+      "y2": 510.55322690532967,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 13,
+      "class_name": "camioneta",
+      "x1": 1834.2953764206745,
+      "y1": 417.2393004242668,
+      "x2": 1948.6801895264935,
+      "y2": 552.6950001548419,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 1935.636307330216,
+      "y1": 410.2156715493481,
+      "x2": 2004.8692205258433,
+      "y2": 467.40807810225755,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    }
+  ]
+}

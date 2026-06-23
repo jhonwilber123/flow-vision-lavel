@@ -1,4 +1,5 @@
 """Local AABB label editor for the Peru traffic dataset."""
+import base64
 import csv
 import json
 import os
@@ -19,6 +20,7 @@ BATCHES_DIR = RAW_DIR / "batches"
 BATCH_STATE_FILE = BATCHES_DIR / "state.json"
 METADATA_CSV = RAW_DIR / "metadata.csv"
 CORRECTED_DIR = ROOT / "data" / "corrected_labels"
+AI_LABELS_DIR = ROOT / "data" / "ai_labels"
 EXPORTS_DIR = ROOT / "exports"
 BACKUP_DIR = ROOT / "data" / "backups"
 HOST = os.environ.get("PERU_LABEL_HOST", "127.0.0.1")
@@ -175,10 +177,34 @@ def save_corrected(name, boxes):
     return payload
 
 
+def ai_label_path(image_name):
+    return AI_LABELS_DIR / (Path(image_name).stem + ".json")
+
+
+def load_ai_label(name):
+    path = ai_label_path(name)
+    if not path.exists():
+        return None
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return None
+
+
+def save_ai_label(name, boxes):
+    AI_LABELS_DIR.mkdir(parents=True, exist_ok=True)
+    payload = {"image": name, "source": "ai", "updated_at": now_stamp(), "boxes": boxes}
+    ai_label_path(name).write_text(json.dumps(payload, indent=2), encoding="utf-8")
+    return payload
+
+
 def boxes_for_image(name):
     saved = load_corrected(name)
     if saved is not None:
         return "corrected", saved.get("boxes", [])
+    ai = load_ai_label(name)
+    if ai is not None:
+        return "ai", ai.get("boxes", [])
     return "metadata", META_BY_FILE.get(name, [])
 
 
@@ -568,6 +594,142 @@ def reload_globals():
 reload_globals()
 
 
+AI_MODEL = os.environ.get("PERU_AI_MODEL", "claude-opus-4-8")
+
+
+def run_ai_detection(name):
+    """Detect vehicles/people in one frame with Claude vision. Returns (result, http_code)."""
+    path = image_path(name)
+    if not path:
+        return {"error": "imagen no encontrada"}, 404
+
+    try:
+        import anthropic
+    except ImportError:
+        return {"error": "Falta el paquete 'anthropic'. Instala con: python -m pip install anthropic"}, 500
+
+    if not (os.environ.get("ANTHROPIC_API_KEY") or os.environ.get("ANTHROPIC_AUTH_TOKEN")):
+        return {"error": "Falta la variable de entorno ANTHROPIC_API_KEY (clave de la API de Anthropic)."}, 400
+
+    w, h = get_image_dims(name)
+    media = "image/png" if path.suffix.lower() == ".png" else "image/jpeg"
+    b64 = base64.standard_b64encode(path.read_bytes()).decode("ascii")
+
+    class_list = [CLASS_NAMES[i] for i in sorted(CLASS_NAMES)]
+    name_to_id = {CLASS_NAMES[i]: i for i in sorted(CLASS_NAMES)}
+
+    tool = {
+        "name": "report_detections",
+        "description": "Reporta TODOS los vehiculos y personas visibles en el frame de trafico como cajas rectangulares.",
+        "strict": True,
+        "input_schema": {
+            "type": "object",
+            "properties": {
+                "detections": {
+                    "type": "array",
+                    "description": "Una entrada por objeto detectado.",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "class_name": {"type": "string", "enum": class_list},
+                            "x1": {"type": "number", "description": "Borde izquierdo, fraccion 0-1 del ancho"},
+                            "y1": {"type": "number", "description": "Borde superior, fraccion 0-1 del alto"},
+                            "x2": {"type": "number", "description": "Borde derecho, fraccion 0-1 del ancho"},
+                            "y2": {"type": "number", "description": "Borde inferior, fraccion 0-1 del alto"},
+                        },
+                        "required": ["class_name", "x1", "y1", "x2", "y2"],
+                        "additionalProperties": False,
+                    },
+                }
+            },
+            "required": ["detections"],
+            "additionalProperties": False,
+        },
+    }
+
+    prompt = (
+        "Esta es una imagen de una camara de trafico en Peru. Detecta CADA vehiculo y persona visible "
+        "(incluyendo objetos parcialmente ocultos o pequenos al fondo) y reporta una caja axis-aligned por objeto.\n"
+        "Coordenadas NORMALIZADAS de 0 a 1: x1,y1 = esquina superior-izquierda; x2,y2 = inferior-derecha; "
+        "origen arriba-izquierda; x1<x2 y y1<y2. Ajusta cada caja lo mas pegada posible al objeto.\n"
+        "Asigna a cada objeto la clase mas parecida de la lista. Notas Peru: 'mototaxi' = trimovil/mototaxi de 3 ruedas; "
+        "'combi'/'microbus' = minibus de transporte; 'camioneta' = pickup/SUV; 'van-minivan' = furgoneta; "
+        "'bici-triciclo' = triciclo de carga. Usa 'report_detections'."
+    )
+
+    try:
+        client = anthropic.Anthropic()
+        resp = client.messages.create(
+            model=AI_MODEL,
+            max_tokens=8000,
+            tools=[tool],
+            tool_choice={"type": "tool", "name": "report_detections"},
+            messages=[
+                {
+                    "role": "user",
+                    "content": [
+                        {"type": "image", "source": {"type": "base64", "media_type": media, "data": b64}},
+                        {"type": "text", "text": prompt},
+                    ],
+                }
+            ],
+        )
+    except anthropic.AuthenticationError:
+        return {"error": "Clave de API invalida (ANTHROPIC_API_KEY)."}, 401
+    except anthropic.APIStatusError as e:
+        return {"error": f"Error de la API ({e.status_code}): {e.message}"}, 502
+    except Exception as e:  # network, etc.
+        return {"error": f"No se pudo contactar la API: {e}"}, 502
+
+    if resp.stop_reason == "refusal":
+        return {"error": "El modelo rechazo la solicitud."}, 422
+
+    detections = []
+    for block in resp.content:
+        if block.type == "tool_use" and block.name == "report_detections":
+            detections = block.input.get("detections", [])
+            break
+
+    boxes = []
+    for d in detections:
+        cname = d.get("class_name")
+        cid = name_to_id.get(cname)
+        if cid is None:
+            continue
+        x1 = max(0.0, min(1.0, float(d.get("x1", 0)))) * w
+        y1 = max(0.0, min(1.0, float(d.get("y1", 0)))) * h
+        x2 = max(0.0, min(1.0, float(d.get("x2", 0)))) * w
+        y2 = max(0.0, min(1.0, float(d.get("y2", 0)))) * h
+        lo_x, hi_x = sorted((x1, x2))
+        lo_y, hi_y = sorted((y1, y2))
+        if hi_x - lo_x < 1 or hi_y - lo_y < 1:
+            continue
+        boxes.append(
+            {
+                "class_id": cid,
+                "class_name": cname,
+                "x1": round(lo_x, 1),
+                "y1": round(lo_y, 1),
+                "x2": round(hi_x, 1),
+                "y2": round(hi_y, 1),
+                "confidence": None,
+                "source": "ai",
+            }
+        )
+
+    usage = getattr(resp, "usage", None)
+    return {
+        "image": name,
+        "model": getattr(resp, "model", AI_MODEL),
+        "count": len(boxes),
+        "boxes": boxes,
+        "tokens": {
+            "input": getattr(usage, "input_tokens", None),
+            "output": getattr(usage, "output_tokens", None),
+        },
+    }, 200
+
+
 class Handler(BaseHTTPRequestHandler):
     def log_message(self, *args):
         pass
@@ -668,6 +830,12 @@ class Handler(BaseHTTPRequestHandler):
             payload = json.loads(body.decode("utf-8"))
         except json.JSONDecodeError:
             self.send_json({"error": "bad json"}, 400)
+            return
+
+        if path.startswith("/api/detect/"):
+            name = sanitize_filename(path[len("/api/detect/") :])
+            result, code = run_ai_detection(name)
+            self.send_json(result, code)
             return
 
         if path.startswith("/api/save/"):

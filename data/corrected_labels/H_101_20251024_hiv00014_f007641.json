@@ -1,59 +1,72 @@
 {
   "image": "H_101_20251024_hiv00014_f007641.jpg",
   "reviewed": true,
-  "updated_at": "20260618_085826",
+  "updated_at": "20260622_101810",
   "boxes": [
     {
       "class_id": 1,
       "class_name": "mototaxi",
-      "x1": 558.0,
-      "y1": 668.0,
-      "x2": 771.0,
-      "y2": 865.0,
+      "x1": 516.316370324954,
+      "y1": 673.6757466935272,
+      "x2": 741.4861171936585,
+      "y2": 885.4354004590537,
       "confidence": 0.4530470371246338,
       "origin_line": "L3",
       "destination_line": "L4",
       "turn_name": "M2",
-      "source": "metadata"
+      "source": "human"
     },
     {
       "class_id": 1,
       "class_name": "mototaxi",
-      "x1": 1490.0,
-      "y1": 705.0,
-      "x2": 1720.0,
-      "y2": 841.4,
+      "x1": 1653.736007707804,
+      "y1": 647.1073837260226,
+      "x2": 1816.4876937899623,
+      "y2": 854.7863683140067,
       "confidence": null,
       "origin_line": "",
       "destination_line": "",
       "turn_name": "",
-      "source": "vision"
+      "source": "human"
     },
     {
       "class_id": 3,
       "class_name": "motorcycle",
-      "x1": 1060.0,
-      "y1": 475.0,
-      "x2": 1210.0,
-      "y2": 568.0,
+      "x1": 1307.515459402645,
+      "y1": 521.5411228869231,
+      "x2": 1409.7862836121571,
+      "y2": 649.3243380083222,
       "confidence": null,
       "origin_line": "",
       "destination_line": "",
       "turn_name": "",
-      "source": "vision"
+      "source": "human"
     },
     {
       "class_id": 7,
       "class_name": "van-minivan",
-      "x1": 1730.0,
-      "y1": 425.0,
-      "x2": 1870.0,
-      "y2": 535.0,
+      "x1": 1760.4400455461152,
+      "y1": 454.07865175098675,
+      "x2": 1865.4594026451782,
+      "y2": 558.8381361128143,
       "confidence": null,
       "origin_line": "",
       "destination_line": "",
       "turn_name": "",
-      "source": "vision"
+      "source": "human"
+    },
+    {
+      "class_id": 1,
+      "class_name": "mototaxi",
+      "x1": 1810.3866164491546,
+      "y1": 509.70096934755327,
+      "x2": 1897.7931155294734,
+      "y2": 630.0267992503298,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
     }
   ]
 }

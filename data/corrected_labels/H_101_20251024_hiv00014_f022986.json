@@ -1,0 +1,33 @@
+{
+  "image": "H_101_20251024_hiv00014_f022986.jpg",
+  "reviewed": true,
+  "updated_at": "20260623_083927",
+  "boxes": [
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 508.0,
+      "y1": 683.0,
+      "x2": 794.0,
+      "y2": 890.0,
+      "confidence": 0.906558632850647,
+      "origin_line": "L3",
+      "destination_line": "L4",
+      "turn_name": "M2",
+      "source": "metadata"
+    },
+    {
+      "class_id": 10,
+      "class_name": "bus",
+      "x1": 1853.3595119383112,
+      "y1": 402.1886671208695,
+      "x2": 1967.7443250441302,
+      "y2": 524.6004846551671,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "image": "H_101_20251024_hiv00015_f009495.jpg",
+  "reviewed": true,
+  "updated_at": "20260623_120527",
+  "boxes": [
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 1753.0,
+      "y1": 485.0,
+      "x2": 1855.0,
+      "y2": 565.0,
+      "confidence": 0.8108332753181458,
+      "origin_line": "L1",
+      "destination_line": "L2",
+      "turn_name": "M1",
+      "source": "metadata"
+    },
+    {
+      "class_id": 1,
+      "class_name": "mototaxi",
+      "x1": 1399.4625558377857,
+      "y1": 781.0016612981532,
+      "x2": 1675.3038451432074,
+      "y2": 1102.2489241517926,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 1644.6548129981604,
+      "y1": 861.5972643462394,
+      "x2": 1967.0372251905053,
+      "y2": 1166.9524364580025,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 4,
+      "class_name": "person",
+      "x1": 1968.1723745292106,
+      "y1": 820.7318881528436,
+      "x2": 2039.6867828676534,
+      "y2": 1054.572651926164,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 13,
+      "class_name": "camioneta",
+      "x1": 95.17596566523603,
+      "y1": 969.4364515232561,
+      "x2": 863.6720679688184,
+      "y2": 1296.0,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 12,
+      "class_name": "bicycle",
+      "x1": 1927.3069983358148,
+      "y1": 474.51133984768467,
+      "x2": 1964.7669265130944,
+      "y2": 552.83664421836,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    }
+  ]
+}

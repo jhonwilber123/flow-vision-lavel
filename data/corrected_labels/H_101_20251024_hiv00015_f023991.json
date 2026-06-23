@@ -1,0 +1,98 @@
+{
+  "image": "H_101_20251024_hiv00015_f023991.jpg",
+  "reviewed": true,
+  "updated_at": "20260623_170919",
+  "boxes": [
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 94.8,
+      "y1": 710.1,
+      "x2": 154.1,
+      "y2": 749.7,
+      "confidence": 0.383,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 250.2,
+      "y1": 651.6,
+      "x2": 295.2,
+      "y2": 696.6,
+      "confidence": 0.578,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 307.8,
+      "y1": 640.3,
+      "x2": 360.0,
+      "y2": 684.5,
+      "confidence": 0.635,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 4,
+      "class_name": "person",
+      "x1": 843.3,
+      "y1": 578.7,
+      "x2": 886.5,
+      "y2": 696.6,
+      "confidence": 0.674,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 13,
+      "class_name": "camioneta",
+      "x1": 1524.6,
+      "y1": 634.5,
+      "x2": 1863.0,
+      "y2": 870.3,
+      "confidence": 0.893,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 1,
+      "class_name": "mototaxi",
+      "x1": 1818.2413675637176,
+      "y1": 482.45871140565475,
+      "x2": 1886.4709052057851,
+      "y2": 579.7861401009569,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 13,
+      "class_name": "camioneta",
+      "x1": 2066.075129292992,
+      "y1": 419.2460515313864,
+      "x2": 2135.3080424886193,
+      "y2": 467.40807810225755,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    }
+  ]
+}

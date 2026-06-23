@@ -1,7 +1,7 @@
 {
   "image": "H_101_20251024_hiv00014_f012486.jpg",
   "reviewed": true,
-  "updated_at": "20260618_085826",
+  "updated_at": "20260622_111829",
   "boxes": [
     {
       "class_id": 5,
@@ -19,28 +19,41 @@
     {
       "class_id": 5,
       "class_name": "truck",
-      "x1": 1233.0,
-      "y1": 383.0,
-      "x2": 1505.0,
-      "y2": 525.6,
+      "x1": 1504.3006919506001,
+      "y1": 419.32477883857405,
+      "x2": 1776.3006919506001,
+      "y2": 640.2431432986788,
       "confidence": null,
       "origin_line": "",
       "destination_line": "",
       "turn_name": "",
-      "source": "vision"
+      "source": "human"
     },
     {
       "class_id": 1,
       "class_name": "mototaxi",
-      "x1": 1338.0,
-      "y1": 592.0,
-      "x2": 1505.0,
-      "y2": 721.6,
+      "x1": 1670.5987562406935,
+      "y1": 620.378733467636,
+      "x2": 1837.5987562406935,
+      "y2": 805.9749467496729,
       "confidence": null,
       "origin_line": "",
       "destination_line": "",
       "turn_name": "",
-      "source": "vision"
+      "source": "human"
+    },
+    {
+      "class_id": 5,
+      "class_name": "truck",
+      "x1": 1953.41543312604,
+      "y1": 337.1582698643265,
+      "x2": 2130.4987299640884,
+      "y2": 467.700443815452,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
     }
   ]
 }

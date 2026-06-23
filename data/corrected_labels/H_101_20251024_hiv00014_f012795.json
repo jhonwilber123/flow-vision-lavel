@@ -1,7 +1,7 @@
 {
   "image": "H_101_20251024_hiv00014_f012795.jpg",
   "reviewed": true,
-  "updated_at": "20260618_085826",
+  "updated_at": "20260622_112006",
   "boxes": [
     {
       "class_id": 3,
@@ -19,28 +19,15 @@
     {
       "class_id": 2,
       "class_name": "microbus",
-      "x1": 1756.0,
-      "y1": 442.0,
-      "x2": 1881.0,
-      "y2": 513.3,
+      "x1": 1889.9476219672417,
+      "y1": 406.8103705001314,
+      "x2": 2001.0917053516685,
+      "y2": 510.8361186862587,
       "confidence": null,
       "origin_line": "",
       "destination_line": "",
       "turn_name": "",
-      "source": "vision"
-    },
-    {
-      "class_id": 4,
-      "class_name": "person",
-      "x1": 951.0,
-      "y1": 582.0,
-      "x2": 1003.0,
-      "y2": 703.0,
-      "confidence": null,
-      "origin_line": "",
-      "destination_line": "",
-      "turn_name": "",
-      "source": "vision"
+      "source": "human"
     }
   ]
 }

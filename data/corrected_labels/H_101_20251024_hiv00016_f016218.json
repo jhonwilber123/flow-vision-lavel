@@ -1,0 +1,85 @@
+{
+  "image": "H_101_20251024_hiv00016_f016218.jpg",
+  "reviewed": true,
+  "updated_at": "20260623_163803",
+  "boxes": [
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 1752.0,
+      "y1": 493.0,
+      "x2": 1855.0,
+      "y2": 569.0,
+      "confidence": 0.5668033957481384,
+      "origin_line": "L1",
+      "destination_line": "L2",
+      "turn_name": "M1",
+      "source": "metadata"
+    },
+    {
+      "class_id": 7,
+      "class_name": "van-minivan",
+      "x1": 1452.009290514385,
+      "y1": 588.8165200829952,
+      "x2": 1691.8160478151808,
+      "y2": 796.5152596698771,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 13,
+      "class_name": "camioneta",
+      "x1": 1706.866681118578,
+      "y1": 637.9819222074262,
+      "x2": 1895.5012851878234,
+      "y2": 822.6030240624323,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 2028.9502338112788,
+      "y1": 435.30006038834347,
+      "x2": 2138.3181691492987,
+      "y2": 500.5194713697315,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 7,
+      "class_name": "van-minivan",
+      "x1": 2074.1021337214706,
+      "y1": 402.1886671208695,
+      "x2": 2159.389055774055,
+      "y2": 461.38782478089865,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 505.82614350747883,
+      "y1": 1151.7102056300516,
+      "x2": 1119.891982286086,
+      "y2": 1296.0,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    }
+  ]
+}

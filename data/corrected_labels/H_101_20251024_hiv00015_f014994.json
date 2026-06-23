@@ -1,0 +1,85 @@
+{
+  "image": "H_101_20251024_hiv00015_f014994.jpg",
+  "reviewed": true,
+  "updated_at": "20260623_150353",
+  "boxes": [
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 0.2,
+      "y1": 788.4,
+      "x2": 399.8,
+      "y2": 1067.4,
+      "confidence": 0.894,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 1618.2,
+      "y1": 879.8,
+      "x2": 1960.2,
+      "y2": 1200.6,
+      "confidence": 0.945,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 1789.2,
+      "y1": 505.8,
+      "x2": 1904.4,
+      "y2": 620.1,
+      "confidence": 0.893,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 1818.0,
+      "y1": 469.8,
+      "x2": 1897.2,
+      "y2": 523.8,
+      "confidence": 0.844,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 10,
+      "class_name": "bus",
+      "x1": 1893.6,
+      "y1": 407.0,
+      "x2": 1987.2,
+      "y2": 511.2,
+      "confidence": 0.902,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 4,
+      "class_name": "person",
+      "x1": 1940.4,
+      "y1": 963.0,
+      "x2": 2019.6,
+      "y2": 1071.0,
+      "confidence": 0.16,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    }
+  ]
+}

@@ -1,11 +1,11 @@
 {
   "image": "H_101_20251024_hiv00014_f013218.jpg",
   "reviewed": true,
-  "updated_at": "20260618_vision",
+  "updated_at": "20260622_112643",
   "boxes": [
     {
-      "class_id": 4,
-      "class_name": "person",
+      "class_id": 3,
+      "class_name": "motorcycle",
       "x1": 1879.0,
       "y1": 495.0,
       "x2": 1911.0,
@@ -14,7 +14,7 @@
       "origin_line": "L1",
       "destination_line": "L2",
       "turn_name": "M1",
-      "source": "metadata"
+      "source": "human"
     }
   ]
 }

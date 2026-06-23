@@ -1,0 +1,98 @@
+{
+  "image": "H_101_20251024_hiv00015_f008121.jpg",
+  "reviewed": true,
+  "updated_at": "20260623_111512",
+  "boxes": [
+    {
+      "class_id": 8,
+      "class_name": "combi",
+      "x1": 1780.0,
+      "y1": 478.0,
+      "x2": 1897.0,
+      "y2": 594.0,
+      "confidence": 0.71943598985672,
+      "origin_line": "L1",
+      "destination_line": "L2",
+      "turn_name": "M1",
+      "source": "metadata"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 1647.0600801068092,
+      "y1": 861.456031381686,
+      "x2": 1957.4167461377074,
+      "y2": 1188.2918124230744,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 13,
+      "class_name": "camioneta",
+      "x1": 1112.8621018500858,
+      "y1": 795.5395713397253,
+      "x2": 1566.0377646385657,
+      "y2": 1144.347505728434,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 1681.3915697119971,
+      "y1": 460.46423279309164,
+      "x2": 1785.7592981117682,
+      "y2": 545.6063270139575,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 1,
+      "class_name": "mototaxi",
+      "x1": 1822.837306885371,
+      "y1": 427.50600277211134,
+      "x2": 1879.1409498378791,
+      "y2": 476.94334780358184,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 1,
+      "class_name": "mototaxi",
+      "x1": 1946.4306694640475,
+      "y1": 426.1327431879038,
+      "x2": 1997.2412740797254,
+      "y2": 498.91550115090206,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 13,
+      "class_name": "camioneta",
+      "x1": 2085.1298874690065,
+      "y1": 406.9071090089986,
+      "x2": 2184.0045775319472,
+      "y2": 457.71771362467666,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    }
+  ]
+}

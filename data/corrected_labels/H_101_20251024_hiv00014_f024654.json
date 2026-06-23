@@ -1,0 +1,33 @@
+{
+  "image": "H_101_20251024_hiv00014_f024654.jpg",
+  "reviewed": true,
+  "updated_at": "20260623_085254",
+  "boxes": [
+    {
+      "class_id": 5,
+      "class_name": "truck",
+      "x1": 1704.0,
+      "y1": 393.0,
+      "x2": 1952.0,
+      "y2": 675.0,
+      "confidence": 0.35953277349472046,
+      "origin_line": "L1",
+      "destination_line": "L2",
+      "turn_name": "M1",
+      "source": "metadata"
+    },
+    {
+      "class_id": 5,
+      "class_name": "truck",
+      "x1": 1834.2953764206745,
+      "y1": 381.1177804961134,
+      "x2": 1957.7105695085318,
+      "y2": 542.6612446192437,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    }
+  ]
+}

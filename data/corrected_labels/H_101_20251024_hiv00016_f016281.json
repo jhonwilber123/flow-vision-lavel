@@ -1,0 +1,59 @@
+{
+  "image": "H_101_20251024_hiv00016_f016281.jpg",
+  "reviewed": true,
+  "updated_at": "20260623_163857",
+  "boxes": [
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 1784.016877767799,
+      "y1": 480.9831222322009,
+      "x2": 1882.016877767799,
+      "y2": 557.9831222322009,
+      "confidence": 0.8668117523193359,
+      "origin_line": "L1",
+      "destination_line": "L2",
+      "turn_name": "M1",
+      "source": "human"
+    },
+    {
+      "class_id": 13,
+      "class_name": "camioneta",
+      "x1": 1709.8768077792574,
+      "y1": 632.9650444396271,
+      "x2": 1887.4742807593448,
+      "y2": 816.5827707410733,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 7,
+      "class_name": "van-minivan",
+      "x1": 1908.545167384101,
+      "y1": 425.2663048527453,
+      "x2": 1987.8118361153263,
+      "y2": 498.5127202626118,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 2029.9536093648385,
+      "y1": 435.30006038834347,
+      "x2": 2135.3080424886193,
+      "y2": 498.5127202626118,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    }
+  ]
+}
