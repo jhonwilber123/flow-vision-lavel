@@ -1,0 +1,85 @@
+{
+  "image": "H_101_20251024_hiv00016_f017388.jpg",
+  "source": "ai",
+  "updated_at": "20260623_165245",
+  "boxes": [
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 92.6,
+      "y1": 710.1,
+      "x2": 154.8,
+      "y2": 749.7,
+      "confidence": 0.215,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 93.4,
+      "y1": 685.8,
+      "x2": 172.6,
+      "y2": 750.6,
+      "confidence": 0.309,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 156.1,
+      "y1": 791.1,
+      "x2": 488.2,
+      "y2": 987.3,
+      "confidence": 0.932,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 313.2,
+      "y1": 639.9,
+      "x2": 359.1,
+      "y2": 661.5,
+      "confidence": 0.34,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 1824.3,
+      "y1": 492.3,
+      "x2": 1911.6,
+      "y2": 573.3,
+      "confidence": 0.878,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 2021.4,
+      "y1": 442.8,
+      "x2": 2140.2,
+      "y2": 495.9,
+      "confidence": 0.257,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    }
+  ]
+}

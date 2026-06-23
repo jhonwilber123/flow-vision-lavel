@@ -1,0 +1,716 @@
+[
+  {
+    "crop": "H_101_20251024_hiv00014_f006534_b00.jpg",
+    "image": "H_101_20251024_hiv00014_f006534.jpg",
+    "box_idx": 0,
+    "class_name": "truck",
+    "class_id": 5
+  },
+  {
+    "crop": "H_101_20251024_hiv00014_f006615_b00.jpg",
+    "image": "H_101_20251024_hiv00014_f006615.jpg",
+    "box_idx": 0,
+    "class_name": "car",
+    "class_id": 0
+  },
+  {
+    "crop": "H_101_20251024_hiv00014_f006753_b00.jpg",
+    "image": "H_101_20251024_hiv00014_f006753.jpg",
+    "box_idx": 0,
+    "class_name": "truck",
+    "class_id": 5
+  },
+  {
+    "crop": "H_101_20251024_hiv00014_f006789_b00.jpg",
+    "image": "H_101_20251024_hiv00014_f006789.jpg",
+    "box_idx": 0,
+    "class_name": "microbus",
+    "class_id": 2
+  },
+  {
+    "crop": "H_101_20251024_hiv00014_f006822_b00.jpg",
+    "image": "H_101_20251024_hiv00014_f006822.jpg",
+    "box_idx": 0,
+    "class_name": "car",
+    "class_id": 0
+  },
+  {
+    "crop": "H_101_20251024_hiv00014_f006852_b00.jpg",
+    "image": "H_101_20251024_hiv00014_f006852.jpg",
+    "box_idx": 0,
+    "class_name": "van-minivan",
+    "class_id": 7
+  },
+  {
+    "crop": "H_101_20251024_hiv00014_f006882_b00.jpg",
+    "image": "H_101_20251024_hiv00014_f006882.jpg",
+    "box_idx": 0,
+    "class_name": "car",
+    "class_id": 0
+  },
+  {
+    "crop": "H_101_20251024_hiv00014_f006909_b00.jpg",
+    "image": "H_101_20251024_hiv00014_f006909.jpg",
+    "box_idx": 0,
+    "class_name": "car",
+    "class_id": 0
+  },
+  {
+    "crop": "H_101_20251024_hiv00014_f006918_b00.jpg",
+    "image": "H_101_20251024_hiv00014_f006918.jpg",
+    "box_idx": 0,
+    "class_name": "car",
+    "class_id": 0
+  },
+  {
+    "crop": "H_101_20251024_hiv00014_f007131_b00.jpg",
+    "image": "H_101_20251024_hiv00014_f007131.jpg",
+    "box_idx": 0,
+    "class_name": "car",
+    "class_id": 0
+  },
+  {
+    "crop": "H_101_20251024_hiv00014_f007230_b00.jpg",
+    "image": "H_101_20251024_hiv00014_f007230.jpg",
+    "box_idx": 0,
+    "class_name": "car",
+    "class_id": 0
+  },
+  {
+    "crop": "H_101_20251024_hiv00014_f007239_b00.jpg",
+    "image": "H_101_20251024_hiv00014_f007239.jpg",
+    "box_idx": 0,
+    "class_name": "van-minivan",
+    "class_id": 7
+  },
+  {
+    "crop": "H_101_20251024_hiv00014_f007455_b00.jpg",
+    "image": "H_101_20251024_hiv00014_f007455.jpg",
+    "box_idx": 0,
+    "class_name": "car",
+    "class_id": 0
+  },
+  {
+    "crop": "H_101_20251024_hiv00014_f007464_b00.jpg",
+    "image": "H_101_20251024_hiv00014_f007464.jpg",
+    "box_idx": 0,
+    "class_name": "car",
+    "class_id": 0
+  },
+  {
+    "crop": "H_101_20251024_hiv00014_f007575_b00.jpg",
+    "image": "H_101_20251024_hiv00014_f007575.jpg",
+    "box_idx": 0,
+    "class_name": "car",
+    "class_id": 0
+  },
+  {
+    "crop": "H_101_20251024_hiv00014_f007638_b00.jpg",
+    "image": "H_101_20251024_hiv00014_f007638.jpg",
+    "box_idx": 0,
+    "class_name": "van-minivan",
+    "class_id": 7
+  },
+  {
+    "crop": "H_101_20251024_hiv00014_f007641_b00.jpg",
+    "image": "H_101_20251024_hiv00014_f007641.jpg",
+    "box_idx": 0,
+    "class_name": "mototaxi",
+    "class_id": 1
+  },
+  {
+    "crop": "H_101_20251024_hiv00014_f007653_b00.jpg",
+    "image": "H_101_20251024_hiv00014_f007653.jpg",
+    "box_idx": 0,
+    "class_name": "mototaxi",
+    "class_id": 1
+  },
+  {
+    "crop": "H_101_20251024_hiv00014_f007683_b00.jpg",
+    "image": "H_101_20251024_hiv00014_f007683.jpg",
+    "box_idx": 0,
+    "class_name": "mototaxi",
+    "class_id": 1
+  },
+  {
+    "crop": "H_101_20251024_hiv00014_f007815_b00.jpg",
+    "image": "H_101_20251024_hiv00014_f007815.jpg",
+    "box_idx": 0,
+    "class_name": "car",
+    "class_id": 0
+  },
+  {
+    "crop": "H_101_20251024_hiv00014_f007851_b00.jpg",
+    "image": "H_101_20251024_hiv00014_f007851.jpg",
+    "box_idx": 0,
+    "class_name": "car",
+    "class_id": 0
+  },
+  {
+    "crop": "H_101_20251024_hiv00014_f007863_b00.jpg",
+    "image": "H_101_20251024_hiv00014_f007863.jpg",
+    "box_idx": 0,
+    "class_name": "motorcycle",
+    "class_id": 3
+  },
+  {
+    "crop": "H_101_20251024_hiv00014_f007866_b00.jpg",
+    "image": "H_101_20251024_hiv00014_f007866.jpg",
+    "box_idx": 0,
+    "class_name": "car",
+    "class_id": 0
+  },
+  {
+    "crop": "H_101_20251024_hiv00014_f007947_b00.jpg",
+    "image": "H_101_20251024_hiv00014_f007947.jpg",
+    "box_idx": 0,
+    "class_name": "mototaxi",
+    "class_id": 1
+  },
+  {
+    "crop": "H_101_20251024_hiv00014_f008151_b00.jpg",
+    "image": "H_101_20251024_hiv00014_f008151.jpg",
+    "box_idx": 0,
+    "class_name": "combi",
+    "class_id": 8
+  },
+  {
+    "crop": "H_101_20251024_hiv00014_f008151_b01.jpg",
+    "image": "H_101_20251024_hiv00014_f008151.jpg",
+    "box_idx": 1,
+    "class_name": "combi",
+    "class_id": 8
+  },
+  {
+    "crop": "H_101_20251024_hiv00014_f008160_b00.jpg",
+    "image": "H_101_20251024_hiv00014_f008160.jpg",
+    "box_idx": 0,
+    "class_name": "car",
+    "class_id": 0
+  },
+  {
+    "crop": "H_101_20251024_hiv00014_f008169_b00.jpg",
+    "image": "H_101_20251024_hiv00014_f008169.jpg",
+    "box_idx": 0,
+    "class_name": "car",
+    "class_id": 0
+  },
+  {
+    "crop": "H_101_20251024_hiv00014_f008193_b00.jpg",
+    "image": "H_101_20251024_hiv00014_f008193.jpg",
+    "box_idx": 0,
+    "class_name": "car",
+    "class_id": 0
+  },
+  {
+    "crop": "H_101_20251024_hiv00014_f008352_b00.jpg",
+    "image": "H_101_20251024_hiv00014_f008352.jpg",
+    "box_idx": 0,
+    "class_name": "microbus",
+    "class_id": 2
+  },
+  {
+    "crop": "H_101_20251024_hiv00014_f008487_b00.jpg",
+    "image": "H_101_20251024_hiv00014_f008487.jpg",
+    "box_idx": 0,
+    "class_name": "car",
+    "class_id": 0
+  },
+  {
+    "crop": "H_101_20251024_hiv00014_f008496_b00.jpg",
+    "image": "H_101_20251024_hiv00014_f008496.jpg",
+    "box_idx": 0,
+    "class_name": "car",
+    "class_id": 0
+  },
+  {
+    "crop": "H_101_20251024_hiv00014_f008640_b00.jpg",
+    "image": "H_101_20251024_hiv00014_f008640.jpg",
+    "box_idx": 0,
+    "class_name": "mototaxi",
+    "class_id": 1
+  },
+  {
+    "crop": "H_101_20251024_hiv00014_f009405_b00.jpg",
+    "image": "H_101_20251024_hiv00014_f009405.jpg",
+    "box_idx": 0,
+    "class_name": "mototaxi",
+    "class_id": 1
+  },
+  {
+    "crop": "H_101_20251024_hiv00014_f009450_b00.jpg",
+    "image": "H_101_20251024_hiv00014_f009450.jpg",
+    "box_idx": 0,
+    "class_name": "van-minivan",
+    "class_id": 7
+  },
+  {
+    "crop": "H_101_20251024_hiv00014_f009516_b00.jpg",
+    "image": "H_101_20251024_hiv00014_f009516.jpg",
+    "box_idx": 0,
+    "class_name": "mototaxi",
+    "class_id": 1
+  },
+  {
+    "crop": "H_101_20251024_hiv00014_f009534_b00.jpg",
+    "image": "H_101_20251024_hiv00014_f009534.jpg",
+    "box_idx": 0,
+    "class_name": "combi",
+    "class_id": 8
+  },
+  {
+    "crop": "H_101_20251024_hiv00014_f009549_b00.jpg",
+    "image": "H_101_20251024_hiv00014_f009549.jpg",
+    "box_idx": 0,
+    "class_name": "car",
+    "class_id": 0
+  },
+  {
+    "crop": "H_101_20251024_hiv00014_f009588_b00.jpg",
+    "image": "H_101_20251024_hiv00014_f009588.jpg",
+    "box_idx": 0,
+    "class_name": "mototaxi",
+    "class_id": 1
+  },
+  {
+    "crop": "H_101_20251024_hiv00014_f009615_b00.jpg",
+    "image": "H_101_20251024_hiv00014_f009615.jpg",
+    "box_idx": 0,
+    "class_name": "car",
+    "class_id": 0
+  },
+  {
+    "crop": "H_101_20251024_hiv00014_f009663_b00.jpg",
+    "image": "H_101_20251024_hiv00014_f009663.jpg",
+    "box_idx": 0,
+    "class_name": "mototaxi",
+    "class_id": 1
+  },
+  {
+    "crop": "H_101_20251024_hiv00014_f009789_b00.jpg",
+    "image": "H_101_20251024_hiv00014_f009789.jpg",
+    "box_idx": 0,
+    "class_name": "car",
+    "class_id": 0
+  },
+  {
+    "crop": "H_101_20251024_hiv00014_f010161_b00.jpg",
+    "image": "H_101_20251024_hiv00014_f010161.jpg",
+    "box_idx": 0,
+    "class_name": "car",
+    "class_id": 0
+  },
+  {
+    "crop": "H_101_20251024_hiv00014_f010170_b00.jpg",
+    "image": "H_101_20251024_hiv00014_f010170.jpg",
+    "box_idx": 0,
+    "class_name": "car",
+    "class_id": 0
+  },
+  {
+    "crop": "H_101_20251024_hiv00014_f010215_b00.jpg",
+    "image": "H_101_20251024_hiv00014_f010215.jpg",
+    "box_idx": 0,
+    "class_name": "combi",
+    "class_id": 8
+  },
+  {
+    "crop": "H_101_20251024_hiv00014_f010215_b01.jpg",
+    "image": "H_101_20251024_hiv00014_f010215.jpg",
+    "box_idx": 1,
+    "class_name": "mototaxi",
+    "class_id": 1
+  },
+  {
+    "crop": "H_101_20251024_hiv00014_f010224_b00.jpg",
+    "image": "H_101_20251024_hiv00014_f010224.jpg",
+    "box_idx": 0,
+    "class_name": "combi",
+    "class_id": 8
+  },
+  {
+    "crop": "H_101_20251024_hiv00014_f010284_b00.jpg",
+    "image": "H_101_20251024_hiv00014_f010284.jpg",
+    "box_idx": 0,
+    "class_name": "car",
+    "class_id": 0
+  },
+  {
+    "crop": "H_101_20251024_hiv00014_f010326_b00.jpg",
+    "image": "H_101_20251024_hiv00014_f010326.jpg",
+    "box_idx": 0,
+    "class_name": "car",
+    "class_id": 0
+  },
+  {
+    "crop": "H_101_20251024_hiv00014_f010491_b00.jpg",
+    "image": "H_101_20251024_hiv00014_f010491.jpg",
+    "box_idx": 0,
+    "class_name": "motorcycle",
+    "class_id": 3
+  },
+  {
+    "crop": "H_101_20251024_hiv00014_f010518_b00.jpg",
+    "image": "H_101_20251024_hiv00014_f010518.jpg",
+    "box_idx": 0,
+    "class_name": "car",
+    "class_id": 0
+  },
+  {
+    "crop": "H_101_20251024_hiv00014_f010530_b00.jpg",
+    "image": "H_101_20251024_hiv00014_f010530.jpg",
+    "box_idx": 0,
+    "class_name": "car",
+    "class_id": 0
+  },
+  {
+    "crop": "H_101_20251024_hiv00014_f010806_b00.jpg",
+    "image": "H_101_20251024_hiv00014_f010806.jpg",
+    "box_idx": 0,
+    "class_name": "car",
+    "class_id": 0
+  },
+  {
+    "crop": "H_101_20251024_hiv00014_f010812_b00.jpg",
+    "image": "H_101_20251024_hiv00014_f010812.jpg",
+    "box_idx": 0,
+    "class_name": "mototaxi",
+    "class_id": 1
+  },
+  {
+    "crop": "H_101_20251024_hiv00014_f011067_b00.jpg",
+    "image": "H_101_20251024_hiv00014_f011067.jpg",
+    "box_idx": 0,
+    "class_name": "truck",
+    "class_id": 5
+  },
+  {
+    "crop": "H_101_20251024_hiv00014_f011115_b00.jpg",
+    "image": "H_101_20251024_hiv00014_f011115.jpg",
+    "box_idx": 0,
+    "class_name": "car",
+    "class_id": 0
+  },
+  {
+    "crop": "H_101_20251024_hiv00014_f011340_b00.jpg",
+    "image": "H_101_20251024_hiv00014_f011340.jpg",
+    "box_idx": 0,
+    "class_name": "mototaxi",
+    "class_id": 1
+  },
+  {
+    "crop": "H_101_20251024_hiv00014_f011436_b00.jpg",
+    "image": "H_101_20251024_hiv00014_f011436.jpg",
+    "box_idx": 0,
+    "class_name": "truck",
+    "class_id": 5
+  },
+  {
+    "crop": "H_101_20251024_hiv00014_f011493_b00.jpg",
+    "image": "H_101_20251024_hiv00014_f011493.jpg",
+    "box_idx": 0,
+    "class_name": "mototaxi",
+    "class_id": 1
+  },
+  {
+    "crop": "H_101_20251024_hiv00014_f011520_b00.jpg",
+    "image": "H_101_20251024_hiv00014_f011520.jpg",
+    "box_idx": 0,
+    "class_name": "motorcycle",
+    "class_id": 3
+  },
+  {
+    "crop": "H_101_20251024_hiv00014_f011694_b00.jpg",
+    "image": "H_101_20251024_hiv00014_f011694.jpg",
+    "box_idx": 0,
+    "class_name": "car",
+    "class_id": 0
+  },
+  {
+    "crop": "H_101_20251024_hiv00014_f011697_b00.jpg",
+    "image": "H_101_20251024_hiv00014_f011697.jpg",
+    "box_idx": 0,
+    "class_name": "mototaxi",
+    "class_id": 1
+  },
+  {
+    "crop": "H_101_20251024_hiv00014_f011721_b00.jpg",
+    "image": "H_101_20251024_hiv00014_f011721.jpg",
+    "box_idx": 0,
+    "class_name": "car",
+    "class_id": 0
+  },
+  {
+    "crop": "H_101_20251024_hiv00014_f011853_b00.jpg",
+    "image": "H_101_20251024_hiv00014_f011853.jpg",
+    "box_idx": 0,
+    "class_name": "car",
+    "class_id": 0
+  },
+  {
+    "crop": "H_101_20251024_hiv00014_f011958_b00.jpg",
+    "image": "H_101_20251024_hiv00014_f011958.jpg",
+    "box_idx": 0,
+    "class_name": "car",
+    "class_id": 0
+  },
+  {
+    "crop": "H_101_20251024_hiv00014_f011973_b00.jpg",
+    "image": "H_101_20251024_hiv00014_f011973.jpg",
+    "box_idx": 0,
+    "class_name": "car",
+    "class_id": 0
+  },
+  {
+    "crop": "H_101_20251024_hiv00014_f011982_b00.jpg",
+    "image": "H_101_20251024_hiv00014_f011982.jpg",
+    "box_idx": 0,
+    "class_name": "car",
+    "class_id": 0
+  },
+  {
+    "crop": "H_101_20251024_hiv00014_f012000_b00.jpg",
+    "image": "H_101_20251024_hiv00014_f012000.jpg",
+    "box_idx": 0,
+    "class_name": "car",
+    "class_id": 0
+  },
+  {
+    "crop": "H_101_20251024_hiv00014_f012042_b00.jpg",
+    "image": "H_101_20251024_hiv00014_f012042.jpg",
+    "box_idx": 0,
+    "class_name": "car",
+    "class_id": 0
+  },
+  {
+    "crop": "H_101_20251024_hiv00014_f012057_b00.jpg",
+    "image": "H_101_20251024_hiv00014_f012057.jpg",
+    "box_idx": 0,
+    "class_name": "car",
+    "class_id": 0
+  },
+  {
+    "crop": "H_101_20251024_hiv00014_f012090_b00.jpg",
+    "image": "H_101_20251024_hiv00014_f012090.jpg",
+    "box_idx": 0,
+    "class_name": "mototaxi",
+    "class_id": 1
+  },
+  {
+    "crop": "H_101_20251024_hiv00014_f012195_b00.jpg",
+    "image": "H_101_20251024_hiv00014_f012195.jpg",
+    "box_idx": 0,
+    "class_name": "car",
+    "class_id": 0
+  },
+  {
+    "crop": "H_101_20251024_hiv00014_f012264_b00.jpg",
+    "image": "H_101_20251024_hiv00014_f012264.jpg",
+    "box_idx": 0,
+    "class_name": "car",
+    "class_id": 0
+  },
+  {
+    "crop": "H_101_20251024_hiv00014_f012486_b00.jpg",
+    "image": "H_101_20251024_hiv00014_f012486.jpg",
+    "box_idx": 0,
+    "class_name": "truck",
+    "class_id": 5
+  },
+  {
+    "crop": "H_101_20251024_hiv00014_f012516_b00.jpg",
+    "image": "H_101_20251024_hiv00014_f012516.jpg",
+    "box_idx": 0,
+    "class_name": "mototaxi",
+    "class_id": 1
+  },
+  {
+    "crop": "H_101_20251024_hiv00014_f012528_b00.jpg",
+    "image": "H_101_20251024_hiv00014_f012528.jpg",
+    "box_idx": 0,
+    "class_name": "truck",
+    "class_id": 5
+  },
+  {
+    "crop": "H_101_20251024_hiv00014_f012600_b00.jpg",
+    "image": "H_101_20251024_hiv00014_f012600.jpg",
+    "box_idx": 0,
+    "class_name": "truck",
+    "class_id": 5
+  },
+  {
+    "crop": "H_101_20251024_hiv00014_f012639_b00.jpg",
+    "image": "H_101_20251024_hiv00014_f012639.jpg",
+    "box_idx": 0,
+    "class_name": "truck",
+    "class_id": 5
+  },
+  {
+    "crop": "H_101_20251024_hiv00014_f012741_b00.jpg",
+    "image": "H_101_20251024_hiv00014_f012741.jpg",
+    "box_idx": 0,
+    "class_name": "microbus",
+    "class_id": 2
+  },
+  {
+    "crop": "H_101_20251024_hiv00014_f012795_b00.jpg",
+    "image": "H_101_20251024_hiv00014_f012795.jpg",
+    "box_idx": 0,
+    "class_name": "motorcycle",
+    "class_id": 3
+  },
+  {
+    "crop": "H_101_20251024_hiv00014_f013014_b00.jpg",
+    "image": "H_101_20251024_hiv00014_f013014.jpg",
+    "box_idx": 0,
+    "class_name": "car",
+    "class_id": 0
+  },
+  {
+    "crop": "H_101_20251024_hiv00014_f013041_b00.jpg",
+    "image": "H_101_20251024_hiv00014_f013041.jpg",
+    "box_idx": 0,
+    "class_name": "car",
+    "class_id": 0
+  },
+  {
+    "crop": "H_101_20251024_hiv00014_f013218_b00.jpg",
+    "image": "H_101_20251024_hiv00014_f013218.jpg",
+    "box_idx": 0,
+    "class_name": "person",
+    "class_id": 4
+  },
+  {
+    "crop": "H_101_20251024_hiv00014_f013356_b00.jpg",
+    "image": "H_101_20251024_hiv00014_f013356.jpg",
+    "box_idx": 0,
+    "class_name": "mototaxi",
+    "class_id": 1
+  },
+  {
+    "crop": "H_101_20251024_hiv00014_f013446_b00.jpg",
+    "image": "H_101_20251024_hiv00014_f013446.jpg",
+    "box_idx": 0,
+    "class_name": "truck",
+    "class_id": 5
+  },
+  {
+    "crop": "H_101_20251024_hiv00014_f013476_b00.jpg",
+    "image": "H_101_20251024_hiv00014_f013476.jpg",
+    "box_idx": 0,
+    "class_name": "mototaxi",
+    "class_id": 1
+  },
+  {
+    "crop": "H_101_20251024_hiv00014_f013515_b00.jpg",
+    "image": "H_101_20251024_hiv00014_f013515.jpg",
+    "box_idx": 0,
+    "class_name": "car",
+    "class_id": 0
+  },
+  {
+    "crop": "H_101_20251024_hiv00014_f013548_b00.jpg",
+    "image": "H_101_20251024_hiv00014_f013548.jpg",
+    "box_idx": 0,
+    "class_name": "car",
+    "class_id": 0
+  },
+  {
+    "crop": "H_101_20251024_hiv00014_f013749_b00.jpg",
+    "image": "H_101_20251024_hiv00014_f013749.jpg",
+    "box_idx": 0,
+    "class_name": "car",
+    "class_id": 0
+  },
+  {
+    "crop": "H_101_20251024_hiv00014_f013761_b00.jpg",
+    "image": "H_101_20251024_hiv00014_f013761.jpg",
+    "box_idx": 0,
+    "class_name": "car",
+    "class_id": 0
+  },
+  {
+    "crop": "H_101_20251024_hiv00014_f013791_b00.jpg",
+    "image": "H_101_20251024_hiv00014_f013791.jpg",
+    "box_idx": 0,
+    "class_name": "car",
+    "class_id": 0
+  },
+  {
+    "crop": "H_101_20251024_hiv00014_f013806_b00.jpg",
+    "image": "H_101_20251024_hiv00014_f013806.jpg",
+    "box_idx": 0,
+    "class_name": "car",
+    "class_id": 0
+  },
+  {
+    "crop": "H_101_20251024_hiv00014_f013812_b00.jpg",
+    "image": "H_101_20251024_hiv00014_f013812.jpg",
+    "box_idx": 0,
+    "class_name": "car",
+    "class_id": 0
+  },
+  {
+    "crop": "H_101_20251024_hiv00014_f013827_b00.jpg",
+    "image": "H_101_20251024_hiv00014_f013827.jpg",
+    "box_idx": 0,
+    "class_name": "car",
+    "class_id": 0
+  },
+  {
+    "crop": "H_101_20251024_hiv00014_f013902_b00.jpg",
+    "image": "H_101_20251024_hiv00014_f013902.jpg",
+    "box_idx": 0,
+    "class_name": "car",
+    "class_id": 0
+  },
+  {
+    "crop": "H_101_20251024_hiv00014_f014049_b00.jpg",
+    "image": "H_101_20251024_hiv00014_f014049.jpg",
+    "box_idx": 0,
+    "class_name": "car",
+    "class_id": 0
+  },
+  {
+    "crop": "H_101_20251024_hiv00014_f014058_b00.jpg",
+    "image": "H_101_20251024_hiv00014_f014058.jpg",
+    "box_idx": 0,
+    "class_name": "car",
+    "class_id": 0
+  },
+  {
+    "crop": "H_101_20251024_hiv00014_f014160_b00.jpg",
+    "image": "H_101_20251024_hiv00014_f014160.jpg",
+    "box_idx": 0,
+    "class_name": "van-minivan",
+    "class_id": 7
+  },
+  {
+    "crop": "H_101_20251024_hiv00014_f014229_b00.jpg",
+    "image": "H_101_20251024_hiv00014_f014229.jpg",
+    "box_idx": 0,
+    "class_name": "van-minivan",
+    "class_id": 7
+  },
+  {
+    "crop": "H_101_20251024_hiv00014_f014325_b00.jpg",
+    "image": "H_101_20251024_hiv00014_f014325.jpg",
+    "box_idx": 0,
+    "class_name": "car",
+    "class_id": 0
+  },
+  {
+    "crop": "H_101_20251024_hiv00014_f014433_b00.jpg",
+    "image": "H_101_20251024_hiv00014_f014433.jpg",
+    "box_idx": 0,
+    "class_name": "car",
+    "class_id": 0
+  },
+  {
+    "crop": "H_101_20251024_hiv00014_f014451_b00.jpg",
+    "image": "H_101_20251024_hiv00014_f014451.jpg",
+    "box_idx": 0,
+    "class_name": "car",
+    "class_id": 0
+  }
+]

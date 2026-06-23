@@ -1,0 +1,98 @@
+{
+  "image": "H_101_20251024_hiv00016_f012207.jpg",
+  "source": "ai",
+  "updated_at": "20260623_164617",
+  "boxes": [
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 45.2,
+      "y1": 792.9,
+      "x2": 370.1,
+      "y2": 1043.1,
+      "confidence": 0.946,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 94.7,
+      "y1": 684.0,
+      "x2": 173.7,
+      "y2": 753.3,
+      "confidence": 0.229,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 250.2,
+      "y1": 651.6,
+      "x2": 293.4,
+      "y2": 679.5,
+      "confidence": 0.217,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 3,
+      "class_name": "motorcycle",
+      "x1": 1036.8,
+      "y1": 599.8,
+      "x2": 1130.4,
+      "y2": 698.8,
+      "confidence": 0.874,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 4,
+      "class_name": "person",
+      "x1": 1044.0,
+      "y1": 566.5,
+      "x2": 1112.4,
+      "y2": 668.2,
+      "confidence": 0.739,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 4,
+      "class_name": "person",
+      "x1": 1681.2,
+      "y1": 415.8,
+      "x2": 1702.8,
+      "y2": 471.6,
+      "confidence": 0.789,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 2028.6,
+      "y1": 443.7,
+      "x2": 2140.2,
+      "y2": 495.0,
+      "confidence": 0.606,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    }
+  ]
+}

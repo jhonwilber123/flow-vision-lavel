@@ -1,0 +1,111 @@
+{
+  "image": "H_101_20251024_hiv00016_f000540.jpg",
+  "source": "ai",
+  "updated_at": "20260623_163306",
+  "boxes": [
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 95.7,
+      "y1": 710.1,
+      "x2": 154.5,
+      "y2": 749.7,
+      "confidence": 0.51,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 117.9,
+      "y1": 683.5,
+      "x2": 175.0,
+      "y2": 732.1,
+      "confidence": 0.299,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 247.5,
+      "y1": 652.5,
+      "x2": 294.3,
+      "y2": 694.8,
+      "confidence": 0.415,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 990.9,
+      "y1": 837.0,
+      "x2": 1554.3,
+      "y2": 1243.8,
+      "confidence": 0.919,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 4,
+      "class_name": "person",
+      "x1": 1195.2,
+      "y1": 488.7,
+      "x2": 1231.2,
+      "y2": 575.1,
+      "confidence": 0.797,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 1644.3,
+      "y1": 588.6,
+      "x2": 1808.1,
+      "y2": 730.8,
+      "confidence": 0.911,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 1809.0,
+      "y1": 473.4,
+      "x2": 1906.2,
+      "y2": 581.4,
+      "confidence": 0.723,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 5,
+      "class_name": "truck",
+      "x1": 1888.2,
+      "y1": 455.4,
+      "x2": 1938.6,
+      "y2": 531.0,
+      "confidence": 0.201,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    }
+  ]
+}
