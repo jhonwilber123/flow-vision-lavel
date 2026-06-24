@@ -1,0 +1,111 @@
+{
+  "image": "H_101_20251024_hiv00017_f017406.jpg",
+  "source": "ai",
+  "updated_at": "20260624_142035",
+  "boxes": [
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 106.6,
+      "y1": 683.1,
+      "x2": 172.6,
+      "y2": 735.3,
+      "confidence": 0.417,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 5,
+      "class_name": "truck",
+      "x1": 175.0,
+      "y1": 638.1,
+      "x2": 658.3,
+      "y2": 978.3,
+      "confidence": 0.514,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 250.6,
+      "y1": 650.7,
+      "x2": 286.6,
+      "y2": 681.3,
+      "confidence": 0.227,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 1173.6,
+      "y1": 942.3,
+      "x2": 1638.0,
+      "y2": 1287.9,
+      "confidence": 0.95,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 1489.5,
+      "y1": 460.8,
+      "x2": 1662.3,
+      "y2": 612.9,
+      "confidence": 0.78,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 1529.1,
+      "y1": 621.9,
+      "x2": 1692.9,
+      "y2": 809.1,
+      "confidence": 0.798,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 1803.6,
+      "y1": 443.7,
+      "x2": 1879.2,
+      "y2": 501.3,
+      "confidence": 0.831,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 1850.4,
+      "y1": 486.9,
+      "x2": 1915.2,
+      "y2": 582.3,
+      "confidence": 0.725,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    }
+  ]
+}

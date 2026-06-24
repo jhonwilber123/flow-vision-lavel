@@ -1,0 +1,85 @@
+{
+  "image": "H_101_20251024_hiv00017_f006927.jpg",
+  "reviewed": true,
+  "updated_at": "20260624_165649",
+  "boxes": [
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 93.8,
+      "y1": 709.2,
+      "x2": 153.4,
+      "y2": 747.9,
+      "confidence": 0.406,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 251.1,
+      "y1": 650.2,
+      "x2": 295.2,
+      "y2": 689.0,
+      "confidence": 0.329,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 7,
+      "class_name": "van-minivan",
+      "x1": 509.4,
+      "y1": 715.0,
+      "x2": 1076.4,
+      "y2": 1157.4,
+      "confidence": 0.525,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 4,
+      "class_name": "person",
+      "x1": 1328.4,
+      "y1": 444.6,
+      "x2": 1353.6,
+      "y2": 516.6,
+      "confidence": 0.753,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 1452.6,
+      "y1": 517.5,
+      "x2": 1639.8,
+      "y2": 629.1,
+      "confidence": 0.929,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 1,
+      "class_name": "mototaxi",
+      "x1": 1801.8,
+      "y1": 494.1,
+      "x2": 1877.4,
+      "y2": 594.9,
+      "confidence": 0.229,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    }
+  ]
+}

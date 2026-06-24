@@ -1,0 +1,98 @@
+{
+  "image": "H_101_20251024_hiv00017_f001200.jpg",
+  "reviewed": true,
+  "updated_at": "20260624_160325",
+  "boxes": [
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 93.9,
+      "y1": 709.2,
+      "x2": 152.3,
+      "y2": 747.0,
+      "confidence": 0.52,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 1,
+      "class_name": "mototaxi",
+      "x1": 152.8,
+      "y1": 791.1,
+      "x2": 358.4,
+      "y2": 995.4,
+      "confidence": 0.446,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 250.2,
+      "y1": 650.7,
+      "x2": 294.3,
+      "y2": 689.4,
+      "confidence": 0.281,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 11,
+      "class_name": "bici-triciclo",
+      "x1": 1486.8,
+      "y1": 458.1,
+      "x2": 1638.0,
+      "y2": 616.5,
+      "confidence": 0.888,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 1,
+      "class_name": "mototaxi",
+      "x1": 1717.4067511071198,
+      "y1": 628.3033755535598,
+      "x2": 1850.6067511071196,
+      "y2": 808.3033755535598,
+      "confidence": 0.442,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 7,
+      "class_name": "van-minivan",
+      "x1": 1773.0,
+      "y1": 461.7,
+      "x2": 1891.8,
+      "y2": 598.5,
+      "confidence": 0.504,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 2023.9333560434798,
+      "y1": 438.3101870490229,
+      "x2": 2140.3249202564184,
+      "y2": 495.5025936019324,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "image": "H_101_20251024_hiv00017_f005247.jpg",
+  "reviewed": true,
+  "updated_at": "20260624_162652",
+  "boxes": [
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 94.8,
+      "y1": 708.3,
+      "x2": 153.6,
+      "y2": 749.7,
+      "confidence": 0.457,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 1,
+      "class_name": "mototaxi",
+      "x1": 96.1,
+      "y1": 819.0,
+      "x2": 294.1,
+      "y2": 1027.8,
+      "confidence": 0.667,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 250.4,
+      "y1": 651.1,
+      "x2": 294.1,
+      "y2": 683.5,
+      "confidence": 0.343,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 312.8,
+      "y1": 639.0,
+      "x2": 358.6,
+      "y2": 675.0,
+      "confidence": 0.39,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 1449.9,
+      "y1": 511.6,
+      "x2": 1624.5,
+      "y2": 626.0,
+      "confidence": 0.931,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 1769.4,
+      "y1": 444.8,
+      "x2": 1852.2,
+      "y2": 505.8,
+      "confidence": 0.67,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 7,
+      "class_name": "van-minivan",
+      "x1": 1809.9,
+      "y1": 462.6,
+      "x2": 1918.8,
+      "y2": 581.4,
+      "confidence": 0.457,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "image": "H_101_20251024_hiv00017_f012966.jpg",
+  "reviewed": true,
+  "updated_at": "20260624_173801",
+  "boxes": [
+    {
+      "class_id": 13,
+      "class_name": "camioneta",
+      "x1": 1141.2,
+      "y1": 503.1,
+      "x2": 1393.2,
+      "y2": 659.7,
+      "confidence": 0.771,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 2,
+      "class_name": "microbus",
+      "x1": 1771.2,
+      "y1": 442.3,
+      "x2": 1911.6,
+      "y2": 608.8,
+      "confidence": 0.607,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 4,
+      "class_name": "person",
+      "x1": 2073.6,
+      "y1": 441.0,
+      "x2": 2088.0,
+      "y2": 480.6,
+      "confidence": 0.309,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    }
+  ]
+}

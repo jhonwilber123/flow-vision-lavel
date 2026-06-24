@@ -1,0 +1,98 @@
+{
+  "image": "H_101_20251024_hiv00016_f024018.jpg",
+  "reviewed": true,
+  "updated_at": "20260624_135306",
+  "boxes": [
+    {
+      "class_id": 3,
+      "class_name": "motorcycle",
+      "x1": 1481.4,
+      "y1": 1026.0,
+      "x2": 1639.8,
+      "y2": 1278.0,
+      "confidence": 0.794,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 4,
+      "class_name": "person",
+      "x1": 1499.4,
+      "y1": 981.9,
+      "x2": 1636.2,
+      "y2": 1190.7,
+      "confidence": 0.85,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 13,
+      "class_name": "camioneta",
+      "x1": 1570.5,
+      "y1": 587.7,
+      "x2": 1788.3,
+      "y2": 777.6,
+      "confidence": 0.784,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 7,
+      "class_name": "van-minivan",
+      "x1": 1747.8,
+      "y1": 434.2,
+      "x2": 1834.2,
+      "y2": 517.0,
+      "confidence": 0.39,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 13,
+      "class_name": "camioneta",
+      "x1": 1816.2,
+      "y1": 478.8,
+      "x2": 1917.0,
+      "y2": 586.8,
+      "confidence": 0.824,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 1924.2,
+      "y1": 443.2,
+      "x2": 1992.6,
+      "y2": 495.4,
+      "confidence": 0.609,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 2030.4,
+      "y1": 444.6,
+      "x2": 2142.0,
+      "y2": 495.9,
+      "confidence": 0.628,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    }
+  ]
+}

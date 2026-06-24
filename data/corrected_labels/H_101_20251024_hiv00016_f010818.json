@@ -1,0 +1,98 @@
+{
+  "image": "H_101_20251024_hiv00016_f010818.jpg",
+  "reviewed": true,
+  "updated_at": "20260624_094002",
+  "boxes": [
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 92.5,
+      "y1": 711.0,
+      "x2": 153.2,
+      "y2": 748.8,
+      "confidence": 0.514,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 249.3,
+      "y1": 650.7,
+      "x2": 294.3,
+      "y2": 688.5,
+      "confidence": 0.324,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 312.8,
+      "y1": 640.8,
+      "x2": 361.3,
+      "y2": 675.0,
+      "confidence": 0.385,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 1,
+      "class_name": "mototaxi",
+      "x1": 1918.8,
+      "y1": 414.9,
+      "x2": 1962.0,
+      "y2": 463.5,
+      "confidence": 0.311,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 1965.6,
+      "y1": 441.0,
+      "x2": 2073.6,
+      "y2": 496.8,
+      "confidence": 0.771,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 1,
+      "class_name": "mototaxi",
+      "x1": 1820.5040254633964,
+      "y1": 488.79807152218683,
+      "x2": 1889.6596143044374,
+      "y2": 585.8585470885602,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 2125.0312675528926,
+      "y1": 412.3629470136678,
+      "x2": 2188.1205766710355,
+      "y2": 452.4003931847968,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    }
+  ]
+}

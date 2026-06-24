@@ -1,0 +1,85 @@
+{
+  "image": "H_101_20251024_hiv00016_f024759.jpg",
+  "reviewed": true,
+  "updated_at": "20260624_140746",
+  "boxes": [
+    {
+      "class_id": 2,
+      "class_name": "microbus",
+      "x1": 1762.0,
+      "y1": 448.0,
+      "x2": 1909.0,
+      "y2": 624.0,
+      "confidence": 0.9097514748573303,
+      "origin_line": "L1",
+      "destination_line": "L2",
+      "turn_name": "M1",
+      "source": "metadata"
+    },
+    {
+      "class_id": 5,
+      "class_name": "truck",
+      "x1": 0.0,
+      "y1": 624.9380400111486,
+      "x2": 879.0818494317302,
+      "y2": 1296.0,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 3,
+      "class_name": "motorcycle",
+      "x1": 1673.755287851104,
+      "y1": 657.0460577250627,
+      "x2": 1759.0422099036884,
+      "y2": 826.6165262766715,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 1128.9223622681243,
+      "y1": 956.0519726858876,
+      "x2": 1641.64727013719,
+      "y2": 1296.0,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 1918.578922919699,
+      "y1": 413.2257982100275,
+      "x2": 1993.8320894366852,
+      "y2": 468.41145365581735,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 2025.9401071505993,
+      "y1": 437.3068114954631,
+      "x2": 2147.348549131337,
+      "y2": 495.5025936019324,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    }
+  ]
+}

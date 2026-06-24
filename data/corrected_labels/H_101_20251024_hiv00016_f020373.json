@@ -1,0 +1,98 @@
+{
+  "image": "H_101_20251024_hiv00016_f020373.jpg",
+  "reviewed": true,
+  "updated_at": "20260624_132317",
+  "boxes": [
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 389.0,
+      "y1": 708.3,
+      "x2": 739.8,
+      "y2": 917.1,
+      "confidence": 0.938,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 865.3,
+      "y1": 898.2,
+      "x2": 1384.2,
+      "y2": 1254.6,
+      "confidence": 0.949,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 1584.0,
+      "y1": 695.2,
+      "x2": 1803.6,
+      "y2": 896.8,
+      "confidence": 0.934,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 1674.0,
+      "y1": 573.3,
+      "x2": 1821.6,
+      "y2": 702.9,
+      "confidence": 0.9,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 11,
+      "class_name": "bici-triciclo",
+      "x1": 1806.3,
+      "y1": 465.8,
+      "x2": 1893.6,
+      "y2": 590.8,
+      "confidence": 0.756,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 2030.4,
+      "y1": 444.6,
+      "x2": 2142.0,
+      "y2": 494.1,
+      "confidence": 0.512,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 1,
+      "class_name": "mototaxi",
+      "x1": 1885.467529652225,
+      "y1": 453.36082035242015,
+      "x2": 1936.6396828837758,
+      "y2": 525.6038602087268,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    }
+  ]
+}

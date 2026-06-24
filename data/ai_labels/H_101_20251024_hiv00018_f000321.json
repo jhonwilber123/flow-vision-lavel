@@ -1,0 +1,59 @@
+{
+  "image": "H_101_20251024_hiv00018_f000321.jpg",
+  "source": "ai",
+  "updated_at": "20260624_143005",
+  "boxes": [
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 662.4,
+      "y1": 720.0,
+      "x2": 1209.6,
+      "y2": 1068.3,
+      "confidence": 0.942,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 1206.0,
+      "y1": 512.1,
+      "x2": 1389.6,
+      "y2": 629.1,
+      "confidence": 0.933,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 1341.0,
+      "y1": 776.7,
+      "x2": 1603.8,
+      "y2": 1080.9,
+      "confidence": 0.794,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 3,
+      "class_name": "motorcycle",
+      "x1": 2149.2,
+      "y1": 715.5,
+      "x2": 2278.8,
+      "y2": 828.9,
+      "confidence": 0.784,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    }
+  ]
+}

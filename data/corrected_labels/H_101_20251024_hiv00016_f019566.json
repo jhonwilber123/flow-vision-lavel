@@ -1,0 +1,111 @@
+{
+  "image": "H_101_20251024_hiv00016_f019566.jpg",
+  "reviewed": true,
+  "updated_at": "20260624_131917",
+  "boxes": [
+    {
+      "class_id": 3,
+      "class_name": "motorcycle",
+      "x1": 1485.9,
+      "y1": 472.5,
+      "x2": 1534.5,
+      "y2": 528.3,
+      "confidence": 0.643,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 4,
+      "class_name": "person",
+      "x1": 1490.4,
+      "y1": 446.59324889288035,
+      "x2": 1530.0,
+      "y2": 511.49324889288033,
+      "confidence": 0.598,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 1728.4135022142393,
+      "y1": 459.0,
+      "x2": 1818.4135022142393,
+      "y2": 527.4,
+      "confidence": 0.883,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 1816.2,
+      "y1": 486.0,
+      "x2": 1913.4,
+      "y2": 583.2,
+      "confidence": 0.889,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 1,
+      "class_name": "mototaxi",
+      "x1": 1886.4,
+      "y1": 447.3,
+      "x2": 1936.8,
+      "y2": 517.5,
+      "confidence": 0.637,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 4,
+      "class_name": "person",
+      "x1": 1897.2,
+      "y1": 413.1,
+      "x2": 1918.8,
+      "y2": 447.3,
+      "confidence": 0.222,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 1,
+      "class_name": "mototaxi",
+      "x1": 1945.8,
+      "y1": 433.8,
+      "x2": 1996.2,
+      "y2": 491.4,
+      "confidence": 0.307,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 2030.4,
+      "y1": 444.1,
+      "x2": 2138.4,
+      "y2": 495.4,
+      "confidence": 0.753,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    }
+  ]
+}

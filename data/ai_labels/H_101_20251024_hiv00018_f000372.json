@@ -1,0 +1,20 @@
+{
+  "image": "H_101_20251024_hiv00018_f000372.jpg",
+  "source": "ai",
+  "updated_at": "20260624_143013",
+  "boxes": [
+    {
+      "class_id": 3,
+      "class_name": "motorcycle",
+      "x1": 2149.2,
+      "y1": 719.5,
+      "x2": 2278.8,
+      "y2": 827.5,
+      "confidence": 0.734,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    }
+  ]
+}

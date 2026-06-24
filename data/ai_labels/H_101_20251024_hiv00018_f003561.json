@@ -1,0 +1,98 @@
+{
+  "image": "H_101_20251024_hiv00018_f003561.jpg",
+  "source": "ai",
+  "updated_at": "20260624_154432",
+  "boxes": [
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 250.2,
+      "y1": 650.2,
+      "x2": 293.9,
+      "y2": 688.0,
+      "confidence": 0.306,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 312.8,
+      "y1": 639.9,
+      "x2": 357.8,
+      "y2": 665.1,
+      "confidence": 0.269,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 1125.0,
+      "y1": 496.8,
+      "x2": 1438.2,
+      "y2": 702.0,
+      "confidence": 0.922,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 1649.7,
+      "y1": 479.7,
+      "x2": 1764.9,
+      "y2": 562.5,
+      "confidence": 0.909,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 5,
+      "class_name": "truck",
+      "x1": 1798.2,
+      "y1": 477.9,
+      "x2": 1902.6,
+      "y2": 576.9,
+      "confidence": 0.484,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 2093.4,
+      "y1": 433.3,
+      "x2": 2154.6,
+      "y2": 471.1,
+      "confidence": 0.406,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 3,
+      "class_name": "motorcycle",
+      "x1": 2151.0,
+      "y1": 717.8,
+      "x2": 2277.0,
+      "y2": 829.3,
+      "confidence": 0.845,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    }
+  ]
+}

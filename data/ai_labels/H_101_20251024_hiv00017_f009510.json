@@ -1,0 +1,85 @@
+{
+  "image": "H_101_20251024_hiv00017_f009510.jpg",
+  "source": "ai",
+  "updated_at": "20260624_141235",
+  "boxes": [
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 93.7,
+      "y1": 709.2,
+      "x2": 154.7,
+      "y2": 748.8,
+      "confidence": 0.451,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 117.2,
+      "y1": 686.7,
+      "x2": 173.5,
+      "y2": 728.1,
+      "confidence": 0.206,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 250.2,
+      "y1": 650.7,
+      "x2": 293.9,
+      "y2": 684.9,
+      "confidence": 0.411,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 313.6,
+      "y1": 639.9,
+      "x2": 359.5,
+      "y2": 668.7,
+      "confidence": 0.269,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 10,
+      "class_name": "bus",
+      "x1": 1829.7,
+      "y1": 484.2,
+      "x2": 1900.8,
+      "y2": 579.6,
+      "confidence": 0.625,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 5,
+      "class_name": "truck",
+      "x1": 1981.8,
+      "y1": 421.9,
+      "x2": 2057.4,
+      "y2": 476.1,
+      "confidence": 0.512,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    }
+  ]
+}

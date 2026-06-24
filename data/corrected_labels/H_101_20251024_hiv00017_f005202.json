@@ -1,0 +1,98 @@
+{
+  "image": "H_101_20251024_hiv00017_f005202.jpg",
+  "reviewed": true,
+  "updated_at": "20260624_162544",
+  "boxes": [
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 92.8,
+      "y1": 709.6,
+      "x2": 153.6,
+      "y2": 748.3,
+      "confidence": 0.347,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 250.2,
+      "y1": 650.7,
+      "x2": 293.4,
+      "y2": 684.9,
+      "confidence": 0.331,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 312.3,
+      "y1": 639.9,
+      "x2": 358.2,
+      "y2": 666.9,
+      "confidence": 0.319,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 7,
+      "class_name": "van-minivan",
+      "x1": 433.3,
+      "y1": 665.1,
+      "x2": 767.2,
+      "y2": 909.9,
+      "confidence": 0.788,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 5,
+      "class_name": "truck",
+      "x1": 1385.1,
+      "y1": 472.9,
+      "x2": 1484.1,
+      "y2": 568.3,
+      "confidence": 0.469,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 1848.6,
+      "y1": 428.4,
+      "x2": 1917.0,
+      "y2": 481.5,
+      "confidence": 0.847,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 2052.0,
+      "y1": 418.0,
+      "x2": 2102.4,
+      "y2": 454.9,
+      "confidence": 0.693,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "image": "H_101_20251024_hiv00016_f015594.jpg",
+  "reviewed": true,
+  "updated_at": "20260624_101335",
+  "boxes": [
+    {
+      "class_id": 1,
+      "class_name": "mototaxi",
+      "x1": 1823.4,
+      "y1": 484.2,
+      "x2": 1891.8,
+      "y2": 579.6,
+      "confidence": 0.326,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 5,
+      "class_name": "truck",
+      "x1": 1951.2,
+      "y1": 378.4,
+      "x2": 2044.8,
+      "y2": 485.5,
+      "confidence": 0.488,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 2050.2,
+      "y1": 444.1,
+      "x2": 2140.2,
+      "y2": 489.1,
+      "confidence": 0.323,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 13,
+      "class_name": "camioneta",
+      "x1": 2129.4,
+      "y1": 413.5,
+      "x2": 2194.2,
+      "y2": 449.5,
+      "confidence": 0.271,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    }
+  ]
+}

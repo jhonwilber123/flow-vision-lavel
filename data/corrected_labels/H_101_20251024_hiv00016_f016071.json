@@ -1,7 +1,7 @@
 {
   "image": "H_101_20251024_hiv00016_f016071.jpg",
   "reviewed": true,
-  "updated_at": "20260623_163526",
+  "updated_at": "20260624_103643",
   "boxes": [
     {
       "class_id": 0,
@@ -17,8 +17,8 @@
       "source": "human"
     },
     {
-      "class_id": 12,
-      "class_name": "bicycle",
+      "class_id": 3,
+      "class_name": "motorcycle",
       "x1": 1508.1983215137345,
       "y1": 751.3633597596853,
       "x2": 1629.6067634944723,

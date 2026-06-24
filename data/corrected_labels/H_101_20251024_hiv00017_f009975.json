@@ -1,0 +1,98 @@
+{
+  "image": "H_101_20251024_hiv00017_f009975.jpg",
+  "reviewed": true,
+  "updated_at": "20260624_172006",
+  "boxes": [
+    {
+      "class_id": 13,
+      "class_name": "camioneta",
+      "x1": 0.0,
+      "y1": 790.2,
+      "x2": 394.6,
+      "y2": 1065.6,
+      "confidence": 0.934,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 92.2,
+      "y1": 708.8,
+      "x2": 153.2,
+      "y2": 750.1,
+      "confidence": 0.434,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 115.9,
+      "y1": 682.2,
+      "x2": 173.0,
+      "y2": 732.6,
+      "confidence": 0.242,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 249.3,
+      "y1": 649.8,
+      "x2": 295.2,
+      "y2": 687.6,
+      "confidence": 0.345,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 4,
+      "class_name": "person",
+      "x1": 268.2,
+      "y1": 790.2,
+      "x2": 331.2,
+      "y2": 862.2,
+      "confidence": 0.743,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 313.6,
+      "y1": 639.0,
+      "x2": 358.6,
+      "y2": 667.8,
+      "confidence": 0.249,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 13,
+      "class_name": "camioneta",
+      "x1": 2008.8,
+      "y1": 423.7,
+      "x2": 2080.8,
+      "y2": 477.9,
+      "confidence": 0.676,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    }
+  ]
+}

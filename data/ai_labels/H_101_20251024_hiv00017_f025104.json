@@ -1,0 +1,98 @@
+{
+  "image": "H_101_20251024_hiv00017_f025104.jpg",
+  "source": "ai",
+  "updated_at": "20260624_142921",
+  "boxes": [
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 249.8,
+      "y1": 649.8,
+      "x2": 292.9,
+      "y2": 689.4,
+      "confidence": 0.321,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 774.0,
+      "y1": 765.0,
+      "x2": 1225.8,
+      "y2": 1071.0,
+      "confidence": 0.957,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 1321.2,
+      "y1": 758.7,
+      "x2": 1666.8,
+      "y2": 1008.0,
+      "confidence": 0.947,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 1719.0,
+      "y1": 513.0,
+      "x2": 1866.6,
+      "y2": 667.8,
+      "confidence": 0.876,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 10,
+      "class_name": "bus",
+      "x1": 1728.0,
+      "y1": 345.1,
+      "x2": 1936.8,
+      "y2": 512.1,
+      "confidence": 0.931,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 1854.0,
+      "y1": 461.7,
+      "x2": 1929.6,
+      "y2": 544.5,
+      "confidence": 0.541,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 3,
+      "class_name": "motorcycle",
+      "x1": 2149.2,
+      "y1": 710.1,
+      "x2": 2278.8,
+      "y2": 828.9,
+      "confidence": 0.793,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "image": "H_101_20251024_hiv00016_f016821.jpg",
+  "reviewed": true,
+  "updated_at": "20260624_130154",
+  "boxes": [
+    {
+      "class_id": 7,
+      "class_name": "van-minivan",
+      "x1": 694.8,
+      "y1": 533.7,
+      "x2": 1072.8,
+      "y2": 825.3,
+      "confidence": 0.852,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 13,
+      "class_name": "camioneta",
+      "x1": 1303.2,
+      "y1": 806.4,
+      "x2": 1731.6,
+      "y2": 1189.8,
+      "confidence": 0.943,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 1443.6,
+      "y1": 564.3,
+      "x2": 1650.6,
+      "y2": 734.4,
+      "confidence": 0.925,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 7,
+      "class_name": "van-minivan",
+      "x1": 1672.2,
+      "y1": 404.5,
+      "x2": 1794.6,
+      "y2": 481.0,
+      "confidence": 0.641,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 1,
+      "class_name": "mototaxi",
+      "x1": 1825.2,
+      "y1": 486.9,
+      "x2": 1893.6,
+      "y2": 582.3,
+      "confidence": 0.261,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 1958.4,
+      "y1": 436.9,
+      "x2": 2023.2,
+      "y2": 483.8,
+      "confidence": 0.807,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 2029.9536093648385,
+      "y1": 435.30006038834347,
+      "x2": 2144.338422470658,
+      "y2": 495.5025936019324,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    }
+  ]
+}

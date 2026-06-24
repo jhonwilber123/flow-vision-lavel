@@ -1,0 +1,98 @@
+{
+  "image": "H_101_20251024_hiv00017_f009888.jpg",
+  "source": "ai",
+  "updated_at": "20260624_141251",
+  "boxes": [
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 91.5,
+      "y1": 709.2,
+      "x2": 153.8,
+      "y2": 748.8,
+      "confidence": 0.514,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 116.7,
+      "y1": 684.0,
+      "x2": 172.2,
+      "y2": 732.6,
+      "confidence": 0.291,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 250.0,
+      "y1": 649.8,
+      "x2": 293.6,
+      "y2": 685.8,
+      "confidence": 0.363,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 313.2,
+      "y1": 639.0,
+      "x2": 357.8,
+      "y2": 666.0,
+      "confidence": 0.221,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 1569.6,
+      "y1": 417.4,
+      "x2": 1706.4,
+      "y2": 495.0,
+      "confidence": 0.611,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 1801.8,
+      "y1": 479.7,
+      "x2": 1906.2,
+      "y2": 587.7,
+      "confidence": 0.848,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 1873.8,
+      "y1": 457.2,
+      "x2": 1927.8,
+      "y2": 536.4,
+      "confidence": 0.406,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "image": "H_101_20251024_hiv00016_f011820.jpg",
+  "reviewed": true,
+  "updated_at": "20260624_094816",
+  "boxes": [
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 94.5,
+      "y1": 711.0,
+      "x2": 153.2,
+      "y2": 750.6,
+      "confidence": 0.549,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 250.6,
+      "y1": 651.1,
+      "x2": 294.8,
+      "y2": 692.5,
+      "confidence": 0.363,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 311.6,
+      "y1": 639.9,
+      "x2": 359.3,
+      "y2": 674.1,
+      "confidence": 0.26,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 13,
+      "class_name": "camioneta",
+      "x1": 1771.2,
+      "y1": 479.7,
+      "x2": 1875.6,
+      "y2": 582.3,
+      "confidence": 0.74,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 1,
+      "class_name": "mototaxi",
+      "x1": 1884.6,
+      "y1": 451.8,
+      "x2": 1935.0,
+      "y2": 523.8,
+      "confidence": 0.432,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 2026.8,
+      "y1": 443.0,
+      "x2": 2142.0,
+      "y2": 495.0,
+      "confidence": 0.297,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    }
+  ]
+}

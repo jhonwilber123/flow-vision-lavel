@@ -1,0 +1,46 @@
+{
+  "image": "H_101_20251024_hiv00018_f005601.jpg",
+  "source": "ai",
+  "updated_at": "20260624_154614",
+  "boxes": [
+    {
+      "class_id": 10,
+      "class_name": "bus",
+      "x1": 200.2,
+      "y1": 563.4,
+      "x2": 850.0,
+      "y2": 955.8,
+      "confidence": 0.947,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 3,
+      "class_name": "motorcycle",
+      "x1": 2041.2,
+      "y1": 692.1,
+      "x2": 2156.4,
+      "y2": 805.5,
+      "confidence": 0.869,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 4,
+      "class_name": "person",
+      "x1": 2077.2,
+      "y1": 655.2,
+      "x2": 2120.4,
+      "y2": 785.7,
+      "confidence": 0.762,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    }
+  ]
+}

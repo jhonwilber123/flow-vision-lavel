@@ -1,0 +1,111 @@
+{
+  "image": "H_101_20251024_hiv00017_f000783.jpg",
+  "reviewed": true,
+  "updated_at": "20260624_155950",
+  "boxes": [
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 487.8,
+      "y1": 1102.5,
+      "x2": 1173.6,
+      "y2": 1291.5,
+      "confidence": 0.939,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 1,
+      "class_name": "mototaxi",
+      "x1": 1443.6,
+      "y1": 678.6,
+      "x2": 1638.0,
+      "y2": 911.7,
+      "confidence": 0.623,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 4,
+      "class_name": "person",
+      "x1": 1672.2,
+      "y1": 403.2,
+      "x2": 1690.2,
+      "y2": 448.2,
+      "confidence": 0.593,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 13,
+      "class_name": "camioneta",
+      "x1": 1749.6,
+      "y1": 432.4,
+      "x2": 1839.6,
+      "y2": 499.9,
+      "confidence": 0.745,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 1780.2,
+      "y1": 487.8,
+      "x2": 1873.8,
+      "y2": 568.8,
+      "confidence": 0.882,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 13,
+      "class_name": "camioneta",
+      "x1": 1877.4,
+      "y1": 415.3,
+      "x2": 1967.4,
+      "y2": 501.8,
+      "confidence": 0.759,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 2030.4,
+      "y1": 442.8,
+      "x2": 2142.0,
+      "y2": 498.6,
+      "confidence": 0.329,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 13,
+      "class_name": "camioneta",
+      "x1": 1919.582298473259,
+      "y1": 485.46883806633423,
+      "x2": 1948.6801895264937,
+      "y2": 554.7017512619615,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    }
+  ]
+}

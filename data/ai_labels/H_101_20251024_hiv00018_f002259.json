@@ -1,0 +1,111 @@
+{
+  "image": "H_101_20251024_hiv00018_f002259.jpg",
+  "source": "ai",
+  "updated_at": "20260624_143149",
+  "boxes": [
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 381.8,
+      "y1": 421.2,
+      "x2": 441.2,
+      "y2": 468.9,
+      "confidence": 0.248,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 756.0,
+      "y1": 733.9,
+      "x2": 1306.8,
+      "y2": 1087.2,
+      "confidence": 0.725,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 4,
+      "class_name": "person",
+      "x1": 1569.6,
+      "y1": 461.7,
+      "x2": 1593.0,
+      "y2": 546.3,
+      "confidence": 0.804,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 1726.2,
+      "y1": 505.3,
+      "x2": 1855.8,
+      "y2": 610.6,
+      "confidence": 0.835,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 1760.4,
+      "y1": 441.0,
+      "x2": 1850.4,
+      "y2": 512.1,
+      "confidence": 0.836,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 1940.4,
+      "y1": 409.9,
+      "x2": 2012.4,
+      "y2": 463.0,
+      "confidence": 0.572,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 1987.2,
+      "y1": 440.5,
+      "x2": 2044.8,
+      "y2": 484.6,
+      "confidence": 0.731,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 3,
+      "class_name": "motorcycle",
+      "x1": 2151.0,
+      "y1": 719.5,
+      "x2": 2277.0,
+      "y2": 828.4,
+      "confidence": 0.792,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "image": "H_101_20251024_hiv00016_f015009.jpg",
+  "reviewed": true,
+  "updated_at": "20260624_100709",
+  "boxes": [
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 91.8,
+      "y1": 711.0,
+      "x2": 152.1,
+      "y2": 751.5,
+      "confidence": 0.436,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 247.9,
+      "y1": 650.7,
+      "x2": 294.8,
+      "y2": 692.1,
+      "confidence": 0.35,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 311.9,
+      "y1": 639.9,
+      "x2": 358.6,
+      "y2": 677.7,
+      "confidence": 0.326,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 7,
+      "class_name": "van-minivan",
+      "x1": 1796.4,
+      "y1": 480.6,
+      "x2": 1888.2,
+      "y2": 586.8,
+      "confidence": 0.72,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 1976.4,
+      "y1": 428.4,
+      "x2": 2041.2,
+      "y2": 473.4,
+      "confidence": 0.803,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 2052.0,
+      "y1": 421.2,
+      "x2": 2102.4,
+      "y2": 449.1,
+      "confidence": 0.274,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 10,
+      "class_name": "bus",
+      "x1": 2140.8035948324286,
+      "y1": 397.8038756787118,
+      "x2": 2208.74592772889,
+      "y2": 469.38597640891214,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 2023.1177682082007,
+      "y1": 440.2678337390002,
+      "x2": 2142.016850777008,
+      "y2": 498.5041190788242,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    }
+  ]
+}

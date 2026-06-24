@@ -1,0 +1,98 @@
+{
+  "image": "H_101_20251024_hiv00016_f016587.jpg",
+  "reviewed": true,
+  "updated_at": "20260624_103727",
+  "boxes": [
+    {
+      "class_id": 10,
+      "class_name": "bus",
+      "x1": 787.0,
+      "y1": 483.3,
+      "x2": 1337.4,
+      "y2": 783.9,
+      "confidence": 0.954,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 13,
+      "class_name": "camioneta",
+      "x1": 1344.6,
+      "y1": 459.9,
+      "x2": 1488.6,
+      "y2": 573.3,
+      "confidence": 0.882,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 1684.8,
+      "y1": 556.6,
+      "x2": 1821.6,
+      "y2": 691.6,
+      "confidence": 0.882,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 1728.0,
+      "y1": 459.0,
+      "x2": 1819.8,
+      "y2": 529.2,
+      "confidence": 0.876,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 13,
+      "class_name": "camioneta",
+      "x1": 1832.4,
+      "y1": 491.8,
+      "x2": 1918.8,
+      "y2": 582.8,
+      "confidence": 0.87,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 13,
+      "class_name": "camioneta",
+      "x1": 2021.4,
+      "y1": 414.0,
+      "x2": 2100.6,
+      "y2": 456.8,
+      "confidence": 0.617,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 2030.4,
+      "y1": 443.7,
+      "x2": 2138.4,
+      "y2": 493.2,
+      "confidence": 0.596,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    }
+  ]
+}

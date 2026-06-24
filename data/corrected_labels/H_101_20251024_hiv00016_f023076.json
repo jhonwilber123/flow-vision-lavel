@@ -1,0 +1,98 @@
+{
+  "image": "H_101_20251024_hiv00016_f023076.jpg",
+  "reviewed": true,
+  "updated_at": "20260624_133451",
+  "boxes": [
+    {
+      "class_id": 13,
+      "class_name": "camioneta",
+      "x1": 271.6,
+      "y1": 850.9,
+      "x2": 977.4,
+      "y2": 1287.0,
+      "confidence": 0.967,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 3,
+      "class_name": "motorcycle",
+      "x1": 364.5,
+      "y1": 814.5,
+      "x2": 487.3,
+      "y2": 929.7,
+      "confidence": 0.75,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 4,
+      "class_name": "person",
+      "x1": 398.7,
+      "y1": 773.1,
+      "x2": 473.4,
+      "y2": 915.3,
+      "confidence": 0.708,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 3,
+      "class_name": "motorcycle",
+      "x1": 1474.2,
+      "y1": 521.1,
+      "x2": 1575.0,
+      "y2": 596.7,
+      "confidence": 0.875,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 4,
+      "class_name": "person",
+      "x1": 1504.8,
+      "y1": 497.7,
+      "x2": 1544.4,
+      "y2": 593.1,
+      "confidence": 0.746,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 13,
+      "class_name": "camioneta",
+      "x1": 1791.0,
+      "y1": 473.4,
+      "x2": 1891.8,
+      "y2": 581.4,
+      "confidence": 0.5,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 2028.6,
+      "y1": 443.7,
+      "x2": 2140.2,
+      "y2": 492.3,
+      "confidence": 0.506,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    }
+  ]
+}

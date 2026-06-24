@@ -1,0 +1,98 @@
+{
+  "image": "H_101_20251024_hiv00018_f005049.jpg",
+  "source": "ai",
+  "updated_at": "20260624_154545",
+  "boxes": [
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 559.8,
+      "y1": 729.0,
+      "x2": 1166.4,
+      "y2": 1186.2,
+      "confidence": 0.925,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 4,
+      "class_name": "person",
+      "x1": 1521.0,
+      "y1": 408.6,
+      "x2": 1537.2,
+      "y2": 463.0,
+      "confidence": 0.562,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 1708.2,
+      "y1": 587.2,
+      "x2": 1827.0,
+      "y2": 753.8,
+      "confidence": 0.802,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 3,
+      "class_name": "motorcycle",
+      "x1": 1755.0,
+      "y1": 469.8,
+      "x2": 1785.6,
+      "y2": 515.7,
+      "confidence": 0.67,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 4,
+      "class_name": "person",
+      "x1": 1755.9,
+      "y1": 448.2,
+      "x2": 1786.5,
+      "y2": 502.2,
+      "confidence": 0.613,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 10,
+      "class_name": "bus",
+      "x1": 1843.2,
+      "y1": 415.8,
+      "x2": 1958.4,
+      "y2": 529.2,
+      "confidence": 0.901,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 3,
+      "class_name": "motorcycle",
+      "x1": 2151.0,
+      "y1": 718.2,
+      "x2": 2277.0,
+      "y2": 828.0,
+      "confidence": 0.769,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    }
+  ]
+}

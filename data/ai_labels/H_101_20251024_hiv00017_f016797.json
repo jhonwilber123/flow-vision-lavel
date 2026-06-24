@@ -1,0 +1,98 @@
+{
+  "image": "H_101_20251024_hiv00017_f016797.jpg",
+  "source": "ai",
+  "updated_at": "20260624_142004",
+  "boxes": [
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 96.8,
+      "y1": 682.2,
+      "x2": 173.7,
+      "y2": 736.2,
+      "confidence": 0.547,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 250.0,
+      "y1": 650.2,
+      "x2": 294.5,
+      "y2": 684.5,
+      "confidence": 0.301,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 312.8,
+      "y1": 639.9,
+      "x2": 358.6,
+      "y2": 667.8,
+      "confidence": 0.286,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 533.7,
+      "y1": 684.9,
+      "x2": 764.1,
+      "y2": 875.7,
+      "confidence": 0.729,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 4,
+      "class_name": "person",
+      "x1": 1501.2,
+      "y1": 446.8,
+      "x2": 1537.2,
+      "y2": 509.8,
+      "confidence": 0.712,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 3,
+      "class_name": "motorcycle",
+      "x1": 1503.0,
+      "y1": 473.4,
+      "x2": 1535.4,
+      "y2": 522.0,
+      "confidence": 0.722,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 1864.8,
+      "y1": 414.9,
+      "x2": 1951.2,
+      "y2": 476.1,
+      "confidence": 0.633,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    }
+  ]
+}

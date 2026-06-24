@@ -1,0 +1,98 @@
+{
+  "image": "H_101_20251024_hiv00017_f006753.jpg",
+  "reviewed": true,
+  "updated_at": "20260624_165527",
+  "boxes": [
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 0.0,
+      "y1": 853.2,
+      "x2": 312.8,
+      "y2": 1080.0,
+      "confidence": 0.939,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 91.6,
+      "y1": 709.2,
+      "x2": 152.3,
+      "y2": 747.0,
+      "confidence": 0.409,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 110.7,
+      "y1": 683.1,
+      "x2": 173.9,
+      "y2": 731.7,
+      "confidence": 0.237,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 314.1,
+      "y1": 639.5,
+      "x2": 358.2,
+      "y2": 666.5,
+      "confidence": 0.281,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 4,
+      "class_name": "person",
+      "x1": 1540.8,
+      "y1": 407.7,
+      "x2": 1562.4,
+      "y2": 464.4,
+      "confidence": 0.242,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 1,
+      "class_name": "mototaxi",
+      "x1": 1821.251494224397,
+      "y1": 425.26630485274535,
+      "x2": 1882.4574029915457,
+      "y2": 496.50596915549227,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 1,
+      "class_name": "mototaxi",
+      "x1": 2038.983989346877,
+      "y1": 411.2190471029079,
+      "x2": 2090.1561425784275,
+      "y2": 461.38782478089865,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    }
+  ]
+}

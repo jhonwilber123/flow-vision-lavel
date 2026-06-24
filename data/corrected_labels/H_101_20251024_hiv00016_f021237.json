@@ -1,0 +1,98 @@
+{
+  "image": "H_101_20251024_hiv00016_f021237.jpg",
+  "reviewed": true,
+  "updated_at": "20260624_132845",
+  "boxes": [
+    {
+      "class_id": 3,
+      "class_name": "motorcycle",
+      "x1": 1416.6,
+      "y1": 801.0,
+      "x2": 1530.0,
+      "y2": 977.4,
+      "confidence": 0.709,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 4,
+      "class_name": "person",
+      "x1": 1435.5,
+      "y1": 761.4,
+      "x2": 1529.1,
+      "y2": 920.7,
+      "confidence": 0.768,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 1,
+      "class_name": "mototaxi",
+      "x1": 1652.4,
+      "y1": 576.9,
+      "x2": 1778.4,
+      "y2": 738.9,
+      "confidence": 0.413,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 1,
+      "class_name": "mototaxi",
+      "x1": 1800.79662444644,
+      "y1": 481.9,
+      "x2": 1876.3966244464402,
+      "y2": 575.5,
+      "confidence": 0.498,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 13,
+      "class_name": "camioneta",
+      "x1": 1864.8,
+      "y1": 452.7,
+      "x2": 1944.0,
+      "y2": 535.5,
+      "confidence": 0.714,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 2025.9401071505993,
+      "y1": 441.32031370970236,
+      "x2": 2143.3350469170978,
+      "y2": 497.509344709052,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 2100.1898981140257,
+      "y1": 429.2798070669845,
+      "x2": 2154.3721780062556,
+      "y2": 464.3979514415781,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    }
+  ]
+}

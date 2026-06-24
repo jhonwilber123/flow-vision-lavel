@@ -1,0 +1,46 @@
+{
+  "image": "H_101_20251024_hiv00016_f024693.jpg",
+  "reviewed": true,
+  "updated_at": "20260624_135640",
+  "boxes": [
+    {
+      "class_id": 2,
+      "class_name": "microbus",
+      "x1": 412.512217026416,
+      "y1": 584.0101266606795,
+      "x2": 1288.9493666966027,
+      "y2": 1265.091643182311,
+      "confidence": 0.9686873555183411,
+      "origin_line": "L3",
+      "destination_line": "L4",
+      "turn_name": "M2",
+      "source": "human"
+    },
+    {
+      "class_id": 5,
+      "class_name": "truck",
+      "x1": 1667.7350345297452,
+      "y1": 377.1042782818742,
+      "x2": 1843.3257564027128,
+      "y2": 552.695000154842,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 2023.9333560434795,
+      "y1": 432.289933727664,
+      "x2": 2143.3350469170978,
+      "y2": 504.5329735839707,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    }
+  ]
+}
