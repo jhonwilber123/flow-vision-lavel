@@ -1,60 +1,8 @@
 {
   "image": "H_101_20251024_hiv00017_f007911.jpg",
   "reviewed": true,
-  "updated_at": "20260624_170257",
+  "updated_at": "20260626_085801",
   "boxes": [
-    {
-      "class_id": 0,
-      "class_name": "car",
-      "x1": 96.9,
-      "y1": 710.1,
-      "x2": 152.8,
-      "y2": 747.9,
-      "confidence": 0.553,
-      "origin_line": "",
-      "destination_line": "",
-      "turn_name": "",
-      "source": "ai"
-    },
-    {
-      "class_id": 0,
-      "class_name": "car",
-      "x1": 105.9,
-      "y1": 680.4,
-      "x2": 174.5,
-      "y2": 732.6,
-      "confidence": 0.278,
-      "origin_line": "",
-      "destination_line": "",
-      "turn_name": "",
-      "source": "ai"
-    },
-    {
-      "class_id": 0,
-      "class_name": "car",
-      "x1": 249.8,
-      "y1": 650.7,
-      "x2": 294.8,
-      "y2": 688.5,
-      "confidence": 0.451,
-      "origin_line": "",
-      "destination_line": "",
-      "turn_name": "",
-      "source": "ai"
-    },
-    {
-      "class_id": 0,
-      "class_name": "car",
-      "x1": 311.9,
-      "y1": 639.0,
-      "x2": 359.1,
-      "y2": 675.0,
-      "confidence": 0.354,
-      "origin_line": "",
-      "destination_line": "",
-      "turn_name": "",
-      "source": "ai"
-    },
     {
       "class_id": 1,
       "class_name": "mototaxi",

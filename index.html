@@ -14,11 +14,13 @@
   html,body{height:100%;margin:0;background:var(--bg);color:var(--text);
     font-family:Segoe UI,Roboto,Arial,sans-serif;font-size:13px;overflow:hidden}
   #app{height:100vh;display:grid;grid-template-columns:1fr 320px;grid-template-rows:auto 1fr}
-  #top{grid-column:1/3;display:flex;gap:9px;align-items:center;flex-wrap:wrap;
-    padding:8px 12px;background:var(--panel);border-bottom:1px solid var(--line)}
+  #top{grid-column:1/3;display:flex;gap:6px 8px;align-items:center;flex-wrap:wrap;
+    padding:7px 12px;background:var(--panel);border-bottom:1px solid var(--line);
+    max-height:42vh;overflow-y:auto}
   button,input,select{font:inherit}
   button{background:var(--panel2);color:var(--text);border:1px solid var(--line);
     border-radius:6px;padding:6px 10px;cursor:pointer}
+  #top button{white-space:nowrap}
   button:hover{border-color:var(--accent)}
   button.primary{background:var(--accent);border-color:var(--accent);font-weight:650;color:white}
   button.good{background:#173629;border-color:#246f50;color:#c8ffe6}
@@ -40,7 +42,7 @@
   #zoom{right:10px}
   #approveFloat{position:absolute;bottom:46px;right:10px;padding:11px 18px;font-size:14px;
     border-radius:9px;box-shadow:0 3px 12px rgba(0,0,0,.55);z-index:5}
-  #side{background:var(--panel);border-left:1px solid var(--line);display:flex;flex-direction:column;min-height:0}
+  #side{background:var(--panel);border-left:1px solid var(--line);display:flex;flex-direction:column;min-height:0;overflow-y:auto}
   #classPanel{padding:10px;border-bottom:1px solid var(--line);display:grid;grid-template-columns:1fr 1fr;gap:6px}
   .cls{display:flex;align-items:center;gap:7px;padding:6px 7px;border:1px solid var(--line);
     border-radius:6px;cursor:pointer;min-width:0}
@@ -50,7 +52,7 @@
   .cls span.key{margin-left:auto;color:var(--muted);font-family:Consolas,monospace}
   #boxHead{display:flex;justify-content:space-between;align-items:center;padding:9px 10px;
     border-bottom:1px solid var(--line);color:var(--muted)}
-  #boxList{flex:1;overflow:auto;padding:7px}
+  #boxList{flex:0 0 auto;max-height:240px;overflow:auto;padding:7px}
   .boxRow{display:grid;grid-template-columns:14px 1fr auto auto;gap:7px;align-items:center;
     padding:6px;border-radius:6px;margin-bottom:4px;cursor:pointer}
   .boxRow:hover{background:var(--panel2)}
@@ -74,6 +76,30 @@
   .batchItem{background:var(--panel2);border-radius:5px;padding:7px}
   .batchBar{height:4px;background:var(--line);border-radius:2px;margin:4px 0 6px}
   .batchBarFill{height:100%;border-radius:2px;transition:width .4s}
+
+  /* --- Toolbar responsive: compacta los controles segun el ancho --- */
+  @media (max-width:1280px){
+    #top{gap:5px 7px}
+    #top button{padding:5px 8px}
+  }
+  @media (max-width:1080px){
+    #top{padding:6px 9px}
+    #top button{padding:5px 7px;font-size:12px}
+    #top .sep{display:none}
+    #app{grid-template-columns:1fr 288px}
+  }
+  @media (max-width:880px){
+    body{font-size:12px}
+    #top{gap:4px 6px;padding:5px 8px}
+    #top button{padding:4px 6px;font-size:11.5px}
+    #top #counter,#top #imageId{font-size:12px}
+    #app{grid-template-columns:1fr 250px}
+  }
+  @media (max-width:680px){
+    #app{grid-template-columns:1fr 210px}
+    #top #jump{flex:1 1 90px;min-width:70px}
+    #top button{padding:4px 6px;font-size:11px}
+  }
 </style>
 </head>
 <body>
@@ -87,7 +113,7 @@
     <span id="dirty">sin guardar</span>
     <span id="reviewedBadge"></span>
     <div class="sep"></div>
-    <input id="jump" type="text" placeholder="id o #indice" style="width:150px">
+    <input id="jump" type="text" placeholder="id o #indice" style="width:140px;flex:0 1 140px;min-width:84px">
     <button id="jumpBtn">Ir</button>
     <label class="muted"><input id="onlyPending" type="checkbox"> solo pendientes</label>
     <div class="sep"></div>
@@ -524,40 +550,65 @@ async function loadBatches() {
     return;
   }
 
+  const counts = info.counts || {};
+  const summary = document.createElement('div');
+  summary.className = 'muted';
+  summary.style.cssText = 'font-size:11px;margin-bottom:5px';
+  summary.textContent =
+    `${info.batches.length} lotes · ${counts.completed||0} completados · ` +
+    `${counts.active||0} activos · ${counts.pending||0} sin descargar`;
+  container.appendChild(summary);
+
   for (const b of info.batches) {
-    const pct = b.total > 0 ? Math.round(b.reviewed / b.total * 100) : 0;
-    const barColor = b.complete ? 'var(--ok)' : (pct >= 50 ? 'var(--warn)' : 'var(--accent)');
+    const numStr = String(b.num).padStart(3,'0');
     const div = document.createElement('div');
     div.className = 'batchItem';
 
-    const header = document.createElement('div');
-    header.style.cssText = 'display:flex;justify-content:space-between;font-size:12px';
-    header.innerHTML =
-      `<span>Lote <b>${String(b.num).padStart(3,'0')}</b></span>` +
-      `<span style="color:${barColor}">${b.reviewed}/${b.total} (${pct}%)</span>`;
+    if (b.status === 'active') {
+      const pct = b.total > 0 ? Math.round(b.reviewed / b.total * 100) : 0;
+      const barColor = b.complete ? 'var(--ok)' : (pct >= 50 ? 'var(--warn)' : 'var(--accent)');
+      const header = document.createElement('div');
+      header.style.cssText = 'display:flex;justify-content:space-between;font-size:12px';
+      header.innerHTML =
+        `<span>Lote <b>${numStr}</b> <span class="muted" style="font-size:10px">activo</span></span>` +
+        `<span style="color:${barColor}">${b.reviewed}/${b.total} (${pct}%)</span>`;
 
-    const barWrap = document.createElement('div');
-    barWrap.className = 'batchBar';
-    const fill = document.createElement('div');
-    fill.className = 'batchBarFill';
-    fill.style.width = pct + '%';
-    fill.style.background = barColor;
-    barWrap.appendChild(fill);
+      const barWrap = document.createElement('div');
+      barWrap.className = 'batchBar';
+      const fill = document.createElement('div');
+      fill.className = 'batchBarFill';
+      fill.style.width = pct + '%';
+      fill.style.background = barColor;
+      barWrap.appendChild(fill);
 
-    const btn = document.createElement('button');
-    btn.style.cssText = 'width:100%;font-size:11px;padding:4px 6px';
-    if (b.complete) {
-      btn.className = 'good';
-      btn.textContent = 'Completar y liberar lote ' + String(b.num).padStart(3,'0');
-      btn.onclick = () => completeBatch(b.num);
+      const btn = document.createElement('button');
+      btn.style.cssText = 'width:100%;font-size:11px;padding:4px 6px';
+      if (b.complete) {
+        btn.className = 'good';
+        btn.textContent = 'Completar y liberar lote ' + numStr;
+        btn.onclick = () => completeBatch(b.num);
+      } else {
+        btn.disabled = true;
+        btn.textContent = `Faltan ${b.total - b.reviewed} imagenes`;
+      }
+
+      div.appendChild(header);
+      div.appendChild(barWrap);
+      div.appendChild(btn);
     } else {
-      btn.disabled = true;
-      btn.textContent = `Faltan ${b.total - b.reviewed} imagenes`;
+      // completado o sin descargar -> fila compacta de una linea
+      const done = b.status === 'completed';
+      div.style.cssText = 'background:var(--panel2);border-radius:5px;padding:5px 8px;' +
+        'display:flex;justify-content:space-between;align-items:center;font-size:11.5px' +
+        (done ? '' : ';opacity:.55');
+      const tag = done
+        ? '<span style="color:var(--ok)">&#10003; completado</span>'
+        : '<span class="muted">sin descargar</span>';
+      div.innerHTML =
+        `<span>Lote <b>${numStr}</b></span>` +
+        `<span>${tag} <span class="muted">&middot; ${b.total}</span></span>`;
     }
 
-    div.appendChild(header);
-    div.appendChild(barWrap);
-    div.appendChild(btn);
     container.appendChild(div);
   }
 }

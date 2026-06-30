@@ -16,6 +16,7 @@ from urllib.parse import parse_qs, unquote, urlparse
 ROOT = Path(__file__).resolve().parent
 RAW_DIR = ROOT / "data" / "raw"
 IMAGE_DIR = RAW_DIR / "images" / "train"
+LABELED_DIR = RAW_DIR / "labeled_full"   # imagenes etiquetadas re-descargadas full-res
 BATCHES_DIR = RAW_DIR / "batches"
 BATCH_STATE_FILE = BATCHES_DIR / "state.json"
 METADATA_CSV = RAW_DIR / "metadata.csv"
@@ -136,23 +137,22 @@ def safe_float(value):
 
 
 def scan_images():
+    # Reune todas las imagenes locales: lotes activos + labeled_full (re-descargadas)
+    # + images/train. Dedup por nombre (primera aparicion gana).
+    names = {}
     if BATCHES_DIR.exists():
-        names = []
         for batch_dir in sorted(BATCHES_DIR.glob("batch_*")):
             imgs = batch_dir / "images"
             if imgs.exists():
-                names.extend(
-                    p.name for p in imgs.iterdir()
-                    if p.suffix.lower() in {".jpg", ".jpeg", ".png"}
-                )
-        if names:
-            return sorted(names)
-    if not IMAGE_DIR.exists():
-        return []
-    return sorted(
-        p.name for p in IMAGE_DIR.iterdir()
-        if p.suffix.lower() in {".jpg", ".jpeg", ".png"}
-    )
+                for p in imgs.iterdir():
+                    if p.suffix.lower() in {".jpg", ".jpeg", ".png"}:
+                        names.setdefault(p.name, p)
+    for extra in (LABELED_DIR, IMAGE_DIR):
+        if extra.exists():
+            for p in extra.iterdir():
+                if p.suffix.lower() in {".jpg", ".jpeg", ".png"}:
+                    names.setdefault(p.name, p)
+    return sorted(names)
 
 
 def load_corrected(name):
@@ -221,9 +221,10 @@ def image_path(name):
             p = batch_dir / "images" / safe
             if p.exists():
                 return p
-    path = IMAGE_DIR / safe
-    if path.exists():
-        return path
+    for extra in (LABELED_DIR, IMAGE_DIR):
+        p = extra / safe
+        if p.exists():
+            return p
     return None
 
 
@@ -505,26 +506,49 @@ def get_batches_info():
     if not state:
         return None
     rev = reviewed_names()
+    total = state.get("total_images", 0)
+    n_lots = (total + 99) // 100 if total else 0
+    by_num = {b.get("num"): b for b in state.get("batches", [])}
     batches = []
-    for b in state.get("batches", []):
-        if b.get("status") != "active":
+    for num in range(1, n_lots + 1):
+        b = by_num.get(num)
+        if b is None:
+            # lote que aun no se ha descargado de Drive
+            start = (num - 1) * 100
+            end = min(num * 100, total)
+            batches.append({
+                "num": num, "folder": f"batch_{num:03d}",
+                "total": end - start, "reviewed": 0,
+                "status": "pending", "complete": False, "on_disk": False,
+            })
             continue
         imgs = b.get("images", [])
-        done = sum(1 for img in imgs if img in rev)
-        batches.append({
-            "num": b["num"],
-            "folder": b["folder"],
-            "total": len(imgs),
-            "reviewed": done,
-            "complete": done == len(imgs) and len(imgs) > 0,
-        })
-    total = state.get("total_images", 0)
+        if b.get("status") == "active":
+            done = sum(1 for img in imgs if img in rev)
+            batches.append({
+                "num": num, "folder": b["folder"], "total": len(imgs),
+                "reviewed": done, "status": "active",
+                "complete": done == len(imgs) and len(imgs) > 0, "on_disk": True,
+            })
+        else:
+            # completado: la carpeta se libero, pero todas quedaron revisadas
+            batches.append({
+                "num": num, "folder": b["folder"], "total": len(imgs),
+                "reviewed": len(imgs), "status": "completed",
+                "complete": True, "on_disk": False,
+            })
     nxt = state.get("next_index", 0)
+    counts = {
+        "completed": sum(1 for x in batches if x["status"] == "completed"),
+        "active": sum(1 for x in batches if x["status"] == "active"),
+        "pending": sum(1 for x in batches if x["status"] == "pending"),
+    }
     return {
         "batches": batches,
         "total_images": total,
         "downloaded": nxt,
         "remaining": total - nxt,
+        "counts": counts,
     }
 
 
