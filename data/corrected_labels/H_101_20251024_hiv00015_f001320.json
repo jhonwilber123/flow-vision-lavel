@@ -1,20 +1,20 @@
 {
   "image": "H_101_20251024_hiv00015_f001320.jpg",
   "reviewed": true,
-  "updated_at": "20260623_092915",
+  "updated_at": "20260701_145202",
   "boxes": [
     {
-      "class_id": 2,
-      "class_name": "microbus",
-      "x1": 254.0,
+      "class_id": 10,
+      "class_name": "bus",
+      "x1": 234.12504423734822,
       "y1": 547.0,
-      "x2": 857.0,
+      "x2": 837.1250442373482,
       "y2": 932.0,
       "confidence": 0.9580619931221008,
       "origin_line": "L3",
       "destination_line": "L4",
       "turn_name": "M2",
-      "source": "metadata"
+      "source": "human"
     },
     {
       "class_id": 0,
@@ -33,8 +33,8 @@
       "class_id": 0,
       "class_name": "car",
       "x1": 1524.9045244805054,
-      "y1": 513.9145350097551,
-      "x2": 1699.1406893561673,
+      "y1": 517.2839447917895,
+      "x2": 1688.6238055916008,
       "y2": 655.842007060791,
       "confidence": null,
       "origin_line": "",

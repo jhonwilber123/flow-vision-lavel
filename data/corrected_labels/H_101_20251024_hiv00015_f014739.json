@@ -1,7 +1,7 @@
 {
   "image": "H_101_20251024_hiv00015_f014739.jpg",
   "reviewed": true,
-  "updated_at": "20260623_150110",
+  "updated_at": "20260701_161049",
   "boxes": [
     {
       "class_id": 13,
@@ -43,17 +43,17 @@
       "source": "human"
     },
     {
-      "class_id": 5,
-      "class_name": "truck",
+      "class_id": 7,
+      "class_name": "van-minivan",
       "x1": 1791.0,
-      "y1": 450.9,
+      "y1": 463.7744485077268,
       "x2": 1895.4,
       "y2": 576.9,
       "confidence": 0.465,
       "origin_line": "",
       "destination_line": "",
       "turn_name": "",
-      "source": "ai"
+      "source": "human"
     },
     {
       "class_id": 4,

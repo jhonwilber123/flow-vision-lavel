@@ -1,11 +1,11 @@
 {
   "image": "H_101_20251024_hiv00015_f006132.jpg",
   "reviewed": true,
-  "updated_at": "20260623_103754",
+  "updated_at": "20260701_150954",
   "boxes": [
     {
-      "class_id": 2,
-      "class_name": "microbus",
+      "class_id": 10,
+      "class_name": "bus",
       "x1": 218.87011253099368,
       "y1": 551.1197787526226,
       "x2": 882.7882891474346,

@@ -1,7 +1,7 @@
 {
   "image": "H_101_20251024_hiv00015_f014598.jpg",
   "reviewed": true,
-  "updated_at": "20260623_150013",
+  "updated_at": "20260701_161014",
   "boxes": [
     {
       "class_id": 0,
@@ -17,8 +17,8 @@
       "source": "ai"
     },
     {
-      "class_id": 10,
-      "class_name": "bus",
+      "class_id": 7,
+      "class_name": "van-minivan",
       "x1": 1506.6,
       "y1": 533.7,
       "x2": 1762.2,
@@ -27,7 +27,7 @@
       "origin_line": "",
       "destination_line": "",
       "turn_name": "",
-      "source": "ai"
+      "source": "human"
     },
     {
       "class_id": 0,
@@ -82,19 +82,6 @@
       "source": "ai"
     },
     {
-      "class_id": 0,
-      "class_name": "car",
-      "x1": 2016.0,
-      "y1": 417.6,
-      "x2": 2088.0,
-      "y2": 468.9,
-      "confidence": 0.379,
-      "origin_line": "",
-      "destination_line": "",
-      "turn_name": "",
-      "source": "ai"
-    },
-    {
       "class_id": 4,
       "class_name": "person",
       "x1": 2080.8,
@@ -106,6 +93,19 @@
       "destination_line": "",
       "turn_name": "",
       "source": "ai"
+    },
+    {
+      "class_id": 11,
+      "class_name": "bici-triciclo",
+      "x1": 2021.9115253037633,
+      "y1": 417.90916597853015,
+      "x2": 2086.1229208446384,
+      "y2": 476.00519051551254,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
     }
   ]
 }

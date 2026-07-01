@@ -1,11 +1,11 @@
 {
   "image": "H_101_20251024_hiv00015_f014136.jpg",
   "reviewed": true,
-  "updated_at": "20260623_145541",
+  "updated_at": "20260701_160820",
   "boxes": [
     {
-      "class_id": 5,
-      "class_name": "truck",
+      "class_id": 13,
+      "class_name": "camioneta",
       "x1": 1335.6,
       "y1": 657.9,
       "x2": 1659.6,
@@ -14,7 +14,7 @@
       "origin_line": "",
       "destination_line": "",
       "turn_name": "",
-      "source": "ai"
+      "source": "human"
     },
     {
       "class_id": 0,

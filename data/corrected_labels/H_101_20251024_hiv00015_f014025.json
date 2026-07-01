@@ -1,60 +1,8 @@
 {
   "image": "H_101_20251024_hiv00015_f014025.jpg",
   "reviewed": true,
-  "updated_at": "20260623_145449",
+  "updated_at": "20260701_160740",
   "boxes": [
-    {
-      "class_id": 0,
-      "class_name": "car",
-      "x1": 98.9,
-      "y1": 709.2,
-      "x2": 155.1,
-      "y2": 748.8,
-      "confidence": 0.436,
-      "origin_line": "",
-      "destination_line": "",
-      "turn_name": "",
-      "source": "ai"
-    },
-    {
-      "class_id": 0,
-      "class_name": "car",
-      "x1": 101.8,
-      "y1": 682.2,
-      "x2": 175.5,
-      "y2": 734.4,
-      "confidence": 0.292,
-      "origin_line": "",
-      "destination_line": "",
-      "turn_name": "",
-      "source": "ai"
-    },
-    {
-      "class_id": 13,
-      "class_name": "camioneta",
-      "x1": 249.3,
-      "y1": 653.4,
-      "x2": 295.2,
-      "y2": 694.8,
-      "confidence": 0.451,
-      "origin_line": "",
-      "destination_line": "",
-      "turn_name": "",
-      "source": "human"
-    },
-    {
-      "class_id": 13,
-      "class_name": "camioneta",
-      "x1": 310.9,
-      "y1": 639.9,
-      "x2": 360.0,
-      "y2": 670.5,
-      "confidence": 0.323,
-      "origin_line": "",
-      "destination_line": "",
-      "turn_name": "",
-      "source": "human"
-    },
     {
       "class_id": 5,
       "class_name": "truck",

@@ -1,11 +1,11 @@
 {
   "image": "H_101_20251024_hiv00015_f014493.jpg",
   "reviewed": true,
-  "updated_at": "20260623_145719",
+  "updated_at": "20260701_160903",
   "boxes": [
     {
-      "class_id": 0,
-      "class_name": "car",
+      "class_id": 13,
+      "class_name": "camioneta",
       "x1": 414.4,
       "y1": 657.0,
       "x2": 796.9,
@@ -14,7 +14,7 @@
       "origin_line": "",
       "destination_line": "",
       "turn_name": "",
-      "source": "ai"
+      "source": "human"
     },
     {
       "class_id": 1,
@@ -56,8 +56,8 @@
       "source": "ai"
     },
     {
-      "class_id": 0,
-      "class_name": "car",
+      "class_id": 13,
+      "class_name": "camioneta",
       "x1": 1723.5,
       "y1": 438.3,
       "x2": 1829.7,
@@ -66,7 +66,7 @@
       "origin_line": "",
       "destination_line": "",
       "turn_name": "",
-      "source": "ai"
+      "source": "human"
     },
     {
       "class_id": 1,

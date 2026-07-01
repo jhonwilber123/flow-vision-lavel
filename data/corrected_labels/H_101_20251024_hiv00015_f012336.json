@@ -1,7 +1,7 @@
 {
   "image": "H_101_20251024_hiv00015_f012336.jpg",
   "reviewed": true,
-  "updated_at": "20260623_142227",
+  "updated_at": "20260701_160125",
   "boxes": [
     {
       "class_id": 1,
@@ -33,14 +33,14 @@
       "class_id": 13,
       "class_name": "camioneta",
       "x1": 409.4,
-      "y1": 626.8,
+      "y1": 670.1682198891117,
       "x2": 871.8,
       "y2": 896.7,
       "confidence": 0.858,
       "origin_line": "",
       "destination_line": "",
       "turn_name": "",
-      "source": "ai"
+      "source": "human"
     },
     {
       "class_id": 0,

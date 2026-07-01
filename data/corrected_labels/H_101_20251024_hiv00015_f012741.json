@@ -1,7 +1,7 @@
 {
   "image": "H_101_20251024_hiv00015_f012741.jpg",
   "reviewed": true,
-  "updated_at": "20260623_142236",
+  "updated_at": "20260701_160219",
   "boxes": [
     {
       "class_id": 13,
@@ -69,8 +69,8 @@
       "source": "ai"
     },
     {
-      "class_id": 0,
-      "class_name": "car",
+      "class_id": 1,
+      "class_name": "mototaxi",
       "x1": 1782.9,
       "y1": 442.4,
       "x2": 1839.9,
@@ -79,7 +79,7 @@
       "origin_line": "",
       "destination_line": "",
       "turn_name": "",
-      "source": "ai"
+      "source": "human"
     },
     {
       "class_id": 0,

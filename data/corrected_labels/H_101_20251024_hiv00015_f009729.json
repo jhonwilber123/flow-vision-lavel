@@ -1,11 +1,11 @@
 {
   "image": "H_101_20251024_hiv00015_f009729.jpg",
   "reviewed": true,
-  "updated_at": "20260623_121202",
+  "updated_at": "20260701_153242",
   "boxes": [
     {
-      "class_id": 8,
-      "class_name": "combi",
+      "class_id": 7,
+      "class_name": "van-minivan",
       "x1": 1788.0,
       "y1": 460.0,
       "x2": 1903.0,
@@ -14,14 +14,14 @@
       "origin_line": "L1",
       "destination_line": "L2",
       "turn_name": "M1",
-      "source": "metadata"
+      "source": "human"
     },
     {
-      "class_id": 9,
-      "class_name": "trailer",
-      "x1": 931.7810282911448,
+      "class_id": 5,
+      "class_name": "truck",
+      "x1": 928.7233427891983,
       "y1": 405.26723018665285,
-      "x2": 1680.9795918367345,
+      "x2": 1677.921906334788,
       "y2": 917.2195819428059,
       "confidence": null,
       "origin_line": "",
@@ -46,9 +46,9 @@
       "class_id": 5,
       "class_name": "truck",
       "x1": 971.5112551458353,
-      "y1": 731.0550903951141,
-      "x2": 1610.6003328369973,
-      "y2": 1292.9540130543062,
+      "y1": 731.3219299280405,
+      "x2": 1587.720184027368,
+      "y2": 1291.4251703033328,
       "confidence": null,
       "origin_line": "",
       "destination_line": "",

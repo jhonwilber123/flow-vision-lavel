@@ -1,11 +1,11 @@
 {
   "image": "H_101_20251024_hiv00015_f009744.jpg",
   "reviewed": true,
-  "updated_at": "20260623_122407",
+  "updated_at": "20260701_153255",
   "boxes": [
     {
-      "class_id": 9,
-      "class_name": "trailer",
+      "class_id": 5,
+      "class_name": "truck",
       "x1": 353.0,
       "y1": 456.0,
       "x2": 1524.0,
@@ -14,7 +14,7 @@
       "origin_line": "L3",
       "destination_line": "L4",
       "turn_name": "M2",
-      "source": "metadata"
+      "source": "human"
     },
     {
       "class_id": 3,
@@ -32,10 +32,10 @@
     {
       "class_id": 5,
       "class_name": "truck",
-      "x1": 1443.7333800472977,
-      "y1": 568.7287349602361,
-      "x2": 1789.9539283524566,
-      "y2": 925.165627313744,
+      "x1": 1442.2045372963244,
+      "y1": 573.3152632131558,
+      "x2": 1788.4250856014833,
+      "y2": 929.7521555666638,
       "confidence": null,
       "origin_line": "",
       "destination_line": "",
@@ -46,8 +46,8 @@
       "class_id": 0,
       "class_name": "car",
       "x1": 1646.9251116755713,
-      "y1": 850.245770959185,
-      "x2": 1973.848121222738,
+      "y1": 858.215878258818,
+      "x2": 1954.6424442609414,
       "y2": 1162.4118391031807,
       "confidence": null,
       "origin_line": "",
@@ -69,8 +69,8 @@
       "source": "human"
     },
     {
-      "class_id": 8,
-      "class_name": "combi",
+      "class_id": 7,
+      "class_name": "van-minivan",
       "x1": 1842.170797932907,
       "y1": 424.56476894464527,
       "x2": 1932.982745029342,

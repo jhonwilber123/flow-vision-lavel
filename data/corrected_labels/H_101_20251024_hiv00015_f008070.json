@@ -1,7 +1,7 @@
 {
   "image": "H_101_20251024_hiv00015_f008070.jpg",
   "reviewed": true,
-  "updated_at": "20260623_111114",
+  "updated_at": "20260701_151452",
   "boxes": [
     {
       "class_id": 0,
@@ -17,8 +17,8 @@
       "source": "human"
     },
     {
-      "class_id": 4,
-      "class_name": "person",
+      "class_id": 10,
+      "class_name": "bus",
       "x1": 1269.4136944497425,
       "y1": 443.9851177826015,
       "x2": 1653.9263780278468,

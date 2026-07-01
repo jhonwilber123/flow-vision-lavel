@@ -1,7 +1,7 @@
 {
   "image": "H_101_20251024_hiv00015_f014580.jpg",
   "reviewed": true,
-  "updated_at": "20260623_150008",
+  "updated_at": "20260701_160937",
   "boxes": [
     {
       "class_id": 13,
@@ -17,8 +17,8 @@
       "source": "human"
     },
     {
-      "class_id": 8,
-      "class_name": "combi",
+      "class_id": 7,
+      "class_name": "van-minivan",
       "x1": 820.8,
       "y1": 747.9,
       "x2": 1477.8,

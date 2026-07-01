@@ -1,7 +1,7 @@
 {
   "image": "H_101_20251024_hiv00015_f003423.jpg",
   "reviewed": true,
-  "updated_at": "20260623_094340",
+  "updated_at": "20260701_145704",
   "boxes": [
     {
       "class_id": 0,
@@ -17,10 +17,10 @@
       "source": "metadata"
     },
     {
-      "class_id": 9,
-      "class_name": "trailer",
+      "class_id": 5,
+      "class_name": "truck",
       "x1": 1983.798333901087,
-      "y1": 354.02664054999843,
+      "y1": 364.3996696944674,
       "x2": 2162.3991824347345,
       "y2": 477.4418336378557,
       "confidence": null,

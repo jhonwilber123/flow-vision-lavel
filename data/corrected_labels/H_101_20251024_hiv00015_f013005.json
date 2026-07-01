@@ -1,60 +1,8 @@
 {
   "image": "H_101_20251024_hiv00015_f013005.jpg",
   "reviewed": true,
-  "updated_at": "20260623_145108",
+  "updated_at": "20260701_160503",
   "boxes": [
-    {
-      "class_id": 0,
-      "class_name": "car",
-      "x1": 101.9,
-      "y1": 709.6,
-      "x2": 154.3,
-      "y2": 749.2,
-      "confidence": 0.206,
-      "origin_line": "",
-      "destination_line": "",
-      "turn_name": "",
-      "source": "ai"
-    },
-    {
-      "class_id": 0,
-      "class_name": "car",
-      "x1": 252.4,
-      "y1": 652.0,
-      "x2": 295.2,
-      "y2": 696.1,
-      "confidence": 0.242,
-      "origin_line": "",
-      "destination_line": "",
-      "turn_name": "",
-      "source": "ai"
-    },
-    {
-      "class_id": 0,
-      "class_name": "car",
-      "x1": 315.9,
-      "y1": 639.9,
-      "x2": 359.5,
-      "y2": 675.9,
-      "confidence": 0.275,
-      "origin_line": "",
-      "destination_line": "",
-      "turn_name": "",
-      "source": "ai"
-    },
-    {
-      "class_id": 0,
-      "class_name": "car",
-      "x1": 382.9,
-      "y1": 421.6,
-      "x2": 444.1,
-      "y2": 466.2,
-      "confidence": 0.167,
-      "origin_line": "",
-      "destination_line": "",
-      "turn_name": "",
-      "source": "ai"
-    },
     {
       "class_id": 0,
       "class_name": "car",
@@ -95,12 +43,12 @@
       "source": "ai"
     },
     {
-      "class_id": 0,
-      "class_name": "car",
+      "class_id": 13,
+      "class_name": "camioneta",
       "x1": 1783.8,
-      "y1": 477.9,
+      "y1": 476.37115724902674,
       "x2": 1895.4,
-      "y2": 579.6,
+      "y2": 578.0711572490268,
       "confidence": 0.874,
       "origin_line": "",
       "destination_line": "",
@@ -108,8 +56,8 @@
       "source": "human"
     },
     {
-      "class_id": 0,
-      "class_name": "car",
+      "class_id": 7,
+      "class_name": "van-minivan",
       "x1": 1920.6,
       "y1": 429.8,
       "x2": 1985.4,
@@ -118,7 +66,7 @@
       "origin_line": "",
       "destination_line": "",
       "turn_name": "",
-      "source": "ai"
+      "source": "human"
     },
     {
       "class_id": 4,
@@ -134,8 +82,8 @@
       "source": "ai"
     },
     {
-      "class_id": 0,
-      "class_name": "car",
+      "class_id": 7,
+      "class_name": "van-minivan",
       "x1": 2032.2,
       "y1": 413.1,
       "x2": 2100.6,
@@ -144,7 +92,7 @@
       "origin_line": "",
       "destination_line": "",
       "turn_name": "",
-      "source": "ai"
+      "source": "human"
     }
   ]
 }
