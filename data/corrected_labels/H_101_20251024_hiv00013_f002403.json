@@ -1,7 +1,7 @@
 {
   "image": "H_101_20251024_hiv00013_f002403.jpg",
   "reviewed": true,
-  "updated_at": "20260617_092356",
+  "updated_at": "20260701_122354",
   "boxes": [
     {
       "class_id": 7,
@@ -30,12 +30,12 @@
       "source": "human"
     },
     {
-      "class_id": 7,
-      "class_name": "van-minivan",
+      "class_id": 13,
+      "class_name": "camioneta",
       "x1": 1715.9179889800646,
-      "y1": 566.0173575803439,
+      "y1": 564.4885148293706,
       "x2": 1878.350887979757,
-      "y2": 742.241729136614,
+      "y2": 740.7128863856408,
       "confidence": null,
       "origin_line": "",
       "destination_line": "",

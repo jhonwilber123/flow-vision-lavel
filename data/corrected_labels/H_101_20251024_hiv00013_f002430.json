@@ -1,11 +1,11 @@
 {
   "image": "H_101_20251024_hiv00013_f002430.jpg",
   "reviewed": true,
-  "updated_at": "20260617_094142",
+  "updated_at": "20260701_122449",
   "boxes": [
     {
-      "class_id": 0,
-      "class_name": "car",
+      "class_id": 13,
+      "class_name": "camioneta",
       "x1": 1832.0,
       "y1": 477.0,
       "x2": 1923.0,
@@ -14,11 +14,11 @@
       "origin_line": "L1",
       "destination_line": "L2",
       "turn_name": "M1",
-      "source": "metadata"
+      "source": "human"
     },
     {
-      "class_id": 7,
-      "class_name": "van-minivan",
+      "class_id": 13,
+      "class_name": "camioneta",
       "x1": 966.5813134060113,
       "y1": 654.8957362782888,
       "x2": 1369.5987892260032,
@@ -36,6 +36,19 @@
       "y1": 418.90831697684865,
       "x2": 1544.2907749426538,
       "y2": 481.7361364012581,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 1,
+      "class_name": "mototaxi",
+      "x1": 2034.1422673115487,
+      "y1": 424.024536982423,
+      "x2": 2076.949864338799,
+      "y2": 472.9475050135661,
       "confidence": null,
       "origin_line": "",
       "destination_line": "",

@@ -1,7 +1,7 @@
 {
   "image": "H_101_20251024_hiv00014_f015864.jpg",
   "reviewed": true,
-  "updated_at": "20260622_151301",
+  "updated_at": "20260701_123424",
   "boxes": [
     {
       "class_id": 1,
@@ -69,12 +69,25 @@
       "source": "human"
     },
     {
-      "class_id": 0,
-      "class_name": "car",
+      "class_id": 10,
+      "class_name": "bus",
       "x1": 268.02613731380256,
       "y1": 814.5760196339537,
       "x2": 1725.5495339258616,
       "y2": 1296.0,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 1,
+      "class_name": "mototaxi",
+      "x1": 2070.8344933349063,
+      "y1": 422.4956942314498,
+      "x2": 2115.1709331131296,
+      "y2": 471.4186622625929,
       "confidence": null,
       "origin_line": "",
       "destination_line": "",

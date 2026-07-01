@@ -1,7 +1,7 @@
 {
   "image": "H_101_20251024_hiv00013_f002265.jpg",
   "reviewed": true,
-  "updated_at": "20260617_092121",
+  "updated_at": "20260701_122341",
   "boxes": [
     {
       "class_id": 3,
@@ -23,6 +23,19 @@
       "y1": 426.5702461749474,
       "x2": 1553.485089980372,
       "y2": 495.52760895783575,
+      "confidence": null,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "human"
+    },
+    {
+      "class_id": 7,
+      "class_name": "van-minivan",
+      "x1": 2113.6420903621565,
+      "y1": 404.14958121977116,
+      "x2": 2190.0842279108174,
+      "y2": 453.0725492509142,
       "confidence": null,
       "origin_line": "",
       "destination_line": "",

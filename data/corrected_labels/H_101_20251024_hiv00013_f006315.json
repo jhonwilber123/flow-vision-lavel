@@ -1,11 +1,11 @@
 {
   "image": "H_101_20251024_hiv00013_f006315.jpg",
   "reviewed": true,
-  "updated_at": "20260617_130333",
+  "updated_at": "20260701_123140",
   "boxes": [
     {
-      "class_id": 0,
-      "class_name": "car",
+      "class_id": 13,
+      "class_name": "camioneta",
       "x1": 367.41845011469246,
       "y1": 657.9605079575283,
       "x2": 821.6761416038025,
