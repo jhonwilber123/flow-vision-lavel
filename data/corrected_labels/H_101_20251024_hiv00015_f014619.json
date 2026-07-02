@@ -1,7 +1,7 @@
 {
   "image": "H_101_20251024_hiv00015_f014619.jpg",
   "reviewed": true,
-  "updated_at": "20260701_161023",
+  "updated_at": "20260623_150026",
   "boxes": [
     {
       "class_id": 1,
@@ -15,6 +15,58 @@
       "destination_line": "",
       "turn_name": "",
       "source": "human"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 95.6,
+      "y1": 711.0,
+      "x2": 154.6,
+      "y2": 750.6,
+      "confidence": 0.269,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 248.8,
+      "y1": 652.5,
+      "x2": 295.6,
+      "y2": 695.7,
+      "confidence": 0.22,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 312.8,
+      "y1": 639.9,
+      "x2": 359.5,
+      "y2": 679.5,
+      "confidence": 0.336,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
+    },
+    {
+      "class_id": 0,
+      "class_name": "car",
+      "x1": 375.3,
+      "y1": 421.2,
+      "x2": 441.0,
+      "y2": 478.8,
+      "confidence": 0.245,
+      "origin_line": "",
+      "destination_line": "",
+      "turn_name": "",
+      "source": "ai"
     },
     {
       "class_id": 0,
@@ -43,8 +95,8 @@
       "source": "ai"
     },
     {
-      "class_id": 7,
-      "class_name": "van-minivan",
+      "class_id": 8,
+      "class_name": "combi",
       "x1": 1765.8,
       "y1": 450.9,
       "x2": 1895.4,

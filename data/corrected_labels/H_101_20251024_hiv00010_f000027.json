@@ -1,7 +1,7 @@
 {
   "image": "H_101_20251024_hiv00010_f000027.jpg",
   "reviewed": true,
-  "updated_at": "20260626_145627",
+  "updated_at": "20260616_091948",
   "boxes": [
     {
       "class_id": 1,
@@ -17,8 +17,8 @@
       "source": "human"
     },
     {
-      "class_id": 0,
-      "class_name": "car",
+      "class_id": 6,
+      "class_name": "taxi",
       "x1": 1653.168697265273,
       "y1": 525.5617565731283,
       "x2": 1788.9288717731238,
